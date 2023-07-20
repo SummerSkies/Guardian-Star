@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Living Room.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
