@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8639DA0B2A5B4A6600B356C1 /* Guardian_StarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA0A2A5B4A6600B356C1 /* Guardian_StarApp.swift */; };
+		8639DA0D2A5B4A6600B356C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA0C2A5B4A6600B356C1 /* ContentView.swift */; };
+		8639DA0F2A5B4A6800B356C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8639DA0E2A5B4A6800B356C1 /* Assets.xcassets */; };
+		8639DA122A5B4A6800B356C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8639DA112A5B4A6800B356C1 /* Preview Assets.xcassets */; };
+		8639DA1C2A5B4A6800B356C1 /* Guardian_StarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA1B2A5B4A6800B356C1 /* Guardian_StarTests.swift */; };
+		8639DA262A5B4A6800B356C1 /* Guardian_StarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA252A5B4A6800B356C1 /* Guardian_StarUITests.swift */; };
+		8639DA282A5B4A6800B356C1 /* Guardian_StarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA272A5B4A6800B356C1 /* Guardian_StarUITestsLaunchTests.swift */; };
+		8639DA352A5B7AC700B356C1 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA342A5B7AC700B356C1 /* MainMenu.swift */; };
+		8639DA372A5B7CEF00B356C1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8639DA362A5B7CEF00B356C1 /* Storyboard.storyboard */; };
+		86A38EEF2A5F0C6400BA4895 /* Backyard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A38EEE2A5F0C6400BA4895 /* Backyard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8639DA182A5B4A6800B356C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8639D9FF2A5B4A6600B356C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8639DA062A5B4A6600B356C1;
+			remoteInfo = "Guardian Star";
+		};
+		8639DA222A5B4A6800B356C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8639D9FF2A5B4A6600B356C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8639DA062A5B4A6600B356C1;
+			remoteInfo = "Guardian Star";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8639DA072A5B4A6600B356C1 /* Guardian Star.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guardian Star.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8639DA0A2A5B4A6600B356C1 /* Guardian_StarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guardian_StarApp.swift; sourceTree = "<group>"; };
+		8639DA0C2A5B4A6600B356C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8639DA0E2A5B4A6800B356C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8639DA112A5B4A6800B356C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8639DA172A5B4A6800B356C1 /* Guardian StarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guardian StarTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8639DA1B2A5B4A6800B356C1 /* Guardian_StarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guardian_StarTests.swift; sourceTree = "<group>"; };
+		8639DA212A5B4A6800B356C1 /* Guardian StarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guardian StarUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8639DA252A5B4A6800B356C1 /* Guardian_StarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guardian_StarUITests.swift; sourceTree = "<group>"; };
+		8639DA272A5B4A6800B356C1 /* Guardian_StarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guardian_StarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8639DA342A5B7AC700B356C1 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		8639DA362A5B7CEF00B356C1 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		86A38EEE2A5F0C6400BA4895 /* Backyard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backyard.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8639DA042A5B4A6600B356C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8639DA142A5B4A6800B356C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8639DA1E2A5B4A6800B356C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8639D9FE2A5B4A6600B356C1 = {
+			isa = PBXGroup;
+			children = (
+				8639DA362A5B7CEF00B356C1 /* Storyboard.storyboard */,
+				8639DA092A5B4A6600B356C1 /* Guardian Star */,
+				8639DA1A2A5B4A6800B356C1 /* Guardian StarTests */,
+				8639DA242A5B4A6800B356C1 /* Guardian StarUITests */,
+				8639DA082A5B4A6600B356C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8639DA082A5B4A6600B356C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8639DA072A5B4A6600B356C1 /* Guardian Star.app */,
+				8639DA172A5B4A6800B356C1 /* Guardian StarTests.xctest */,
+				8639DA212A5B4A6800B356C1 /* Guardian StarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8639DA092A5B4A6600B356C1 /* Guardian Star */ = {
+			isa = PBXGroup;
+			children = (
+				8639DA0A2A5B4A6600B356C1 /* Guardian_StarApp.swift */,
+				8639DA0C2A5B4A6600B356C1 /* ContentView.swift */,
+				8639DA342A5B7AC700B356C1 /* MainMenu.swift */,
+				86A38EEE2A5F0C6400BA4895 /* Backyard.swift */,
+				8639DA0E2A5B4A6800B356C1 /* Assets.xcassets */,
+				8639DA102A5B4A6800B356C1 /* Preview Content */,
+			);
+			path = "Guardian Star";
+			sourceTree = "<group>";
+		};
+		8639DA102A5B4A6800B356C1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8639DA112A5B4A6800B356C1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8639DA1A2A5B4A6800B356C1 /* Guardian StarTests */ = {
+			isa = PBXGroup;
+			children = (
+				8639DA1B2A5B4A6800B356C1 /* Guardian_StarTests.swift */,
+			);
+			path = "Guardian StarTests";
+			sourceTree = "<group>";
+		};
+		8639DA242A5B4A6800B356C1 /* Guardian StarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8639DA252A5B4A6800B356C1 /* Guardian_StarUITests.swift */,
+				8639DA272A5B4A6800B356C1 /* Guardian_StarUITestsLaunchTests.swift */,
+			);
+			path = "Guardian StarUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8639DA062A5B4A6600B356C1 /* Guardian Star */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8639DA2B2A5B4A6800B356C1 /* Build configuration list for PBXNativeTarget "Guardian Star" */;
+			buildPhases = (
+				8639DA032A5B4A6600B356C1 /* Sources */,
+				8639DA042A5B4A6600B356C1 /* Frameworks */,
+				8639DA052A5B4A6600B356C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Guardian Star";
+			packageProductDependencies = (
+			);
+			productName = "Guardian Star";
+			productReference = 8639DA072A5B4A6600B356C1 /* Guardian Star.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8639DA162A5B4A6800B356C1 /* Guardian StarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8639DA2E2A5B4A6800B356C1 /* Build configuration list for PBXNativeTarget "Guardian StarTests" */;
+			buildPhases = (
+				8639DA132A5B4A6800B356C1 /* Sources */,
+				8639DA142A5B4A6800B356C1 /* Frameworks */,
+				8639DA152A5B4A6800B356C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8639DA192A5B4A6800B356C1 /* PBXTargetDependency */,
+			);
+			name = "Guardian StarTests";
+			productName = "Guardian StarTests";
+			productReference = 8639DA172A5B4A6800B356C1 /* Guardian StarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8639DA202A5B4A6800B356C1 /* Guardian StarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8639DA312A5B4A6800B356C1 /* Build configuration list for PBXNativeTarget "Guardian StarUITests" */;
+			buildPhases = (
+				8639DA1D2A5B4A6800B356C1 /* Sources */,
+				8639DA1E2A5B4A6800B356C1 /* Frameworks */,
+				8639DA1F2A5B4A6800B356C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8639DA232A5B4A6800B356C1 /* PBXTargetDependency */,
+			);
+			name = "Guardian StarUITests";
+			productName = "Guardian StarUITests";
+			productReference = 8639DA212A5B4A6800B356C1 /* Guardian StarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8639D9FF2A5B4A6600B356C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8639DA062A5B4A6600B356C1 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					8639DA162A5B4A6800B356C1 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 8639DA062A5B4A6600B356C1;
+					};
+					8639DA202A5B4A6800B356C1 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 8639DA062A5B4A6600B356C1;
+					};
+				};
+			};
+			buildConfigurationList = 8639DA022A5B4A6600B356C1 /* Build configuration list for PBXProject "Guardian Star" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8639D9FE2A5B4A6600B356C1;
+			packageReferences = (
+			);
+			productRefGroup = 8639DA082A5B4A6600B356C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8639DA062A5B4A6600B356C1 /* Guardian Star */,
+				8639DA162A5B4A6800B356C1 /* Guardian StarTests */,
+				8639DA202A5B4A6800B356C1 /* Guardian StarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8639DA052A5B4A6600B356C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8639DA122A5B4A6800B356C1 /* Preview Assets.xcassets in Resources */,
+				8639DA0F2A5B4A6800B356C1 /* Assets.xcassets in Resources */,
+				8639DA372A5B7CEF00B356C1 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8639DA152A5B4A6800B356C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8639DA1F2A5B4A6800B356C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8639DA032A5B4A6600B356C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8639DA0D2A5B4A6600B356C1 /* ContentView.swift in Sources */,
+				86A38EEF2A5F0C6400BA4895 /* Backyard.swift in Sources */,
+				8639DA352A5B7AC700B356C1 /* MainMenu.swift in Sources */,
+				8639DA0B2A5B4A6600B356C1 /* Guardian_StarApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8639DA132A5B4A6800B356C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8639DA1C2A5B4A6800B356C1 /* Guardian_StarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8639DA1D2A5B4A6800B356C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8639DA262A5B4A6800B356C1 /* Guardian_StarUITests.swift in Sources */,
+				8639DA282A5B4A6800B356C1 /* Guardian_StarUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8639DA192A5B4A6800B356C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8639DA062A5B4A6600B356C1 /* Guardian Star */;
+			targetProxy = 8639DA182A5B4A6800B356C1 /* PBXContainerItemProxy */;
+		};
+		8639DA232A5B4A6800B356C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8639DA062A5B4A6600B356C1 /* Guardian Star */;
+			targetProxy = 8639DA222A5B4A6800B356C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		8639DA292A5B4A6800B356C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8639DA2A2A5B4A6800B356C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8639DA2C2A5B4A6800B356C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Guardian Star/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example1.Guardian-Star";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8639DA2D2A5B4A6800B356C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Guardian Star/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example1.Guardian-Star";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8639DA2F2A5B4A6800B356C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example1.Guardian-StarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guardian Star.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Guardian Star";
+			};
+			name = Debug;
+		};
+		8639DA302A5B4A6800B356C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example1.Guardian-StarTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guardian Star.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Guardian Star";
+			};
+			name = Release;
+		};
+		8639DA322A5B4A6800B356C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example1.Guardian-StarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Guardian Star";
+			};
+			name = Debug;
+		};
+		8639DA332A5B4A6800B356C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example1.Guardian-StarUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Guardian Star";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8639DA022A5B4A6600B356C1 /* Build configuration list for PBXProject "Guardian Star" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8639DA292A5B4A6800B356C1 /* Debug */,
+				8639DA2A2A5B4A6800B356C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8639DA2B2A5B4A6800B356C1 /* Build configuration list for PBXNativeTarget "Guardian Star" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8639DA2C2A5B4A6800B356C1 /* Debug */,
+				8639DA2D2A5B4A6800B356C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8639DA2E2A5B4A6800B356C1 /* Build configuration list for PBXNativeTarget "Guardian StarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8639DA2F2A5B4A6800B356C1 /* Debug */,
+				8639DA302A5B4A6800B356C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8639DA312A5B4A6800B356C1 /* Build configuration list for PBXNativeTarget "Guardian StarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8639DA322A5B4A6800B356C1 /* Debug */,
+				8639DA332A5B4A6800B356C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8639D9FF2A5B4A6600B356C1 /* Project object */;
+}
