@@ -18,6 +18,7 @@
 		8639DA372A5B7CEF00B356C1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8639DA362A5B7CEF00B356C1 /* Storyboard.storyboard */; };
 		86A38EEF2A5F0C6400BA4895 /* Backyard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A38EEE2A5F0C6400BA4895 /* Backyard.swift */; };
 		86B982DF2A69817C004A100B /* LivingRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982DE2A69817C004A100B /* LivingRoom.swift */; };
+		86B982E12A698748004A100B /* Hallway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E02A698748004A100B /* Hallway.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		8639DA362A5B7CEF00B356C1 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		86A38EEE2A5F0C6400BA4895 /* Backyard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Backyard.swift; sourceTree = "<group>"; };
 		86B982DE2A69817C004A100B /* LivingRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingRoom.swift; sourceTree = "<group>"; };
+		86B982E02A698748004A100B /* Hallway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hallway.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +107,7 @@
 			children = (
 				8639DA0A2A5B4A6600B356C1 /* Guardian_StarApp.swift */,
 				8639DA0C2A5B4A6600B356C1 /* ContentView.swift */,
-				8639DA342A5B7AC700B356C1 /* MainMenu.swift */,
-				86A38EEE2A5F0C6400BA4895 /* Backyard.swift */,
-				86B982DE2A69817C004A100B /* LivingRoom.swift */,
+				86B982E22A698752004A100B /* Screens */,
 				8639DA0E2A5B4A6800B356C1 /* Assets.xcassets */,
 				8639DA102A5B4A6800B356C1 /* Preview Content */,
 			);
@@ -137,6 +137,17 @@
 				8639DA272A5B4A6800B356C1 /* Guardian_StarUITestsLaunchTests.swift */,
 			);
 			path = "Guardian StarUITests";
+			sourceTree = "<group>";
+		};
+		86B982E22A698752004A100B /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				8639DA342A5B7AC700B356C1 /* MainMenu.swift */,
+				86A38EEE2A5F0C6400BA4895 /* Backyard.swift */,
+				86B982DE2A69817C004A100B /* LivingRoom.swift */,
+				86B982E02A698748004A100B /* Hallway.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86B982E12A698748004A100B /* Hallway.swift in Sources */,
 				86B982DF2A69817C004A100B /* LivingRoom.swift in Sources */,
 				8639DA0D2A5B4A6600B356C1 /* ContentView.swift in Sources */,
 				86A38EEF2A5F0C6400BA4895 /* Backyard.swift in Sources */,
