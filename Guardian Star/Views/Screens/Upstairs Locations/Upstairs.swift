@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct UpstairsView: View {
+    let observableObjects = UpstairsController().observableObjects
+    let interactableObjects = UpstairsController().interactableObjects
+    let navigationalObjects = UpstairsController().navigationalObjects
+    
     init() {
           UIScrollView.appearance().bounces = false
        }

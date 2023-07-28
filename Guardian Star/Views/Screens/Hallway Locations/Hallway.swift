@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct HallwayView: View {
+    let observableObjects = HallwayController().observableObjects
+    let interactableObjects = HallwayController().interactableObjects
+    let navigationalObjects = HallwayController().navigationalObjects
+    
     init() {
           UIScrollView.appearance().bounces = false
        }

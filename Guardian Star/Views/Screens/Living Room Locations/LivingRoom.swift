@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct LivingRoomView: View {
+    let observableObjects = LivingRoomController().observableObjects
+    let interactableObjects = LivingRoomController().interactableObjects
+    let navigationalObjects = LivingRoomController().navigationalObjects
+    
     init() {
           UIScrollView.appearance().bounces = false
        }

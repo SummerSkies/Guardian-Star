@@ -1,13 +1,14 @@
 //
-//  File.swift
+//  Demo Screen.swift
 //  Guardian Star
 //
-//  Created by Juliana Nielson on 7/12/23.
+//  Created by Juliana Nielson on 7/27/23.
 //
 
 import SwiftUI
 
-struct BackyardView: View {
+struct DemoView: View {
+    
     init() {
           UIScrollView.appearance().bounces = false
        }
@@ -56,12 +57,11 @@ struct BackyardView: View {
                 .offset(x: 177, y: 360)
             }
         }
-        .ignoresSafeArea()
     }
 }
 
-struct BackyardView_Previews: PreviewProvider {
+struct DemoView_Previews: PreviewProvider {
     static var previews: some View {
-        BackyardView()
+        DemoView()
     }
 }
