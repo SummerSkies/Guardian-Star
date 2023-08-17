@@ -7,7 +7,12 @@
 
 import SwiftUI
 
-struct LivingRoomView: View {
+struct LivingRoomView: View, Equatable {
+    let viewID = UUID()
+    static func == (lhs: LivingRoomView, rhs: LivingRoomView) -> Bool {
+        return lhs.viewID == rhs.viewID
+    }
+    
     let observableObjects = LivingRoomController().observableObjects
     let interactableObjects = LivingRoomController().interactableObjects
     let navigationalObjects = LivingRoomController().navigationalObjects
@@ -23,58 +28,28 @@ struct LivingRoomView: View {
                     .resizable()
                     .scaledToFill()
                 
-                //Door
-                Button("Door") {
-                    print("Door tapped!")
+                if GameplayController.currentMode == .observe {
+                    HallwayDoor_ObservableButton()
+                    Chair_ObservableButton()
+                    MovedChair_ObservableButton()
+                    LowTable_ObservableButton()
+                    PoolTable_ObservableButton()
+                } else if GameplayController.currentMode == .interact {
+                    Chair_InteractableButton()
+                } else if GameplayController.currentMode == .navigate {
+                    ToPoolTable_NavigationalButton()
+                    ToLowTable_NavigationalButton()
+                    ToHallwayDoorGap_NavigationalButton()
+                    ToHallwayDoorHandle_NavigationalButton()
+                    ToHallway_NavigationalButton()
                 }
-                .frame(width: 244, height: 430)
-                .background(Color.gray)
-                .foregroundColor(Color.white)
-                .offset(x: 591, y: -212)
-                
-                //Chair
-                Button("Chair") {
-                    print("Chair tapped!")
-                }
-                .frame(width: 200, height: 400)
-                .background(Color.mint)
-                .foregroundColor(Color.white)
-                .offset(x: 330, y: 0)
-                
-                //Twine
-                Button("Twine") {
-                    print("Twine tapped!")
-                }
-                .frame(width: 60, height: 70)
-                .background(Color.brown)
-                .foregroundColor(Color.white)
-                .offset(x: -300, y: 240)
-                
-                //Pool Cue
-                Button("Pool Cue") {
-                    print("Pool Cue tapped!")
-                }
-                .frame(width: 30, height: 400)
-                .background(Color.black)
-                .foregroundColor(Color.white)
-                .offset(x: 350, y: 100)
-                
-                //Pool Ball
-                Button("Pool Ball") {
-                    print("Pool Ball tapped!")
-                }
-                .frame(width: 60, height: 60)
-                .background(Color.red)
-                .foregroundColor(Color.white)
-                .offset(x: 550, y: 370)
             }
         }
-        .ignoresSafeArea()
     }
 }
 
 struct LivingRoomView_Previews: PreviewProvider {
     static var previews: some View {
-        LivingRoomView()
+        LivingRoomView().equatable()
     }
 }

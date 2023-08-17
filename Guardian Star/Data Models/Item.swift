@@ -5,7 +5,7 @@
 //  Created by Juliana Nielson on 7/27/23.
 //
 
-import Foundation
+import SwiftUI
 
 struct Item: Equatable {
     let imageName: String

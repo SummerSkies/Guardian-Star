@@ -7,20 +7,43 @@
 
 import SwiftUI
 
-struct ConsoleTableView: View {
+struct ConsoleTableView: View, Equatable {
+    let viewID = UUID()
+    static func == (lhs: ConsoleTableView, rhs: ConsoleTableView) -> Bool {
+        return lhs.viewID == rhs.viewID
+    }
+    
+    let observableObjects = ConsoleTableController().observableObjects
+    let interactableObjects = ConsoleTableController().interactableObjects
+    let navigationalObjects = ConsoleTableController().navigationalObjects
+    
+    init() {
+          UIScrollView.appearance().bounces = false
+       }
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView(.horizontal) {
+            ZStack {
+                //Background
+                Rectangle()
+                    .foregroundColor(Color.red)
+                    .frame(width: 1000)
+                
+                if GameplayController.currentMode == .observe {
+                    Bookshelf_ObservableButton()
+                    DaisysDoorknob_ObservableButton()
+                    Bookmark_ObservableButton()
+                } else if GameplayController.currentMode == .interact {
+                    Bookmark_InteractableButton()
+                } else if GameplayController.currentMode == .navigate {
+                    ToVent_NavigationalButton()
+                }
+            }
         }
-        .padding()
     }
 }
 
 struct ConsoleTableView_Previews: PreviewProvider {
     static var previews: some View {
-        ConsoleTableView()
+        ConsoleTableView().equatable()
     }
 }

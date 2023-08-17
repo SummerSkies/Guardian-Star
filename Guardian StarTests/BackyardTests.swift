@@ -10,15 +10,8 @@ import XCTest
 
 final class BackyardTests: XCTestCase {
 
-    override func setUpWithError() throws {
-    
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func test_() throws {
+    func test_ObservationMode_HedgesTapped_Message() throws {
+        let backyardController = BackyardController()
         
     }
 

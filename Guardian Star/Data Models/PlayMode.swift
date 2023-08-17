@@ -5,7 +5,7 @@
 //  Created by Juliana Nielson on 7/27/23.
 //
 
-import Foundation
+import SwiftUI
 
 enum PlayMode {
     case observe, interact, navigate, inspect, craft, none

@@ -26,7 +26,6 @@
 		8688B6182A72BEA200B4FD53 /* InventoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8688B6172A72BEA200B4FD53 /* InventoryController.swift */; };
 		8688B61A2A72BEE800B4FD53 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8688B6192A72BEE800B4FD53 /* Item.swift */; };
 		8688B61C2A72C2CC00B4FD53 /* HedgesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8688B61B2A72C2CC00B4FD53 /* HedgesController.swift */; };
-		8688B6202A72CA3500B4FD53 /* Demo Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8688B61F2A72CA3500B4FD53 /* Demo Screen.swift */; };
 		8688B6222A72D09C00B4FD53 /* LivingRoomWindow Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8688B6212A72D09C00B4FD53 /* LivingRoomWindow Controller.swift */; };
 		8688B6242A72D38100B4FD53 /* BedroomWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8688B6232A72D38100B4FD53 /* BedroomWindowController.swift */; };
 		8688B6262A72D9E300B4FD53 /* PoolTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8688B6252A72D9E300B4FD53 /* PoolTableController.swift */; };
@@ -47,6 +46,7 @@
 		86A51A8F2A741D8500924EAB /* Landing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A51A8E2A741D8500924EAB /* Landing.swift */; };
 		86A51A912A741DA100924EAB /* ConsoleTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A51A902A741DA100924EAB /* ConsoleTable.swift */; };
 		86A51A932A741DD100924EAB /* Vent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A51A922A741DD100924EAB /* Vent.swift */; };
+		86B18D202A7813F00040F895 /* UIMenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B18D1F2A7813F00040F895 /* UIMenuItem.swift */; };
 		86B982DF2A69817C004A100B /* LivingRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982DE2A69817C004A100B /* LivingRoom.swift */; };
 		86B982E12A698748004A100B /* Hallway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E02A698748004A100B /* Hallway.swift */; };
 		86B982E42A698A6E004A100B /* Upstairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E32A698A6E004A100B /* Upstairs.swift */; };
@@ -93,7 +93,6 @@
 		8688B6172A72BEA200B4FD53 /* InventoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryController.swift; sourceTree = "<group>"; };
 		8688B6192A72BEE800B4FD53 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8688B61B2A72C2CC00B4FD53 /* HedgesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HedgesController.swift; sourceTree = "<group>"; };
-		8688B61F2A72CA3500B4FD53 /* Demo Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Demo Screen.swift"; sourceTree = "<group>"; };
 		8688B6212A72D09C00B4FD53 /* LivingRoomWindow Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LivingRoomWindow Controller.swift"; sourceTree = "<group>"; };
 		8688B6232A72D38100B4FD53 /* BedroomWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedroomWindowController.swift; sourceTree = "<group>"; };
 		8688B6252A72D9E300B4FD53 /* PoolTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoolTableController.swift; sourceTree = "<group>"; };
@@ -114,6 +113,7 @@
 		86A51A8E2A741D8500924EAB /* Landing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landing.swift; sourceTree = "<group>"; };
 		86A51A902A741DA100924EAB /* ConsoleTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleTable.swift; sourceTree = "<group>"; };
 		86A51A922A741DD100924EAB /* Vent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vent.swift; sourceTree = "<group>"; };
+		86B18D1F2A7813F00040F895 /* UIMenuItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIMenuItem.swift; sourceTree = "<group>"; };
 		86B982DE2A69817C004A100B /* LivingRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingRoom.swift; sourceTree = "<group>"; };
 		86B982E02A698748004A100B /* Hallway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hallway.swift; sourceTree = "<group>"; };
 		86B982E32A698A6E004A100B /* Upstairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upstairs.swift; sourceTree = "<group>"; };
@@ -221,6 +221,7 @@
 		866E38932A6DA5A700F53CB0 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				86B18D1F2A7813F00040F895 /* UIMenuItem.swift */,
 				866E38942A6DADD000F53CB0 /* Object.swift */,
 				8688B6192A72BEE800B4FD53 /* Item.swift */,
 				8688B6152A72B4FB00B4FD53 /* PlayMode.swift */,
@@ -323,7 +324,6 @@
 		86B982E22A698752004A100B /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				8688B61F2A72CA3500B4FD53 /* Demo Screen.swift */,
 				86A51A7B2A741BFE00924EAB /* Menus */,
 				86A51A7C2A741C0E00924EAB /* Backyard Locations */,
 				86A51A7D2A741C3100924EAB /* Living Room Locations */,
@@ -498,7 +498,6 @@
 				86A51A6D2A740AE200924EAB /* HallwayDoorGapController.swift in Sources */,
 				86A51A782A7419AB00924EAB /* ConsoleTableController.swift in Sources */,
 				86A51A892A741CFF00924EAB /* LowTable.swift in Sources */,
-				8688B6202A72CA3500B4FD53 /* Demo Screen.swift in Sources */,
 				86A51A872A741CE400924EAB /* PoolTable.swift in Sources */,
 				86A51A8D2A741D5F00924EAB /* HallwayDoorknob.swift in Sources */,
 				8639DA0D2A5B4A6600B356C1 /* ContentView.swift in Sources */,
@@ -521,6 +520,7 @@
 				8688B61C2A72C2CC00B4FD53 /* HedgesController.swift in Sources */,
 				86B982E82A698EEB004A100B /* InventoryView.swift in Sources */,
 				86A51A8F2A741D8500924EAB /* Landing.swift in Sources */,
+				86B18D202A7813F00040F895 /* UIMenuItem.swift in Sources */,
 				8688B6182A72BEA200B4FD53 /* InventoryController.swift in Sources */,
 				86A51A812A741C8500924EAB /* Hedges.swift in Sources */,
 			);

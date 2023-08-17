@@ -5,7 +5,7 @@
 //  Created by Juliana Nielson on 7/27/23.
 //
 
-import Foundation
+import SwiftUI
 
 struct InventoryController {
     let allItems: [ItemType: Item] = [
@@ -24,9 +24,9 @@ struct InventoryController {
             inspectMessage: "This ball is pretty heavy.",
             associatedObjects: [
                 PoolTableController().interactableObjects[.poolBall],
-                PoolTableController().interactableObjects[.fallenPoolBall],
+                PoolTableController().interactableObjects[.poolBallMoved],
                 PoolTableController().observableObjects[.poolBall],
-                PoolTableController().observableObjects[.fallenPoolBall]
+                PoolTableController().observableObjects[.poolBallMoved]
             ]
         ),
         .key: Item(
@@ -52,8 +52,8 @@ struct InventoryController {
             selectedGlowImageName: "Selected - Triangle Block",
             inspectMessage: "A trianglular building block. Daisy always used these as rooftops.",
             associatedObjects: [
-                LandingController().interactableObjects[.triangleBlock],
-                LandingController().observableObjects[.triangleBlock]
+                UpstairsController().interactableObjects[.triangleBlock],
+                UpstairsController().observableObjects[.triangleBlock]
             ]
         ),
         .rectangleBlock: Item(
@@ -61,8 +61,8 @@ struct InventoryController {
             selectedGlowImageName: "Selected - Rectangle Block",
             inspectMessage: "A rectangular building block. These were usually used to give your building some height.",
             associatedObjects: [
-                UpstairsController().interactableObjects[.rectangleblock],
-                UpstairsController().observableObjects[.rectangleblock]
+                LandingController().interactableObjects[.rectangleBlock],
+                LandingController().observableObjects[.rectangleBlock]
             ]
         ),
         .bookmark: Item(

@@ -7,7 +7,12 @@
 
 import SwiftUI
 
-struct UpstairsView: View {
+struct UpstairsView: View, Equatable {
+    let viewID = UUID()
+    static func == (lhs: UpstairsView, rhs: UpstairsView) -> Bool {
+        return lhs.viewID == rhs.viewID
+    }
+    
     let observableObjects = UpstairsController().observableObjects
     let interactableObjects = UpstairsController().interactableObjects
     let navigationalObjects = UpstairsController().navigationalObjects
@@ -23,58 +28,28 @@ struct UpstairsView: View {
                     .resizable()
                     .scaledToFill()
                 
-                //Door
-                 Button("Door") {
-                     print("Door tapped!")
-                 }
-                .frame(width: 220, height: 490)
-                .background(Color.pink)
-                .foregroundColor(Color.white)
-                .offset(x: -112, y: -34)
                 
-                //Table
-                 Button("Table") {
-                     print("Table tapped!")
-                 }
-                .frame(width: 305, height: 155)
-                .background(Color.gray)
-                .foregroundColor(Color.white)
-                .offset(x: 151, y: 165)
                 
-                //Bookmark
-                Button("Book(mark)") {
-                    print("Bookmark tapped!")
+                if GameplayController.currentMode == .observe {
+                    DaisysDoor_ObservableButton()
+                    ConsoleTable_ObservableButton()
+                    Vent_ObservableButton()
+                    ScreenedVent_ObservableButton()
+                    OpenVent_ObservableButton()
+                    TriangleBlock_ObservableButton()
+                } else if GameplayController.currentMode == .interact {
+                    ConsoleTable_InteractableButton()
+                    TriangleBlock_InteractableButton()
+                } else if GameplayController.currentMode == .navigate {
+                    ToConsoleTable_NavigationalButton()
                 }
-                .frame(width: 100, height: 20)
-                .background(Color.red)
-                .foregroundColor(Color.white)
-                .offset(x: 120, y: -5)
-                
-                //Vent
-                Button("Vent") {
-                    print("Vent tapped!")
-                }
-                .frame(width: 120, height: 80)
-                .background(Color.black)
-                .foregroundColor(Color.white)
-                .offset(x: 110, y: -358)
-                
-                //Triangle Block
-                Button("Triangle Block") {
-                    print("Triangle Block tapped!")
-                }
-                .frame(width: 110, height: 70)
-                .background(Color.blue)
-                .foregroundColor(Color.white)
-                .offset(x: -275, y: 310)
             }
         }
-        .ignoresSafeArea()
     }
 }
 
 struct UpstairsView_Previews: PreviewProvider {
     static var previews: some View {
-        UpstairsView()
+        UpstairsView().equatable()
     }
 }

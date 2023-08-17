@@ -5,7 +5,7 @@
 //  Created by Juliana Nielson on 7/28/23.
 //
 
-import Foundation
+import SwiftUI
 
 struct HallwayDoorGapController {
     var observableObjects: [ObjectType: Object] = [
@@ -28,4 +28,42 @@ struct HallwayDoorGapController {
     var navigationalObjects: [ObjectType: Object] = [
         .back: Object(imageName: "Arrow - Back")
     ]
+}
+
+//MARK: UI Models - Observeable
+struct DoorGap_ObservableButton: View {
+    var body: some View {
+        Button("Door Gap") {
+            print("Door Gap tapped!")
+        }
+        .frame(width: 900, height: 160)
+        .background(Color.secondary)
+        .foregroundColor(Color.white)
+        .offset(x: 0, y: 180)
+    }
+}
+
+struct Key_ObservableButton: View {
+    var body: some View {
+        Button("Key") {
+            print("Key tapped!")
+        }
+        .frame(width: 300, height: 70)
+        .background(Color.secondary)
+        .foregroundColor(Color.white)
+        .offset(x: 120, y: 180)
+    }
+}
+
+//MARK: UI Models - Interactable
+struct Key_InteractableButton: View {
+    var body: some View {
+        Button("Key") {
+            print("Key tapped!")
+        }
+        .frame(width: 300, height: 70)
+        .background(Color.secondary)
+        .foregroundColor(Color.indigo.opacity(0.6))
+        .offset(x: 120, y: 180)
+    }
 }

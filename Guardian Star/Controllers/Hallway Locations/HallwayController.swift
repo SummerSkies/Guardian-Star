@@ -5,7 +5,7 @@
 //  Created by Juliana Nielson on 7/23/23.
 //
 
-import Foundation
+import SwiftUI
 
 struct HallwayController {
     var observableObjects: [ObjectType: Object] = [
@@ -35,4 +35,70 @@ struct HallwayController {
         .toLanding: Object(imageName: "Arrow - Foward"),
         .back: Object(imageName: "Arrow - Back")
     ]
+}
+
+//MARK: UI Models - Observeable
+struct ArchBlock_ObservableButton: View {
+    var body: some View {
+        Button("Arch Block") {
+            print("Arch Block tapped!")
+        }
+        .frame(width: 120, height: 80)
+        .background(Color.secondary)
+        .foregroundColor(Color.white)
+        .offset(x: 125, y: 100)
+    }
+}
+
+struct Stairs_ObservableButton: View {
+    var body: some View {
+        Button("Stairs") {
+            print("Stairs tapped!")
+        }
+        .frame(width: 300, height: 200)
+        .background(Color.secondary)
+        .foregroundColor(Color.white)
+        .offset(x: 0, y: -60)
+    }
+}
+
+struct Doors_ObservableButton: View {
+    var body: some View {
+        Button("Doors") {
+            print("Doors tapped!")
+        }
+        .frame(width: 800, height: 650)
+        .background(Color.secondary)
+        .foregroundColor(Color.white)
+        .offset(x: 0, y: -80)
+    }
+}
+
+//MARK: UI Models - Interactable
+struct ArchBlock_InteractableButton: View {
+    var body: some View {
+        Button("Arch Block") {
+            print("Arch Block tapped!")
+        }
+        .frame(width: 120, height: 80)
+        .background(Color.indigo.opacity(0.6))
+        .foregroundColor(Color.white)
+        .offset(x: 125, y: 100)
+    }
+}
+
+//MARK: UI Models - Navigational
+struct ToLanding_NavigationalButton: View {
+    var body: some View {
+        Button {
+            
+        } label: {
+            Text("To Landing")
+            Image(systemName: "arrow.up.to.line")
+        }
+        .frame(width: 110, height: 70)
+        .background(Color.yellow.opacity(0.6))
+        .foregroundColor(Color.white)
+        .offset(x: 0, y: -60)
+    }
 }

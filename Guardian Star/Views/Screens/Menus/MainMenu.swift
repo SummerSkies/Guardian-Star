@@ -7,7 +7,12 @@
 
 import SwiftUI
 
-struct MainMenu: View {
+struct MainMenu: View, Equatable {
+    let viewID = UUID()
+    static func == (lhs: MainMenu, rhs: MainMenu) -> Bool {
+        return lhs.viewID == rhs.viewID
+    }
+    
     @State private var tutorialIsEnabeled = true
     var checkboxImage: String {
         tutorialIsEnabeled ? "checkmark.square.fill" : "checkmark.square"
@@ -68,6 +73,6 @@ struct MainMenu: View {
 
 struct MainMenu_Previews: PreviewProvider {
     static var previews: some View {
-        MainMenu()
+        MainMenu().equatable()
     }
 }

@@ -7,9 +7,14 @@
 
 import SwiftUI
 
-struct BackyardView: View {
-    let observableObjects = BackyardController().observableObjects
-    let navigationalObjects = BackyardController().navigationalObjects
+struct BackyardView: View, Equatable {
+    let viewID = UUID()
+    static func == (lhs: BackyardView, rhs: BackyardView) -> Bool {
+        return lhs.viewID == rhs.viewID
+    }
+    
+    var observableObjects = BackyardController().observableObjects
+    var navigationalObjects = BackyardController().navigationalObjects
     
     init() {
           UIScrollView.appearance().bounces = false
@@ -22,41 +27,14 @@ struct BackyardView: View {
                     .resizable()
                     .scaledToFill()
                 
-                //Bedroom Windows
-                Button("Bedroom Windows") {
-                    print("Bedroom Windows tapped!")
+                if GameplayController.currentMode == .observe {
+                    BedroomWindows_ObservervableButton()
+                    LivingRoomWindow_ObservervableButton()
+                    IvyVines_ObservervableButton()
+                    Hedges_ObservervableButton()
+                } else if GameplayController.currentMode == .navigate {
+                    ToHedges_NavigationalButton()
                 }
-                .frame(width: 300, height: 180)
-                .background(Color.purple)
-                .foregroundColor(Color.white)
-                .offset(x: 124, y: 0)
-                
-                //Living Room Window
-                Button("Living Room Window") {
-                    print("Living Room Window tapped!")
-                }
-                .frame(width: 110, height: 110)
-                .background(Color.blue)
-                .foregroundColor(Color.white)
-                .offset(x: 204, y: 227)
-                
-                //Ivy Vines
-                Button("Ivy Vines") {
-                    print("Ivy Vines tapped!")
-                }
-                .frame(width: 100, height: 400)
-                .background(Color.mint)
-                .foregroundColor(Color.white)
-                .offset(x: 330, y: 120)
-                
-                //Bushes
-                Button("Bushes") {
-                    print("Bushes tapped!")
-                }
-                .frame(width: 480, height: 100)
-                .background(Color.green)
-                .foregroundColor(Color.white)
-                .offset(x: 177, y: 360)
             }
         }
     }
@@ -64,6 +42,6 @@ struct BackyardView: View {
 
 struct BackyardView_Previews: PreviewProvider {
     static var previews: some View {
-        BackyardView()
+        BackyardView().equatable()
     }
 }

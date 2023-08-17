@@ -7,20 +7,39 @@
 
 import SwiftUI
 
-struct HallwayDoorknobView: View {
+struct HallwayDoorknobView: View, Equatable {
+    let viewID = UUID()
+    static func == (lhs: HallwayDoorknobView, rhs: HallwayDoorknobView) -> Bool {
+        return lhs.viewID == rhs.viewID
+    }
+    
+    let observableObjects = HallwayDoorknobController().observableObjects
+    let interactableObjects = HallwayDoorknobController().interactableObjects
+    let navigationalObjects = HallwayDoorknobController().navigationalObjects
+    
+    init() {
+          UIScrollView.appearance().bounces = false
+       }
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView(.horizontal) {
+            ZStack {
+                //Background
+                Rectangle()
+                    .foregroundColor(Color.orange)
+                    .frame(width: 1000)
+            
+                if GameplayController.currentMode == .observe {
+                    Lock_ObservableButton()
+                } else if GameplayController.currentMode == .interact {
+                    Lock_InteractableButton()
+                }
+            }
         }
-        .padding()
     }
 }
 
 struct HallwayDoorknobView_Previews: PreviewProvider {
     static var previews: some View {
-        HallwayDoorknobView()
+        HallwayDoorknobView().equatable()
     }
 }

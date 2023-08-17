@@ -7,20 +7,35 @@
 
 import SwiftUI
 
-struct BedroomWindowView: View {
+struct BedroomWindowView: View, Equatable {
+    let viewID = UUID()
+    static func == (lhs: BedroomWindowView, rhs: BedroomWindowView) -> Bool {
+        return lhs.viewID == rhs.viewID
+    }
+    
+    init() {
+          UIScrollView.appearance().bounces = false
+       }
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView(.horizontal) {
+            ZStack {
+                //Background
+                Rectangle()
+                    .foregroundColor(Color.purple)
+                    .frame(width: 1000)
+                
+                if GameplayController.currentMode == .observe {
+                    //bedroomWindowFrame ivyVinesTips
+                    BedroomWindowFrame_ObservableButton()
+                    IvyVinesTips_ObservableButton()
+                }
+            }
         }
-        .padding()
     }
 }
 
 struct BedroomWindowView_Previews: PreviewProvider {
     static var previews: some View {
-        BedroomWindowView()
+        BedroomWindowView().equatable()
     }
 }

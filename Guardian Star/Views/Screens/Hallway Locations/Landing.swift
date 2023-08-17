@@ -7,20 +7,41 @@
 
 import SwiftUI
 
-struct LandingView: View {
+struct LandingView: View, Equatable {
+    let viewID = UUID()
+    static func == (lhs: LandingView, rhs: LandingView) -> Bool {
+        return lhs.viewID == rhs.viewID
+    }
+    
+    let observableObjects = LandingController().observableObjects
+    let interactableObjects = LandingController().interactableObjects
+    let navigationalObjects = LandingController().navigationalObjects
+    
+    init() {
+          UIScrollView.appearance().bounces = false
+       }
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView(.horizontal) {
+            ZStack {
+                //Background
+                Rectangle()
+                    .foregroundColor(Color.yellow)
+                    .frame(width: 1000)
+                
+                if GameplayController.currentMode == .observe {
+                    RectangleBlock_ObservableButton()
+                } else if GameplayController.currentMode == .interact {
+                    RectangleBlock_InteractableButton()
+                } else if GameplayController.currentMode == .navigate {
+                    ToUpstairs_NavigationalButton()
+                }
+            }
         }
-        .padding()
     }
 }
 
 struct LandingView_Previews: PreviewProvider {
     static var previews: some View {
-        LandingView()
+        LandingView().equatable()
     }
 }

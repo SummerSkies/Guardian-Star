@@ -5,13 +5,14 @@
 //  Created by Juliana Nielson on 7/27/23.
 //
 
-import Foundation
+import SwiftUI
 
 struct GameplayController {
     static var currentMode: PlayMode = .none
+    static let menuColor = Color(red: 38 / 250, green: 38 / 250, blue: 38 / 250)
     
-    static func printMessage(_ message: String) {
-        print(message)
+    static func observe(object: Object) {
+        print(object.message)
         //pop-up dialogue box with message.prefix(from: "\n")
         //wait for player tap
         //pop-up dialogue box with message.suffix(from: "\n")

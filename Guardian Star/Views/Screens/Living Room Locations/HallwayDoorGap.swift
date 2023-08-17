@@ -7,20 +7,40 @@
 
 import SwiftUI
 
-struct HallwayDoorGapView: View {
+struct HallwayDoorGapView: View, Equatable {
+    let viewID = UUID()
+    static func == (lhs: HallwayDoorGapView, rhs: HallwayDoorGapView) -> Bool {
+        return lhs.viewID == rhs.viewID
+    }
+    
+    let observableObjects = HallwayDoorGapController().observableObjects
+    let interactableObjects = HallwayDoorGapController().interactableObjects
+    let navigationalObjects = HallwayDoorGapController().navigationalObjects
+    
+    init() {
+          UIScrollView.appearance().bounces = false
+       }
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView(.horizontal) {
+            ZStack {
+                //Background
+                Rectangle()
+                    .foregroundColor(Color.gray)
+                    .frame(width: 1000)
+            
+                if GameplayController.currentMode == .observe {
+                    DoorGap_ObservableButton()
+                    Key_ObservableButton()
+                } else if GameplayController.currentMode == .interact {
+                    Key_InteractableButton()
+                }
+            }
         }
-        .padding()
     }
 }
 
 struct HallwayDoorGapView_Previews: PreviewProvider {
     static var previews: some View {
-        HallwayDoorGapView()
+        HallwayDoorGapView().equatable()
     }
 }

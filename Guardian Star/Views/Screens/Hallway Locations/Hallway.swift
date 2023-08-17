@@ -7,7 +7,12 @@
 
 import SwiftUI
 
-struct HallwayView: View {
+struct HallwayView: View, Equatable {
+    let viewID = UUID()
+    static func == (lhs: HallwayView, rhs: HallwayView) -> Bool {
+        return lhs.viewID == rhs.viewID
+    }
+    
     let observableObjects = HallwayController().observableObjects
     let interactableObjects = HallwayController().interactableObjects
     let navigationalObjects = HallwayController().navigationalObjects
@@ -23,32 +28,15 @@ struct HallwayView: View {
                     .resizable()
                     .scaledToFill()
                 
-                //Rectangle Block
-                 Button("Rectangle Block") {
-                     print("Rectangle Block tapped!")
-                 }
-                .frame(width: 100, height: 60)
-                .background(Color.pink)
-                .foregroundColor(Color.white)
-                .offset(x: 50, y: -192)
-                
-                //Stairs
-                Button("Stairs") {
-                    print("Stairs tapped!")
+                if GameplayController.currentMode == .observe {
+                    Doors_ObservableButton()
+                    Stairs_ObservableButton()
+                    ArchBlock_ObservableButton()
+                } else if GameplayController.currentMode == .interact {
+                    ArchBlock_InteractableButton()
+                } else if GameplayController.currentMode == .navigate {
+                    ToLanding_NavigationalButton()
                 }
-                .frame(width: 300, height: 200)
-                .background(Color.gray)
-                .foregroundColor(Color.white)
-                .offset(x: 0, y: -60)
-                
-                //Arch Block
-                Button("Arch Block") {
-                    print("Arch Block tapped!")
-                }
-                .frame(width: 120, height: 80)
-                .background(Color.yellow)
-                .foregroundColor(Color.white)
-                .offset(x: 125, y: 100)
             }
         }
         .ignoresSafeArea()
@@ -57,6 +45,6 @@ struct HallwayView: View {
 
 struct HallwayView_Previews: PreviewProvider {
     static var previews: some View {
-        HallwayView()
+        HallwayView().equatable()
     }
 }

@@ -5,7 +5,7 @@
 //  Created by Juliana Nielson on 7/23/23.
 //
 
-import Foundation
+import SwiftUI
 
 struct Object: Equatable {
     let imageName: String
@@ -31,20 +31,20 @@ enum ObjectType: CaseIterable {
     case bedroomWindowFrame, ivyVinesTips //Bedroom Window
     
     // MARK: Living Room Locations
-    case poolTable, chair, hallwayDoor, lowTable, toPoolTable, toHallwayDoor, toLowTable, toHallwayDoorHandle, toHallway //Living Room
-    case poolCue, poolBall, fallenPoolBall //Pool Table
+    case poolTable, chair, movedChair, hallwayDoor, lowTable, toPoolTable, toHallwayDoorGap, toLowTable, toHallwayDoorHandle, toHallway //Living Room
+    case poolCue, poolCueMoved, poolBall, poolBallMoved //Pool Table
     case twine //Low Table
     case doorGap, key //Hallway Door
     case lock //Hallway Doorknob
     
     //MARK: Hallway Locations
     case archBlock, stairs, doors, toLanding //Hallway
-    case triangleBlock, toUpstairs //Landing
+    case rectangleBlock, toUpstairs //Landing
     
     //MARK: Upstairs Locations
-    case rectangleblock, consoleTable, vent, daisysDoor //Upstairs
+    case triangleBlock, consoleTable, vent, screenedVent, openVent, daisysDoor, toConsoleTable //Upstairs
     case daisysDoorknob, bookshelf, bookmark, toVent //Console Table
-    case ventUpClose, toDaisy //Vent
+    case ventUpClose, screenedVentUpClose, openVentUpClose, toDaisy //Vent
     
 // Custom String Convertable; Not current necessary, but may be wanted in the future
 //    var description: String {

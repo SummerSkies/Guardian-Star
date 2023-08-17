@@ -7,20 +7,38 @@
 
 import SwiftUI
 
-struct HedgesView: View {
+struct HedgesView: View, Equatable {
+    let viewID = UUID()
+    static func == (lhs: HedgesView, rhs: HedgesView) -> Bool {
+        return lhs.viewID == rhs.viewID
+    }
+    
+    init() {
+          UIScrollView.appearance().bounces = false
+       }
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        ScrollView(.horizontal) {
+            ZStack {
+                //Background
+                Rectangle()
+                    .foregroundColor(Color.green)
+                    .frame(width: 1000)
+                
+                if GameplayController.currentMode == .observe {
+                    Branch_ObservervableButton()
+                    IvyVinesBase_ObservervableButton()
+                } else if GameplayController.currentMode == .interact {
+                    Branch_InteractableButton()
+                } else if GameplayController.currentMode == .navigate {
+                    ToLivingRoomWindow_NavigationalButton()
+                }
+            }
         }
-        .padding()
     }
 }
 
 struct HedgesView_Previews: PreviewProvider {
     static var previews: some View {
-        HedgesView()
+        HedgesView().equatable()
     }
 }

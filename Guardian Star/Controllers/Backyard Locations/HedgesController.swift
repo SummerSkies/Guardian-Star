@@ -5,7 +5,7 @@
 //  Created by Juliana Nielson on 7/27/23.
 //
 
-import Foundation
+import SwiftUI
 
 struct HedgesController {
     var observableObjects: [ObjectType: Object] = [
@@ -30,4 +30,59 @@ struct HedgesController {
         .toLivingRoomWindow: Object(imageName: "Arrow - Up"),
         .back: Object(imageName: "Arrow - Back")
     ]
+}
+
+
+//MARK: UI Models - Observable
+struct Branch_ObservervableButton: View {
+    var body: some View {
+        Button("Branch") {
+            
+        }
+        .frame(width: 200, height: 50)
+        .background(Color.secondary)
+        .foregroundColor(Color.white)
+        .offset(x: -300, y: 250)
+    }
+}
+
+struct IvyVinesBase_ObservervableButton: View {
+    var body: some View {
+        Button("Ivy Vines Base") {
+            
+        }
+        .frame(width: 300, height: 600)
+        .background(Color.secondary)
+        .foregroundColor(Color.white)
+        .offset(x: 400, y: -100)
+    }
+}
+
+//MARK: UI Models - Interactable
+struct Branch_InteractableButton: View {
+    var body: some View {
+        Button("Branch") {
+            
+        }
+        .frame(width: 200, height: 50)
+        .background(Color.indigo.opacity(0.6))
+        .foregroundColor(Color.white)
+        .offset(x: -300, y: 250)
+    }
+}
+
+//MARK: UI Models - Navigational
+struct ToLivingRoomWindow_NavigationalButton: View {
+    var body: some View {
+        Button {
+            
+        } label: {
+            Text("To Living Room Window")
+            Image(systemName: "arrow.up.to.line")
+        }
+        .frame(width: 110, height: 70)
+        .background(Color.yellow.opacity(0.6))
+        .foregroundColor(Color.white)
+        .offset(x: 400, y: -100)
+    }
 }
