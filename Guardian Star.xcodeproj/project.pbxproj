@@ -16,6 +16,8 @@
 		8639DA282A5B4A6800B356C1 /* Guardian_StarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA272A5B4A6800B356C1 /* Guardian_StarUITestsLaunchTests.swift */; };
 		8639DA352A5B7AC700B356C1 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA342A5B7AC700B356C1 /* MainMenu.swift */; };
 		8639DA372A5B7CEF00B356C1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8639DA362A5B7CEF00B356C1 /* Storyboard.storyboard */; };
+		863A68902A8FC8EE00EC387B /* Tutorial Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */; };
+		863A68922A8FC90100EC387B /* Dialogue Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863A68912A8FC90100EC387B /* Dialogue Box.swift */; };
 		866E38952A6DADD000F53CB0 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E38942A6DADD000F53CB0 /* Object.swift */; };
 		866E38972A6DB60500F53CB0 /* BackyardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E38962A6DB60500F53CB0 /* BackyardController.swift */; };
 		866E389B2A6DB73200F53CB0 /* LivingRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E389A2A6DB73200F53CB0 /* LivingRoomController.swift */; };
@@ -50,7 +52,7 @@
 		86B982DF2A69817C004A100B /* LivingRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982DE2A69817C004A100B /* LivingRoom.swift */; };
 		86B982E12A698748004A100B /* Hallway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E02A698748004A100B /* Hallway.swift */; };
 		86B982E42A698A6E004A100B /* Upstairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E32A698A6E004A100B /* Upstairs.swift */; };
-		86B982E82A698EEB004A100B /* InventoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E72A698EEB004A100B /* InventoryView.swift */; };
+		86B982E82A698EEB004A100B /* Main Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E72A698EEB004A100B /* Main Overlay.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		8639DA272A5B4A6800B356C1 /* Guardian_StarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guardian_StarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8639DA342A5B7AC700B356C1 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		8639DA362A5B7CEF00B356C1 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tutorial Menu.swift"; sourceTree = "<group>"; };
+		863A68912A8FC90100EC387B /* Dialogue Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dialogue Box.swift"; sourceTree = "<group>"; };
 		866E38942A6DADD000F53CB0 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		866E38962A6DB60500F53CB0 /* BackyardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackyardController.swift; sourceTree = "<group>"; };
 		866E389A2A6DB73200F53CB0 /* LivingRoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingRoomController.swift; sourceTree = "<group>"; };
@@ -117,7 +121,7 @@
 		86B982DE2A69817C004A100B /* LivingRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingRoom.swift; sourceTree = "<group>"; };
 		86B982E02A698748004A100B /* Hallway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hallway.swift; sourceTree = "<group>"; };
 		86B982E32A698A6E004A100B /* Upstairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upstairs.swift; sourceTree = "<group>"; };
-		86B982E72A698EEB004A100B /* InventoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryView.swift; sourceTree = "<group>"; };
+		86B982E72A698EEB004A100B /* Main Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main Overlay.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,7 +340,9 @@
 		86B982E52A698E52004A100B /* Overlays */ = {
 			isa = PBXGroup;
 			children = (
-				86B982E72A698EEB004A100B /* InventoryView.swift */,
+				86B982E72A698EEB004A100B /* Main Overlay.swift */,
+				863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */,
+				863A68912A8FC90100EC387B /* Dialogue Box.swift */,
 			);
 			path = Overlays;
 			sourceTree = "<group>";
@@ -501,8 +507,10 @@
 				86A51A872A741CE400924EAB /* PoolTable.swift in Sources */,
 				86A51A8D2A741D5F00924EAB /* HallwayDoorknob.swift in Sources */,
 				8639DA0D2A5B4A6600B356C1 /* ContentView.swift in Sources */,
+				863A68922A8FC90100EC387B /* Dialogue Box.swift in Sources */,
 				86A51A8B2A741D2000924EAB /* HallwayDoorGap.swift in Sources */,
 				866E389F2A6DC21D00F53CB0 /* UpstairsController.swift in Sources */,
+				863A68902A8FC8EE00EC387B /* Tutorial Menu.swift in Sources */,
 				86A38EEF2A5F0C6400BA4895 /* Backyard.swift in Sources */,
 				8639DA352A5B7AC700B356C1 /* MainMenu.swift in Sources */,
 				86A51A762A74159000924EAB /* LandingController.swift in Sources */,
@@ -518,7 +526,7 @@
 				86B982E42A698A6E004A100B /* Upstairs.swift in Sources */,
 				866E389D2A6DC12C00F53CB0 /* HallwayController.swift in Sources */,
 				8688B61C2A72C2CC00B4FD53 /* HedgesController.swift in Sources */,
-				86B982E82A698EEB004A100B /* InventoryView.swift in Sources */,
+				86B982E82A698EEB004A100B /* Main Overlay.swift in Sources */,
 				86A51A8F2A741D8500924EAB /* Landing.swift in Sources */,
 				86B18D202A7813F00040F895 /* UIMenuItem.swift in Sources */,
 				8688B6182A72BEA200B4FD53 /* InventoryController.swift in Sources */,
