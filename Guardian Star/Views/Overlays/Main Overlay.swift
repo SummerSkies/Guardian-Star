@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct MainOverlayViews: View {
-    @StateObject private var playmodeModel = PlaymodeModel()
-    @State var currentMode = PlayMode.none
+    @Binding var currentMode: PlayMode
     
     var observeButtonColor: Color {
         if currentMode == .observe {
@@ -72,9 +71,6 @@ struct MainOverlayViews: View {
                             .scaledToFill()
                             .foregroundColor(observeButtonColor)
                     }
-                    .onChange(of: currentMode) { newMode in
-                        playmodeModel.switchGameMode(to: newMode)
-                    }
                     .accessibilityIdentifier("Observe Button")
                     
                     //Interact Button
@@ -87,9 +83,6 @@ struct MainOverlayViews: View {
                             .scaledToFill()
                             .foregroundColor(interactButtonColor)
                     }
-                    .onChange(of: currentMode) { newMode in
-                        playmodeModel.switchGameMode(to: newMode)
-                    }
                     .accessibilityIdentifier("Interact Button")
                     
                     //Navigate Button
@@ -101,9 +94,6 @@ struct MainOverlayViews: View {
                             .frame(width: 40, height: 40)
                             .scaledToFill()
                             .foregroundColor(navigateButtonColor)
-                    }
-                    .onChange(of: currentMode) { newMode in
-                        playmodeModel.switchGameMode(to: newMode)
                     }
                     .accessibilityIdentifier("Navigate Button")
                 }

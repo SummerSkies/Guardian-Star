@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct HallwayDoorknobView: View, Equatable {
+    @Binding var currentMode: PlayMode
+    
     let viewID = UUID()
     static func == (lhs: HallwayDoorknobView, rhs: HallwayDoorknobView) -> Bool {
         return lhs.viewID == rhs.viewID
@@ -17,9 +19,6 @@ struct HallwayDoorknobView: View, Equatable {
     let interactableObjects = HallwayDoorknobController().interactableObjects
     let navigationalObjects = HallwayDoorknobController().navigationalObjects
     
-    init() {
-          UIScrollView.appearance().bounces = false
-       }
     var body: some View {
         ScrollView(.horizontal) {
             ZStack {
@@ -28,18 +27,12 @@ struct HallwayDoorknobView: View, Equatable {
                     .foregroundColor(Color.orange)
                     .frame(width: 1000)
             
-                if GameplayController().currentMode == .observe {
+                if currentMode == .observe {
                     Lock_ObservableButton()
-                } else if GameplayController().currentMode == .interact {
+                } else if currentMode == .interact {
                     Lock_InteractableButton()
                 }
             }
         }
-    }
-}
-
-struct HallwayDoorknobView_Previews: PreviewProvider {
-    static var previews: some View {
-        HallwayDoorknobView().equatable()
     }
 }

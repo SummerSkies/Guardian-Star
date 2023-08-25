@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct VentView: View, Equatable {
+    @Binding var currentMode: PlayMode
+    
     let viewID = UUID()
     static func == (lhs: VentView, rhs: VentView) -> Bool {
         return lhs.viewID == rhs.viewID
@@ -17,9 +19,6 @@ struct VentView: View, Equatable {
     let interactableObjects = VentController().interactableObjects
     let navigationalObjects = VentController().navigationalObjects
     
-    init() {
-          UIScrollView.appearance().bounces = false
-       }
     var body: some View {
         ScrollView(.horizontal) {
             ZStack {
@@ -28,24 +27,18 @@ struct VentView: View, Equatable {
                     .foregroundColor(Color.green)
                     .frame(width: 1000)
                 
-                if GameplayController().currentMode == .observe {
+                if currentMode == .observe {
                     VentUpClose_ObservableButton()
                     ScreenedVentUpClose_ObservableButton()
                     OpenVentUpClose_ObservableButton()
-                } else if GameplayController().currentMode == .interact {
+                } else if currentMode == .interact {
                     VentUpClose_InteractableButton()
                     ScreenedVentUpClose_InteractableButton()
                     OpenVentUpClose_InteractableButton()
-                } else if GameplayController().currentMode == .navigate {
+                } else if currentMode == .navigate {
                     ToDaisy_NavigationalButton()
                 }
             }
         }
-    }
-}
-
-struct VentView_Previews: PreviewProvider {
-    static var previews: some View {
-        VentView().equatable()
     }
 }

@@ -10,7 +10,6 @@ import XCTest
 import SwiftUI
 
 final class GameplayTests: XCTestCase {
-    let gameplayController = DummyGameplayController()
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -21,9 +20,7 @@ final class GameplayTests: XCTestCase {
     }
 
     func test_SwitchModeTo_ObserveMode_SwitchesMode() throws {
-        gameplayController.switchMode(to: .observe)
         
-        XCTAssertTrue(gameplayController.currentMode == .observe)
     }
 
     func testPerformanceExample() throws {

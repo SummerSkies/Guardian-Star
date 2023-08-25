@@ -6,12 +6,17 @@
 //
 
 import Foundation
+import Contacts
+import Combine
 
 class PlaymodeModel: ObservableObject {
+    @Published var currentMode = PlayMode.none
     var gameplayController = GameplayController()
+    private var cancellable: AnyCancellable?
     
-    func switchGameMode(to mode: PlayMode) {
-        gameplayController.currentMode = mode
-        self.objectWillChange.send()
+    init() {
+        cancellable = $currentMode.sink {
+            self.gameplayController.currentMode = $0
+        }
     }
 }

@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct HedgesView: View, Equatable {
+    @Binding var currentMode: PlayMode
+    
     let viewID = UUID()
     static func == (lhs: HedgesView, rhs: HedgesView) -> Bool {
         return lhs.viewID == rhs.viewID
     }
     
-    init() {
-          UIScrollView.appearance().bounces = false
-       }
     var body: some View {
         ScrollView(.horizontal) {
             ZStack {
@@ -24,21 +23,15 @@ struct HedgesView: View, Equatable {
                     .foregroundColor(Color.green)
                     .frame(width: 1000)
                 
-                if GameplayController().currentMode == .observe {
+                if currentMode == .observe {
                     Branch_ObservervableButton()
                     IvyVinesBase_ObservervableButton()
-                } else if GameplayController().currentMode == .interact {
+                } else if currentMode == .interact {
                     Branch_InteractableButton()
-                } else if GameplayController().currentMode == .navigate {
+                } else if currentMode == .navigate {
                     ToLivingRoomWindow_NavigationalButton()
                 }
             }
         }
-    }
-}
-
-struct HedgesView_Previews: PreviewProvider {
-    static var previews: some View {
-        HedgesView().equatable()
     }
 }

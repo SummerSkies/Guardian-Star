@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct ContentView: View, Equatable {
-
+    @StateObject private var playmodeModel = PlaymodeModel()
+    
     let viewID = UUID()
     
     static func == (lhs: ContentView, rhs: ContentView) -> Bool {
@@ -20,9 +21,11 @@ struct ContentView: View, Equatable {
         ZStack {
             Color.black
                 .ignoresSafeArea()
-            //Whatever View
-            BackyardView()
-            MainOverlayViews()
+            //Whatever View:
+            BackyardView(currentMode: $playmodeModel.currentMode)
+            
+            //Overlay View:
+            MainOverlayViews(currentMode: $playmodeModel.currentMode)
         }
     }
 }

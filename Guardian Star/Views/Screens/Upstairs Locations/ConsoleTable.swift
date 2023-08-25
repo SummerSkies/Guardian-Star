@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ConsoleTableView: View, Equatable {
+    @Binding var currentMode: PlayMode
+    
     let viewID = UUID()
     static func == (lhs: ConsoleTableView, rhs: ConsoleTableView) -> Bool {
         return lhs.viewID == rhs.viewID
@@ -17,9 +19,6 @@ struct ConsoleTableView: View, Equatable {
     let interactableObjects = ConsoleTableController().interactableObjects
     let navigationalObjects = ConsoleTableController().navigationalObjects
     
-    init() {
-          UIScrollView.appearance().bounces = false
-       }
     var body: some View {
         ScrollView(.horizontal) {
             ZStack {
@@ -28,22 +27,16 @@ struct ConsoleTableView: View, Equatable {
                     .foregroundColor(Color.red)
                     .frame(width: 1000)
                 
-                if GameplayController().currentMode == .observe {
+                if currentMode == .observe {
                     Bookshelf_ObservableButton()
                     DaisysDoorknob_ObservableButton()
                     Bookmark_ObservableButton()
-                } else if GameplayController().currentMode == .interact {
+                } else if currentMode == .interact {
                     Bookmark_InteractableButton()
-                } else if GameplayController().currentMode == .navigate {
+                } else if currentMode == .navigate {
                     ToVent_NavigationalButton()
                 }
             }
         }
-    }
-}
-
-struct ConsoleTableView_Previews: PreviewProvider {
-    static var previews: some View {
-        ConsoleTableView().equatable()
     }
 }

@@ -9,9 +9,7 @@ import SwiftUI
 
 struct TutorialView: View {
     
-    init() {
-          UIScrollView.appearance().bounces = false
-       }
+    
     
     var body: some View {
         let menuColor = GameplayController.menuColor
