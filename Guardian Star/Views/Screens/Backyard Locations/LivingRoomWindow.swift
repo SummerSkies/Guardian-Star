@@ -24,10 +24,10 @@ struct LivingRoomWindowView: View, Equatable {
                     .foregroundColor(Color.gray)
                     .frame(width: 1000)
                 
-                if GameplayController.currentMode == .observe {
+                if GameplayController().currentMode == .observe {
                     LivingRoomWindowFrame_ObservableButton()
                     IvyVinesStalk_ObservableButton()
-                } else if GameplayController.currentMode == .navigate {
+                } else if GameplayController().currentMode == .navigate {
                     ToBedroomWindow_NavigationalButton()
                     ToLivingRoom_NavigationalButton()
                 }

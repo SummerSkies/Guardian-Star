@@ -7,20 +7,28 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View, Equatable {
+
+    let viewID = UUID()
+    
+    static func == (lhs: ContentView, rhs: ContentView) -> Bool {
+        return lhs.viewID == rhs.viewID
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        
+        ZStack {
+            Color.black
+                .ignoresSafeArea()
+            //Whatever View
+            BackyardView()
+            MainOverlayViews()
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().equatable()
     }
 }

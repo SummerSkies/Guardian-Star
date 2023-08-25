@@ -28,9 +28,9 @@ struct HallwayDoorknobView: View, Equatable {
                     .foregroundColor(Color.orange)
                     .frame(width: 1000)
             
-                if GameplayController.currentMode == .observe {
+                if GameplayController().currentMode == .observe {
                     Lock_ObservableButton()
-                } else if GameplayController.currentMode == .interact {
+                } else if GameplayController().currentMode == .interact {
                     Lock_InteractableButton()
                 }
             }

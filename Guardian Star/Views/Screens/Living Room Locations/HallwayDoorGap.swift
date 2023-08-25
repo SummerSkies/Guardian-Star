@@ -28,10 +28,10 @@ struct HallwayDoorGapView: View, Equatable {
                     .foregroundColor(Color.gray)
                     .frame(width: 1000)
             
-                if GameplayController.currentMode == .observe {
+                if GameplayController().currentMode == .observe {
                     DoorGap_ObservableButton()
                     Key_ObservableButton()
-                } else if GameplayController.currentMode == .interact {
+                } else if GameplayController().currentMode == .interact {
                     Key_InteractableButton()
                 }
             }

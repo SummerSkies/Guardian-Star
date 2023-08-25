@@ -27,12 +27,12 @@ struct BackyardView: View, Equatable {
                     .resizable()
                     .scaledToFill()
                 
-                if GameplayController.currentMode == .observe {
+                if GameplayController().currentMode == .observe {
                     BedroomWindows_ObservervableButton()
                     LivingRoomWindow_ObservervableButton()
                     IvyVines_ObservervableButton()
                     Hedges_ObservervableButton()
-                } else if GameplayController.currentMode == .navigate {
+                } else if GameplayController().currentMode == .navigate {
                     ToHedges_NavigationalButton()
                 }
             }

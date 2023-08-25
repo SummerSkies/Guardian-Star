@@ -28,11 +28,11 @@ struct LandingView: View, Equatable {
                     .foregroundColor(Color.yellow)
                     .frame(width: 1000)
                 
-                if GameplayController.currentMode == .observe {
+                if GameplayController().currentMode == .observe {
                     RectangleBlock_ObservableButton()
-                } else if GameplayController.currentMode == .interact {
+                } else if GameplayController().currentMode == .interact {
                     RectangleBlock_InteractableButton()
-                } else if GameplayController.currentMode == .navigate {
+                } else if GameplayController().currentMode == .navigate {
                     ToUpstairs_NavigationalButton()
                 }
             }

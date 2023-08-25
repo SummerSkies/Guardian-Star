@@ -24,12 +24,12 @@ struct HedgesView: View, Equatable {
                     .foregroundColor(Color.green)
                     .frame(width: 1000)
                 
-                if GameplayController.currentMode == .observe {
+                if GameplayController().currentMode == .observe {
                     Branch_ObservervableButton()
                     IvyVinesBase_ObservervableButton()
-                } else if GameplayController.currentMode == .interact {
+                } else if GameplayController().currentMode == .interact {
                     Branch_InteractableButton()
-                } else if GameplayController.currentMode == .navigate {
+                } else if GameplayController().currentMode == .navigate {
                     ToLivingRoomWindow_NavigationalButton()
                 }
             }

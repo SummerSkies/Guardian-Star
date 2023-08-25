@@ -28,9 +28,9 @@ struct LowTableView: View, Equatable {
                         .foregroundColor(Color.blue)
                         .frame(width: 1000)
                 
-                    if GameplayController.currentMode == .observe {
+                    if GameplayController().currentMode == .observe {
                         Twine_ObservableButton()
-                    } else if GameplayController.currentMode == .interact {
+                    } else if GameplayController().currentMode == .interact {
                         Twine_InteractableButton()
                     }
                 }

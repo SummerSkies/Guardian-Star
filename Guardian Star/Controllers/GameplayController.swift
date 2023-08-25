@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct GameplayController {
-    static var currentMode: PlayMode = .none
+    var currentMode = PlayMode.none
+    
     static let menuColor = Color(red: 38 / 250, green: 38 / 250, blue: 38 / 250)
     
     static func observe(object: Object) {
@@ -36,9 +37,5 @@ struct GameplayController {
     
     static func enableObject(_ object: Object) {
         //opposite of disableObject
-    }
-    
-    static func switchMode(to mode: PlayMode) {
-        
     }
 }

@@ -28,13 +28,13 @@ struct ConsoleTableView: View, Equatable {
                     .foregroundColor(Color.red)
                     .frame(width: 1000)
                 
-                if GameplayController.currentMode == .observe {
+                if GameplayController().currentMode == .observe {
                     Bookshelf_ObservableButton()
                     DaisysDoorknob_ObservableButton()
                     Bookmark_ObservableButton()
-                } else if GameplayController.currentMode == .interact {
+                } else if GameplayController().currentMode == .interact {
                     Bookmark_InteractableButton()
-                } else if GameplayController.currentMode == .navigate {
+                } else if GameplayController().currentMode == .navigate {
                     ToVent_NavigationalButton()
                 }
             }

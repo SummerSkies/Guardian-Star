@@ -28,13 +28,13 @@ struct HallwayView: View, Equatable {
                     .resizable()
                     .scaledToFill()
                 
-                if GameplayController.currentMode == .observe {
+                if GameplayController().currentMode == .observe {
                     Doors_ObservableButton()
                     Stairs_ObservableButton()
                     ArchBlock_ObservableButton()
-                } else if GameplayController.currentMode == .interact {
+                } else if GameplayController().currentMode == .interact {
                     ArchBlock_InteractableButton()
-                } else if GameplayController.currentMode == .navigate {
+                } else if GameplayController().currentMode == .navigate {
                     ToLanding_NavigationalButton()
                 }
             }

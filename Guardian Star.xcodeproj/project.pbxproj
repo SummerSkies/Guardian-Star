@@ -15,9 +15,10 @@
 		8639DA262A5B4A6800B356C1 /* Guardian_StarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA252A5B4A6800B356C1 /* Guardian_StarUITests.swift */; };
 		8639DA282A5B4A6800B356C1 /* Guardian_StarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA272A5B4A6800B356C1 /* Guardian_StarUITestsLaunchTests.swift */; };
 		8639DA352A5B7AC700B356C1 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA342A5B7AC700B356C1 /* MainMenu.swift */; };
-		8639DA372A5B7CEF00B356C1 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8639DA362A5B7CEF00B356C1 /* Storyboard.storyboard */; };
 		863A68902A8FC8EE00EC387B /* Tutorial Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */; };
 		863A68922A8FC90100EC387B /* Dialogue Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863A68912A8FC90100EC387B /* Dialogue Box.swift */; };
+		86435B272A95052700A9D3B7 /* GameplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86435B262A95052700A9D3B7 /* GameplayTests.swift */; };
+		864CEA862A97AA0500EE6293 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CEA852A97AA0500EE6293 /* AppDelegate.swift */; };
 		866E38952A6DADD000F53CB0 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E38942A6DADD000F53CB0 /* Object.swift */; };
 		866E38972A6DB60500F53CB0 /* BackyardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E38962A6DB60500F53CB0 /* BackyardController.swift */; };
 		866E389B2A6DB73200F53CB0 /* LivingRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E389A2A6DB73200F53CB0 /* LivingRoomController.swift */; };
@@ -53,6 +54,7 @@
 		86B982E12A698748004A100B /* Hallway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E02A698748004A100B /* Hallway.swift */; };
 		86B982E42A698A6E004A100B /* Upstairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E32A698A6E004A100B /* Upstairs.swift */; };
 		86B982E82A698EEB004A100B /* Main Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E72A698EEB004A100B /* Main Overlay.swift */; };
+		86FD0E652A98EF3B00808735 /* Observeable Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FD0E642A98EF3B00808735 /* Observeable Objects.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,9 +86,10 @@
 		8639DA252A5B4A6800B356C1 /* Guardian_StarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guardian_StarUITests.swift; sourceTree = "<group>"; };
 		8639DA272A5B4A6800B356C1 /* Guardian_StarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guardian_StarUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8639DA342A5B7AC700B356C1 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
-		8639DA362A5B7CEF00B356C1 /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tutorial Menu.swift"; sourceTree = "<group>"; };
 		863A68912A8FC90100EC387B /* Dialogue Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dialogue Box.swift"; sourceTree = "<group>"; };
+		86435B262A95052700A9D3B7 /* GameplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayTests.swift; sourceTree = "<group>"; };
+		864CEA852A97AA0500EE6293 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		866E38942A6DADD000F53CB0 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		866E38962A6DB60500F53CB0 /* BackyardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackyardController.swift; sourceTree = "<group>"; };
 		866E389A2A6DB73200F53CB0 /* LivingRoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingRoomController.swift; sourceTree = "<group>"; };
@@ -122,6 +125,7 @@
 		86B982E02A698748004A100B /* Hallway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hallway.swift; sourceTree = "<group>"; };
 		86B982E32A698A6E004A100B /* Upstairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upstairs.swift; sourceTree = "<group>"; };
 		86B982E72A698EEB004A100B /* Main Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main Overlay.swift"; sourceTree = "<group>"; };
+		86FD0E642A98EF3B00808735 /* Observeable Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observeable Objects.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +156,6 @@
 		8639D9FE2A5B4A6600B356C1 = {
 			isa = PBXGroup;
 			children = (
-				8639DA362A5B7CEF00B356C1 /* Storyboard.storyboard */,
 				8639DA092A5B4A6600B356C1 /* Guardian Star */,
 				8639DA1A2A5B4A6800B356C1 /* Guardian StarTests */,
 				8639DA242A5B4A6800B356C1 /* Guardian StarUITests */,
@@ -173,6 +176,7 @@
 		8639DA092A5B4A6600B356C1 /* Guardian Star */ = {
 			isa = PBXGroup;
 			children = (
+				864CEA842A97A9F400EE6293 /* Delegates */,
 				8639DA0A2A5B4A6600B356C1 /* Guardian_StarApp.swift */,
 				8639DA0C2A5B4A6600B356C1 /* ContentView.swift */,
 				866E38932A6DA5A700F53CB0 /* Data Models */,
@@ -195,6 +199,7 @@
 		8639DA1A2A5B4A6800B356C1 /* Guardian StarTests */ = {
 			isa = PBXGroup;
 			children = (
+				86435B262A95052700A9D3B7 /* GameplayTests.swift */,
 				8639DA1B2A5B4A6800B356C1 /* BackyardTests.swift */,
 			);
 			path = "Guardian StarTests";
@@ -207,6 +212,14 @@
 				8639DA272A5B4A6800B356C1 /* Guardian_StarUITestsLaunchTests.swift */,
 			);
 			path = "Guardian StarUITests";
+			sourceTree = "<group>";
+		};
+		864CEA842A97A9F400EE6293 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				864CEA852A97AA0500EE6293 /* AppDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		866E38902A6DA30F00F53CB0 /* Controllers */ = {
@@ -229,6 +242,7 @@
 				866E38942A6DADD000F53CB0 /* Object.swift */,
 				8688B6192A72BEE800B4FD53 /* Item.swift */,
 				8688B6152A72B4FB00B4FD53 /* PlayMode.swift */,
+				86FD0E642A98EF3B00808735 /* Observeable Objects.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -466,7 +480,6 @@
 			files = (
 				8639DA122A5B4A6800B356C1 /* Preview Assets.xcassets in Resources */,
 				8639DA0F2A5B4A6800B356C1 /* Assets.xcassets in Resources */,
-				8639DA372A5B7CEF00B356C1 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +508,7 @@
 				8688B6262A72D9E300B4FD53 /* PoolTableController.swift in Sources */,
 				86A51A912A741DA100924EAB /* ConsoleTable.swift in Sources */,
 				8688B6222A72D09C00B4FD53 /* LivingRoomWindow Controller.swift in Sources */,
+				864CEA862A97AA0500EE6293 /* AppDelegate.swift in Sources */,
 				866E38972A6DB60500F53CB0 /* BackyardController.swift in Sources */,
 				86B982E12A698748004A100B /* Hallway.swift in Sources */,
 				86B982DF2A69817C004A100B /* LivingRoom.swift in Sources */,
@@ -530,6 +544,7 @@
 				86A51A8F2A741D8500924EAB /* Landing.swift in Sources */,
 				86B18D202A7813F00040F895 /* UIMenuItem.swift in Sources */,
 				8688B6182A72BEA200B4FD53 /* InventoryController.swift in Sources */,
+				86FD0E652A98EF3B00808735 /* Observeable Objects.swift in Sources */,
 				86A51A812A741C8500924EAB /* Hedges.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,6 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8639DA1C2A5B4A6800B356C1 /* BackyardTests.swift in Sources */,
+				86435B272A95052700A9D3B7 /* GameplayTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,6 +795,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"BUNDLE_LOADER[arch=*]" = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

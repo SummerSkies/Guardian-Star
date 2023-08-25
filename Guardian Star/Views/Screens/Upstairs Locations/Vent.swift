@@ -28,15 +28,15 @@ struct VentView: View, Equatable {
                     .foregroundColor(Color.green)
                     .frame(width: 1000)
                 
-                if GameplayController.currentMode == .observe {
+                if GameplayController().currentMode == .observe {
                     VentUpClose_ObservableButton()
                     ScreenedVentUpClose_ObservableButton()
                     OpenVentUpClose_ObservableButton()
-                } else if GameplayController.currentMode == .interact {
+                } else if GameplayController().currentMode == .interact {
                     VentUpClose_InteractableButton()
                     ScreenedVentUpClose_InteractableButton()
                     OpenVentUpClose_InteractableButton()
-                } else if GameplayController.currentMode == .navigate {
+                } else if GameplayController().currentMode == .navigate {
                     ToDaisy_NavigationalButton()
                 }
             }

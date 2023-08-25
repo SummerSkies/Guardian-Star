@@ -30,17 +30,17 @@ struct UpstairsView: View, Equatable {
                 
                 
                 
-                if GameplayController.currentMode == .observe {
+                if GameplayController().currentMode == .observe {
                     DaisysDoor_ObservableButton()
                     ConsoleTable_ObservableButton()
                     Vent_ObservableButton()
                     ScreenedVent_ObservableButton()
                     OpenVent_ObservableButton()
                     TriangleBlock_ObservableButton()
-                } else if GameplayController.currentMode == .interact {
+                } else if GameplayController().currentMode == .interact {
                     ConsoleTable_InteractableButton()
                     TriangleBlock_InteractableButton()
-                } else if GameplayController.currentMode == .navigate {
+                } else if GameplayController().currentMode == .navigate {
                     ToConsoleTable_NavigationalButton()
                 }
             }

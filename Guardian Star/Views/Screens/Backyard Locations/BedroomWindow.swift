@@ -24,7 +24,7 @@ struct BedroomWindowView: View, Equatable {
                     .foregroundColor(Color.purple)
                     .frame(width: 1000)
                 
-                if GameplayController.currentMode == .observe {
+                if GameplayController().currentMode == .observe {
                     //bedroomWindowFrame ivyVinesTips
                     BedroomWindowFrame_ObservableButton()
                     IvyVinesTips_ObservableButton()

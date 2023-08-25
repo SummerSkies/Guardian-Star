@@ -28,15 +28,15 @@ struct LivingRoomView: View, Equatable {
                     .resizable()
                     .scaledToFill()
                 
-                if GameplayController.currentMode == .observe {
+                if GameplayController().currentMode == .observe {
                     HallwayDoor_ObservableButton()
                     Chair_ObservableButton()
                     MovedChair_ObservableButton()
                     LowTable_ObservableButton()
                     PoolTable_ObservableButton()
-                } else if GameplayController.currentMode == .interact {
+                } else if GameplayController().currentMode == .interact {
                     Chair_InteractableButton()
-                } else if GameplayController.currentMode == .navigate {
+                } else if GameplayController().currentMode == .navigate {
                     ToPoolTable_NavigationalButton()
                     ToLowTable_NavigationalButton()
                     ToHallwayDoorGap_NavigationalButton()
