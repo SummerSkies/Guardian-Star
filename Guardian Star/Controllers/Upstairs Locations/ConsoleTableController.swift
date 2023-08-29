@@ -36,7 +36,7 @@ struct ConsoleTableController {
     ]
 }
 
-//MARK: UI Models - Observeable
+//MARK: UI Models - Observable
 struct DaisysDoorknob_ObservableButton: View {
     var body: some View {
         Button("Daisy's Doorknob") {

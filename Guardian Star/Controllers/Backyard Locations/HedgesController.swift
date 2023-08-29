@@ -34,7 +34,7 @@ struct HedgesController {
 
 
 //MARK: UI Models - Observable
-struct Branch_ObservervableButton: View {
+struct Branch_ObservableButton: View {
     var body: some View {
         Button("Branch") {
             
@@ -46,7 +46,7 @@ struct Branch_ObservervableButton: View {
     }
 }
 
-struct IvyVinesBase_ObservervableButton: View {
+struct IvyVinesBase_ObservableButton: View {
     var body: some View {
         Button("Ivy Vines Base") {
             

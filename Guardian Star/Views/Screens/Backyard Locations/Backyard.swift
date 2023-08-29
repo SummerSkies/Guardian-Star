@@ -17,6 +17,7 @@ struct BackyardView: View, Equatable {
     
     var observableObjects = BackyardController().observableObjects
     var navigationalObjects = BackyardController().navigationalObjects
+    var controlPoint = 0.0
     
     var body: some View {
         ScrollView(.horizontal) {
@@ -25,12 +26,16 @@ struct BackyardView: View, Equatable {
                 Image("Backyard")
                     .resizable()
                     .scaledToFill()
+                Image("Bedroom Windows")
+                Image("Living Room Window")
+                Image("Ivy Vines")
+                Image("Hedges")
                 
                 if currentMode == .observe {
-                    BedroomWindows_ObservervableButton()
-                    LivingRoomWindow_ObservervableButton()
-                    IvyVines_ObservervableButton()
-                    Hedges_ObservervableButton()
+                    BedroomWindows_ObservableButton()
+                    LivingRoomWindow_ObservableButton()
+                    IvyVines_ObservableButton()
+                    Hedges_ObservableButton()
                 } else if currentMode == .navigate {
                     ToHedges_NavigationalButton()
                 }

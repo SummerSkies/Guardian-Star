@@ -17,6 +17,8 @@
 		8639DA352A5B7AC700B356C1 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA342A5B7AC700B356C1 /* MainMenu.swift */; };
 		863A68902A8FC8EE00EC387B /* Tutorial Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */; };
 		863A68922A8FC90100EC387B /* Dialogue Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863A68912A8FC90100EC387B /* Dialogue Box.swift */; };
+		863AF79F2A9CF48900DF1620 /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863AF79E2A9CF48900DF1620 /* temp.swift */; };
+		863AF7A12A9CF61400DF1620 /* Temp View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863AF7A02A9CF61400DF1620 /* Temp View.swift */; };
 		86435B272A95052700A9D3B7 /* GameplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86435B262A95052700A9D3B7 /* GameplayTests.swift */; };
 		864CEA862A97AA0500EE6293 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CEA852A97AA0500EE6293 /* AppDelegate.swift */; };
 		866E38952A6DADD000F53CB0 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E38942A6DADD000F53CB0 /* Object.swift */; };
@@ -88,6 +90,8 @@
 		8639DA342A5B7AC700B356C1 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tutorial Menu.swift"; sourceTree = "<group>"; };
 		863A68912A8FC90100EC387B /* Dialogue Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dialogue Box.swift"; sourceTree = "<group>"; };
+		863AF79E2A9CF48900DF1620 /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
+		863AF7A02A9CF61400DF1620 /* Temp View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Temp View.swift"; sourceTree = "<group>"; };
 		86435B262A95052700A9D3B7 /* GameplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayTests.swift; sourceTree = "<group>"; };
 		864CEA852A97AA0500EE6293 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		866E38942A6DADD000F53CB0 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
@@ -243,6 +247,8 @@
 				8688B6192A72BEE800B4FD53 /* Item.swift */,
 				8688B6152A72B4FB00B4FD53 /* PlayMode.swift */,
 				86FD0E642A98EF3B00808735 /* Observeable Objects.swift */,
+				863AF79E2A9CF48900DF1620 /* temp.swift */,
+				863AF7A02A9CF61400DF1620 /* Temp View.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -522,6 +528,7 @@
 				86A51A8D2A741D5F00924EAB /* HallwayDoorknob.swift in Sources */,
 				8639DA0D2A5B4A6600B356C1 /* ContentView.swift in Sources */,
 				863A68922A8FC90100EC387B /* Dialogue Box.swift in Sources */,
+				863AF79F2A9CF48900DF1620 /* temp.swift in Sources */,
 				86A51A8B2A741D2000924EAB /* HallwayDoorGap.swift in Sources */,
 				866E389F2A6DC21D00F53CB0 /* UpstairsController.swift in Sources */,
 				863A68902A8FC8EE00EC387B /* Tutorial Menu.swift in Sources */,
@@ -542,6 +549,7 @@
 				8688B61C2A72C2CC00B4FD53 /* HedgesController.swift in Sources */,
 				86B982E82A698EEB004A100B /* Main Overlay.swift in Sources */,
 				86A51A8F2A741D8500924EAB /* Landing.swift in Sources */,
+				863AF7A12A9CF61400DF1620 /* Temp View.swift in Sources */,
 				86B18D202A7813F00040F895 /* UIMenuItem.swift in Sources */,
 				8688B6182A72BEA200B4FD53 /* InventoryController.swift in Sources */,
 				86FD0E652A98EF3B00808735 /* Observeable Objects.swift in Sources */,

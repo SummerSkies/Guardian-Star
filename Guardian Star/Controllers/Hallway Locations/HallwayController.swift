@@ -37,7 +37,7 @@ struct HallwayController {
     ]
 }
 
-//MARK: UI Models - Observeable
+//MARK: UI Models - Observable
 struct ArchBlock_ObservableButton: View {
     var body: some View {
         Button("Arch Block") {

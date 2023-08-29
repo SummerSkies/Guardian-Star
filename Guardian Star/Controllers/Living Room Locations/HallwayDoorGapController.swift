@@ -30,7 +30,7 @@ struct HallwayDoorGapController {
     ]
 }
 
-//MARK: UI Models - Observeable
+//MARK: UI Models - Observable
 struct DoorGap_ObservableButton: View {
     var body: some View {
         Button("Door Gap") {

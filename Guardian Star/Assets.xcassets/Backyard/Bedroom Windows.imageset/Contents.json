@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Bedroom Windows.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

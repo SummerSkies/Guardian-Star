@@ -42,7 +42,7 @@ struct VentController {
     ]
 }
 
-//MARK: UI Models - Observeable
+//MARK: UI Models - Observable
 struct VentUpClose_ObservableButton: View {
     var body: some View {
         Button("Vent - Up Close") {

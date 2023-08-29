@@ -24,8 +24,8 @@ struct HedgesView: View, Equatable {
                     .frame(width: 1000)
                 
                 if currentMode == .observe {
-                    Branch_ObservervableButton()
-                    IvyVinesBase_ObservervableButton()
+                    Branch_ObservableButton()
+                    IvyVinesBase_ObservableButton()
                 } else if currentMode == .interact {
                     Branch_InteractableButton()
                 } else if currentMode == .navigate {

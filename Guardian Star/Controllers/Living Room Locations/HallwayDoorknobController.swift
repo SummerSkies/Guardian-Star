@@ -26,7 +26,7 @@ struct HallwayDoorknobController {
     ]
 }
 
-//MARK: UI Models - Observeable
+//MARK: UI Models - Observable
 struct Lock_ObservableButton: View {
     var body: some View {
         Button("Lock") {

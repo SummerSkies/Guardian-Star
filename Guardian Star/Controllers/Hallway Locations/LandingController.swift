@@ -27,7 +27,7 @@ struct LandingController {
     ]
 }
 
-//MARK: UI Models - Observeable
+//MARK: UI Models - Observable
 struct RectangleBlock_ObservableButton: View {
     var body: some View {
         Button("Rectangle Block") {

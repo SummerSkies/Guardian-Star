@@ -27,7 +27,7 @@ struct LivingRoomWindowController {
     ]
 }
 
-//MARK: UI Models - Observeable
+//MARK: UI Models - Observable
 struct LivingRoomWindowFrame_ObservableButton: View {
     var body: some View {
         Button("Living Room Window Frame") {

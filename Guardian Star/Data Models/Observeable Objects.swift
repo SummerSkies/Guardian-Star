@@ -1,5 +1,5 @@
 //
-//  Observeable Objects.swift
+//  Observable Objects.swift
 //  Guardian Star
 //
 //  Created by Juliana Nielson on 8/25/23.

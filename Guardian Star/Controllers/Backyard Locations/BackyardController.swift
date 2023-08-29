@@ -11,22 +11,22 @@ struct BackyardController {
     var observableObjects: [ObjectType: Object] = [
         .hedges: Object(
             imageName: "Hedges",
-            imageGlowName: "ObsGlo - Hedges",
+            imageGlowName: "Observable Hedges",
             message: "The hedges have been looking a little unkempt lately."
         ),
         .ivyVines: Object(
             imageName: "Ivy Vines",
-            imageGlowName: "ObsGlo - Ivy Vines",
+            imageGlowName: "Observable Ivy Vines",
             message: "I wonder if I could climb that ivy up to Daisy's window.\nI'll have to start at the base, through the hedges."
         ),
         .livingRoomWindow: Object(
             imageName: "Living Room Window",
-            imageGlowName: "ObsGlo - Living Room Window",
+            imageGlowName: "Observable Living Room Window",
             message: "Someone forgot to close the window.\nDaisy's mama must not be home."
         ),
         .bedroomWindow: Object(
-            imageName: "Bedroom Window",
-            imageGlowName: "ObsGlo - Bedroom Window",
+            imageName: "Bedroom Windows",
+            imageGlowName: "Observable Bedroom Windows",
             message: "Daisy's bedroom is up there."
         )
     ]
@@ -36,51 +36,64 @@ struct BackyardController {
 }
 
 //MARK: UI Models - Observable
-struct BedroomWindows_ObservervableButton: View {
+struct BedroomWindows_ObservableButton: View {
     var body: some View {
-        Button("Bedroom Windows") {
+        let tappableArea = Rectangle()
+            .offset(x: 483, y: 310)
+            .size(width: 281, height: 201)
+        
+        Button {
             print("Observed Bedroom Windows.")
+        } label: {
+            Image("Observable Bedroom Windows")
         }
-        .frame(width: 270, height: 192)
-        .background(Color.secondary)
-        .foregroundColor(Color.white)
-        .offset(x: 110, y: 23)
+        .contentShape(tappableArea)
     }
 }
 
-struct LivingRoomWindow_ObservervableButton: View {
+struct LivingRoomWindow_ObservableButton: View {
     var body: some View {
-        Button("Living Room Window") {
+        let tappableArea = Rectangle()
+            .offset(x: 636, y: 538)
+            .size(width: 120, height: 165)
+
+        Button {
             print("Living Room Window tapped!")
+        } label: {
+            Image("Observable Living Room Window")
         }
-        .frame(width: 100, height: 162)
-        .background(Color.secondary)
-        .foregroundColor(Color.white)
-        .offset(x: 181, y: 234)
+        .contentShape(tappableArea)
     }
 }
 
-struct IvyVines_ObservervableButton: View {
+struct IvyVines_ObservableButton: View {
     var body: some View {
-        Button("Ivy Vines") {
+        let tappableArea  = IvyVinesShape(controlPoint: 0.0)
+            .offset(x: 170, y: 215)
+            .scale(2)
+        
+        Button {
             print("Ivy Vines tapped!")
+        } label: {
+            Image("Observable Ivy Vines")
         }
-        .frame(width: 100, height: 280)
-        .background(Color.secondary)
-        .foregroundColor(Color.white)
-        .offset(x: 281, y: 175)
+        .contentShape(tappableArea)
+        
     }
 }
 
-struct Hedges_ObservervableButton: View {
+struct Hedges_ObservableButton: View {
     var body: some View {
-        Button("Hedges") {
+        let tappableArea = Rectangle()
+            .offset(x: 405, y: 660)
+            .size(width: 515, height: 90)
+        
+        Button {
             print("Hedges tapped!")
+        } label: {
+            Image("Observable Hedges")
         }
-        .frame(width: 427, height: 80)
-        .background(Color.secondary)
-        .foregroundColor(Color.white)
-        .offset(x: 158, y: 325)
+        .contentShape(tappableArea)
     }
 }
 

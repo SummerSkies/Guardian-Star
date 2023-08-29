@@ -54,7 +54,7 @@ struct UpstairsController {
     ]
 }
 
-//MARK: UI Models - Observeable
+//MARK: UI Models - Observable
 struct DaisysDoor_ObservableButton: View {
     var body: some View {
         Button("Daisy's Door") {
