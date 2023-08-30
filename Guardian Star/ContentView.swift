@@ -8,24 +8,27 @@
 import SwiftUI
 
 struct ContentView: View, Equatable {
-    @StateObject private var playmodeModel = PlaymodeModel()
+    @StateObject private var gameplayModel = GameplayModel()
     
     let viewID = UUID()
     
     static func == (lhs: ContentView, rhs: ContentView) -> Bool {
         return lhs.viewID == rhs.viewID
     }
-    
+
     var body: some View {
         
         ZStack {
             Color.black
                 .ignoresSafeArea()
             //Whatever View:
-            BackyardView(currentMode: $playmodeModel.currentMode)
+            BackyardView(currentMode: $gameplayModel.currentMode)
+            
+            //Dialogue View:
+            CommentDialogueBoxView(message: $gameplayModel.message, emote: $gameplayModel.emote)
             
             //Overlay View:
-            MainOverlayViews(currentMode: $playmodeModel.currentMode)
+            MainOverlayViews(currentMode: $gameplayModel.currentMode)
         }
     }
 }

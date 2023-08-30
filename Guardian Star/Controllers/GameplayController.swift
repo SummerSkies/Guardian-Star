@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GameplayController {
     var currentMode = PlayMode.none
+    var message = String()
+    var emote = String()
     
     static let menuColor = Color(red: 38 / 250, green: 38 / 250, blue: 38 / 250)
     
