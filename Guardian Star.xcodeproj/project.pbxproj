@@ -19,7 +19,7 @@
 		863A68922A8FC90100EC387B /* Comment Dialogue Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863A68912A8FC90100EC387B /* Comment Dialogue Box.swift */; };
 		863AF79F2A9CF48900DF1620 /* ButtonContentShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863AF79E2A9CF48900DF1620 /* ButtonContentShapes.swift */; };
 		86435B272A95052700A9D3B7 /* GameplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86435B262A95052700A9D3B7 /* GameplayTests.swift */; };
-		864CEA862A97AA0500EE6293 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CEA852A97AA0500EE6293 /* AppDelegate.swift */; };
+		864CEA862A97AA0500EE6293 /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CEA852A97AA0500EE6293 /* Delegates.swift */; };
 		866E38952A6DADD000F53CB0 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E38942A6DADD000F53CB0 /* Object.swift */; };
 		866E38972A6DB60500F53CB0 /* BackyardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E38962A6DB60500F53CB0 /* BackyardController.swift */; };
 		866E389B2A6DB73200F53CB0 /* LivingRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E389A2A6DB73200F53CB0 /* LivingRoomController.swift */; };
@@ -56,6 +56,7 @@
 		86B982E42A698A6E004A100B /* Upstairs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E32A698A6E004A100B /* Upstairs.swift */; };
 		86B982E82A698EEB004A100B /* Main Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E72A698EEB004A100B /* Main Overlay.swift */; };
 		86C1A5CE2A9F8AAF00F0DD10 /* Gameplay Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5CD2A9F8AAF00F0DD10 /* Gameplay Model.swift */; };
+		86C1A5D02A9F909900F0DD10 /* Location Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5CF2A9F909900F0DD10 /* Location Model.swift */; };
 		86EA91952A9E3C3F00423937 /* Story Dialogue Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA91942A9E3C3F00423937 /* Story Dialogue Box.swift */; };
 		86EA91972A9E484100423937 /* Profile Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA91962A9E484100423937 /* Profile Picture.swift */; };
 		86EA919A2A9E4C6A00423937 /* Dialogue Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA91992A9E4C6A00423937 /* Dialogue Box.swift */; };
@@ -94,7 +95,7 @@
 		863A68912A8FC90100EC387B /* Comment Dialogue Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment Dialogue Box.swift"; sourceTree = "<group>"; };
 		863AF79E2A9CF48900DF1620 /* ButtonContentShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonContentShapes.swift; sourceTree = "<group>"; };
 		86435B262A95052700A9D3B7 /* GameplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayTests.swift; sourceTree = "<group>"; };
-		864CEA852A97AA0500EE6293 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		864CEA852A97AA0500EE6293 /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
 		866E38942A6DADD000F53CB0 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		866E38962A6DB60500F53CB0 /* BackyardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackyardController.swift; sourceTree = "<group>"; };
 		866E389A2A6DB73200F53CB0 /* LivingRoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingRoomController.swift; sourceTree = "<group>"; };
@@ -131,6 +132,7 @@
 		86B982E32A698A6E004A100B /* Upstairs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upstairs.swift; sourceTree = "<group>"; };
 		86B982E72A698EEB004A100B /* Main Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main Overlay.swift"; sourceTree = "<group>"; };
 		86C1A5CD2A9F8AAF00F0DD10 /* Gameplay Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gameplay Model.swift"; sourceTree = "<group>"; };
+		86C1A5CF2A9F909900F0DD10 /* Location Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location Model.swift"; sourceTree = "<group>"; };
 		86EA91942A9E3C3F00423937 /* Story Dialogue Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Story Dialogue Box.swift"; sourceTree = "<group>"; };
 		86EA91962A9E484100423937 /* Profile Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile Picture.swift"; sourceTree = "<group>"; };
 		86EA91992A9E4C6A00423937 /* Dialogue Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dialogue Box.swift"; sourceTree = "<group>"; };
@@ -225,7 +227,7 @@
 		864CEA842A97A9F400EE6293 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
-				864CEA852A97AA0500EE6293 /* AppDelegate.swift */,
+				864CEA852A97AA0500EE6293 /* Delegates.swift */,
 			);
 			path = Delegates;
 			sourceTree = "<group>";
@@ -251,6 +253,7 @@
 				8688B6192A72BEE800B4FD53 /* Item.swift */,
 				8688B6152A72B4FB00B4FD53 /* PlayMode.swift */,
 				86C1A5CD2A9F8AAF00F0DD10 /* Gameplay Model.swift */,
+				86C1A5CF2A9F909900F0DD10 /* Location Model.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -529,7 +532,7 @@
 				8688B6262A72D9E300B4FD53 /* PoolTableController.swift in Sources */,
 				86A51A912A741DA100924EAB /* ConsoleTable.swift in Sources */,
 				8688B6222A72D09C00B4FD53 /* LivingRoomWindow Controller.swift in Sources */,
-				864CEA862A97AA0500EE6293 /* AppDelegate.swift in Sources */,
+				864CEA862A97AA0500EE6293 /* Delegates.swift in Sources */,
 				866E38972A6DB60500F53CB0 /* BackyardController.swift in Sources */,
 				86B982E12A698748004A100B /* Hallway.swift in Sources */,
 				86B982DF2A69817C004A100B /* LivingRoom.swift in Sources */,
@@ -564,6 +567,7 @@
 				86A51A932A741DD100924EAB /* Vent.swift in Sources */,
 				86B982E42A698A6E004A100B /* Upstairs.swift in Sources */,
 				866E389D2A6DC12C00F53CB0 /* HallwayController.swift in Sources */,
+				86C1A5D02A9F909900F0DD10 /* Location Model.swift in Sources */,
 				8688B61C2A72C2CC00B4FD53 /* HedgesController.swift in Sources */,
 				86B982E82A698EEB004A100B /* Main Overlay.swift in Sources */,
 				86A51A8F2A741D8500924EAB /* Landing.swift in Sources */,

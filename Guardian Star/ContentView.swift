@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View, Equatable {
     @StateObject private var gameplayModel = GameplayModel()
+    @StateObject private var locationModel = LocationModel()
     
     let viewID = UUID()
     
@@ -17,7 +18,6 @@ struct ContentView: View, Equatable {
     }
 
     var body: some View {
-        
         ZStack {
             Color.black
                 .ignoresSafeArea()
@@ -25,10 +25,12 @@ struct ContentView: View, Equatable {
             BackyardView(currentMode: $gameplayModel.currentMode)
             
             //Dialogue View:
-            CommentDialogueBoxView(message: $gameplayModel.message, emote: $gameplayModel.emote)
+            if locationModel.showComment == true {
+                CommentDialogueBoxView(message: $gameplayModel.message, emote: $gameplayModel.emote, showComment: $locationModel.showComment)
+            }
             
             //Overlay View:
-            MainOverlayViews(currentMode: $gameplayModel.currentMode)
+            MainOverlayViews(currentMode: $gameplayModel.currentMode, showComment: $locationModel.showComment)
         }
     }
 }

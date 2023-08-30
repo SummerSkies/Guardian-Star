@@ -9,11 +9,12 @@ import SwiftUI
 
 @main
 struct Guardian_StarApp: App {
-    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().equatable()
+                .environment(\.colorScheme, .light)
         }
     }
 }

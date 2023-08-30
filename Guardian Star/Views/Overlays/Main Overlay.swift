@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MainOverlayViews: View {
     @Binding var currentMode: PlayMode
+    @Binding var showComment: Bool
     
     var observeButtonColor: Color {
         if currentMode == .observe {
@@ -39,6 +40,8 @@ struct MainOverlayViews: View {
             //Home Button
             HStack {
                 Button {
+                    showComment = false
+                    showComment = true
                     //Home Button:
                     //"Return to the Home Screen? Your progress will be saved." pop-up
                     //save progress, if necissary
@@ -103,6 +106,8 @@ struct MainOverlayViews: View {
                 
                 //Inventory
                 Button {
+                    showComment = false
+                    showComment = true
                     //Inventory Button:
                     //When opening:
                         //shows inventory view (animated)

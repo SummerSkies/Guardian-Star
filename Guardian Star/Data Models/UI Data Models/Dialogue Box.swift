@@ -26,6 +26,11 @@ struct Dialogue_Box: View {
             RoundedRectangle(cornerSize: CGSize(width: 20.0, height: 20.0))
                 .stroke(menuColor, style: .init(lineWidth: 7.0))
                 .frame(width: 300, height: 120)
+            
+            Text("Tap to continue")
+                .italic()
+                .foregroundColor(.white)
+                .offset(x: 0, y: 75)
         }
     }
 }
