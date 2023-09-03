@@ -9,7 +9,6 @@ import CoreGraphics
 import SwiftUI
 
 struct IvyVinesShape: Shape {
-    var controlPoint: Double
     func path(in rect: CGRect) -> Path {
         var pencil = Path()
         

@@ -57,6 +57,9 @@
 		86B982E82A698EEB004A100B /* Main Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E72A698EEB004A100B /* Main Overlay.swift */; };
 		86C1A5CE2A9F8AAF00F0DD10 /* Gameplay Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5CD2A9F8AAF00F0DD10 /* Gameplay Model.swift */; };
 		86C1A5D02A9F909900F0DD10 /* Location Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5CF2A9F909900F0DD10 /* Location Model.swift */; };
+		86C1A5D22AA0CE4000F0DD10 /* Object Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5D12AA0CE4000F0DD10 /* Object Button.swift */; };
+		86C1A5D42AA0D19B00F0DD10 /* Root Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5D32AA0D19B00F0DD10 /* Root Controller.swift */; };
+		86C1A5D72AA0E71500F0DD10 /* TappableArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5D62AA0E71500F0DD10 /* TappableArea.swift */; };
 		86EA91952A9E3C3F00423937 /* Story Dialogue Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA91942A9E3C3F00423937 /* Story Dialogue Box.swift */; };
 		86EA91972A9E484100423937 /* Profile Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA91962A9E484100423937 /* Profile Picture.swift */; };
 		86EA919A2A9E4C6A00423937 /* Dialogue Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA91992A9E4C6A00423937 /* Dialogue Box.swift */; };
@@ -133,6 +136,10 @@
 		86B982E72A698EEB004A100B /* Main Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main Overlay.swift"; sourceTree = "<group>"; };
 		86C1A5CD2A9F8AAF00F0DD10 /* Gameplay Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gameplay Model.swift"; sourceTree = "<group>"; };
 		86C1A5CF2A9F909900F0DD10 /* Location Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location Model.swift"; sourceTree = "<group>"; };
+		86C1A5D12AA0CE4000F0DD10 /* Object Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Object Button.swift"; sourceTree = "<group>"; };
+		86C1A5D32AA0D19B00F0DD10 /* Root Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Root Controller.swift"; sourceTree = "<group>"; };
+		86C1A5D52AA0D48500F0DD10 /* Guardian-StarUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Guardian-StarUITests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		86C1A5D62AA0E71500F0DD10 /* TappableArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableArea.swift; sourceTree = "<group>"; };
 		86EA91942A9E3C3F00423937 /* Story Dialogue Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Story Dialogue Box.swift"; sourceTree = "<group>"; };
 		86EA91962A9E484100423937 /* Profile Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile Picture.swift"; sourceTree = "<group>"; };
 		86EA91992A9E4C6A00423937 /* Dialogue Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dialogue Box.swift"; sourceTree = "<group>"; };
@@ -186,12 +193,14 @@
 		8639DA092A5B4A6600B356C1 /* Guardian Star */ = {
 			isa = PBXGroup;
 			children = (
-				864CEA842A97A9F400EE6293 /* Delegates */,
-				8639DA0A2A5B4A6600B356C1 /* Guardian_StarApp.swift */,
+				86C1A5D32AA0D19B00F0DD10 /* Root Controller.swift */,
+				8640CE142AA533D400E47D05 /* Untouch */,
 				8639DA0C2A5B4A6600B356C1 /* ContentView.swift */,
-				866E38932A6DA5A700F53CB0 /* Data Models */,
-				866E38902A6DA30F00F53CB0 /* Controllers */,
-				86B982E62A698E6F004A100B /* Views */,
+				86EA91992A9E4C6A00423937 /* Dialogue Box.swift */,
+				86C1A5D12AA0CE4000F0DD10 /* Object Button.swift */,
+				86C1A5CD2A9F8AAF00F0DD10 /* Gameplay Model.swift */,
+				86B982E72A698EEB004A100B /* Main Overlay.swift */,
+				8640CE132AA5338800E47D05 /* Unused Items */,
 				8639DA0E2A5B4A6800B356C1 /* Assets.xcassets */,
 				8639DA102A5B4A6800B356C1 /* Preview Content */,
 			);
@@ -218,10 +227,32 @@
 		8639DA242A5B4A6800B356C1 /* Guardian StarUITests */ = {
 			isa = PBXGroup;
 			children = (
+				86C1A5D52AA0D48500F0DD10 /* Guardian-StarUITests-Info.plist */,
 				8639DA252A5B4A6800B356C1 /* Guardian_StarUITests.swift */,
 				8639DA272A5B4A6800B356C1 /* Guardian_StarUITestsLaunchTests.swift */,
 			);
 			path = "Guardian StarUITests";
+			sourceTree = "<group>";
+		};
+		8640CE132AA5338800E47D05 /* Unused Items */ = {
+			isa = PBXGroup;
+			children = (
+				86B18D1F2A7813F00040F895 /* UIMenuItems.swift */,
+				866E38932A6DA5A700F53CB0 /* Data Models */,
+			);
+			path = "Unused Items";
+			sourceTree = "<group>";
+		};
+		8640CE142AA533D400E47D05 /* Untouch */ = {
+			isa = PBXGroup;
+			children = (
+				864CEA842A97A9F400EE6293 /* Delegates */,
+				8639DA0A2A5B4A6600B356C1 /* Guardian_StarApp.swift */,
+				86EA91962A9E484100423937 /* Profile Picture.swift */,
+				863AF79E2A9CF48900DF1620 /* ButtonContentShapes.swift */,
+				8688B6152A72B4FB00B4FD53 /* PlayMode.swift */,
+			);
+			path = Untouch;
 			sourceTree = "<group>";
 		};
 		864CEA842A97A9F400EE6293 /* Delegates */ = {
@@ -248,12 +279,13 @@
 		866E38932A6DA5A700F53CB0 /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				86B982E62A698E6F004A100B /* Views */,
+				866E38902A6DA30F00F53CB0 /* Controllers */,
 				86EA91982A9E4C2700423937 /* UI Data Models */,
 				866E38942A6DADD000F53CB0 /* Object.swift */,
 				8688B6192A72BEE800B4FD53 /* Item.swift */,
-				8688B6152A72B4FB00B4FD53 /* PlayMode.swift */,
-				86C1A5CD2A9F8AAF00F0DD10 /* Gameplay Model.swift */,
 				86C1A5CF2A9F909900F0DD10 /* Location Model.swift */,
+				86C1A5D62AA0E71500F0DD10 /* TappableArea.swift */,
 			);
 			path = "Data Models";
 			sourceTree = "<group>";
@@ -365,7 +397,6 @@
 		86B982E52A698E52004A100B /* Overlays */ = {
 			isa = PBXGroup;
 			children = (
-				86B982E72A698EEB004A100B /* Main Overlay.swift */,
 				863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */,
 				863A68912A8FC90100EC387B /* Comment Dialogue Box.swift */,
 				86EA91942A9E3C3F00423937 /* Story Dialogue Box.swift */,
@@ -385,10 +416,6 @@
 		86EA91982A9E4C2700423937 /* UI Data Models */ = {
 			isa = PBXGroup;
 			children = (
-				863AF79E2A9CF48900DF1620 /* ButtonContentShapes.swift */,
-				86EA91962A9E484100423937 /* Profile Picture.swift */,
-				86B18D1F2A7813F00040F895 /* UIMenuItems.swift */,
-				86EA91992A9E4C6A00423937 /* Dialogue Box.swift */,
 			);
 			path = "UI Data Models";
 			sourceTree = "<group>";
@@ -558,6 +585,7 @@
 				86A51A852A741CC200924EAB /* BedroomWindow.swift in Sources */,
 				86A51A832A741CA300924EAB /* LivingRoomWindow.swift in Sources */,
 				8688B6282A72E0AA00B4FD53 /* LowTableController.swift in Sources */,
+				86C1A5D42AA0D19B00F0DD10 /* Root Controller.swift in Sources */,
 				866E38952A6DADD000F53CB0 /* Object.swift in Sources */,
 				8688B6142A72B4A700B4FD53 /* GameplayController.swift in Sources */,
 				86A51A7A2A741B2F00924EAB /* VentController.swift in Sources */,
@@ -566,6 +594,7 @@
 				8688B6242A72D38100B4FD53 /* BedroomWindowController.swift in Sources */,
 				86A51A932A741DD100924EAB /* Vent.swift in Sources */,
 				86B982E42A698A6E004A100B /* Upstairs.swift in Sources */,
+				86C1A5D22AA0CE4000F0DD10 /* Object Button.swift in Sources */,
 				866E389D2A6DC12C00F53CB0 /* HallwayController.swift in Sources */,
 				86C1A5D02A9F909900F0DD10 /* Location Model.swift in Sources */,
 				8688B61C2A72C2CC00B4FD53 /* HedgesController.swift in Sources */,
@@ -574,6 +603,7 @@
 				86B18D202A7813F00040F895 /* UIMenuItems.swift in Sources */,
 				8688B6182A72BEA200B4FD53 /* InventoryController.swift in Sources */,
 				86A51A812A741C8500924EAB /* Hedges.swift in Sources */,
+				86C1A5D72AA0E71500F0DD10 /* TappableArea.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -738,8 +768,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -766,8 +795,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -827,6 +855,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Guardian-StarUITests-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example1.Guardian-StarUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -844,6 +874,8 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Guardian-StarUITests-Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.example1.Guardian-StarUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

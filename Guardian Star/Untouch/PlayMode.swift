@@ -8,5 +8,5 @@
 import Foundation
 
 enum PlayMode {
-    case observe, interact, navigate, inspect, craft, none
+    case observe, interact, navigate, inspect, craft, use, none
 }

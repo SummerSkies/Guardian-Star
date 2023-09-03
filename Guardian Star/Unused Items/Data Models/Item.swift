@@ -23,5 +23,5 @@ struct Item: Equatable {
 }
 
 enum ItemType: CaseIterable {
-    case branch, poolBall, twine, key, archBlock, triangleBlock, rectangleBlock, bookmark
+    case branch, poolBall, twine, makeshiftWeight, key, archBlock, triangleBlock, rectangleBlock, bookmark
 }

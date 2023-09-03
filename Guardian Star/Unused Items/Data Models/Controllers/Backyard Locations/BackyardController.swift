@@ -68,7 +68,7 @@ struct LivingRoomWindow_ObservableButton: View {
 
 struct IvyVines_ObservableButton: View {
     var body: some View {
-        let tappableArea  = IvyVinesShape(controlPoint: 0.0)
+        let tappableArea  = IvyVinesShape()
             .offset(x: 170, y: 215)
             .scale(2)
         

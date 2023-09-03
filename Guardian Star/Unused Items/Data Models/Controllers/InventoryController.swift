@@ -29,6 +29,20 @@ struct InventoryController {
                 PoolTableController().observableObjects[.poolBallMoved]
             ]
         ),
+        .twine: Item(
+            imageName: "Twine - Item ",
+            selectedGlowImageName: "Selected - Twine",
+            inspectMessage: "I'm pretty handy with this stuff!",
+            associatedObjects: [
+                LowTableController()
+                    .interactableObjects[.twine]
+            ]
+        ),
+        .makeshiftWeight: Item(
+            imageName: "Makeshift Weight",
+            selectedGlowImageName: "Selected - Makeshift Weight",
+            inspectMessage: "I can tie this on my back to make me heavier."
+        ),
         .key: Item(
             imageName: "Key - Item ",
             selectedGlowImageName: "Selected - Key",
