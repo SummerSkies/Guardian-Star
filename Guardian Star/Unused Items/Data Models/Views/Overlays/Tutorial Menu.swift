@@ -12,7 +12,7 @@ struct TutorialView: View {
     
     
     var body: some View {
-        let menuColor = GameplayController.menuColor
+        let menuColor = Color.red
         
         ZStack {
             Color.secondary

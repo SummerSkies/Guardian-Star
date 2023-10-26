@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Dialogue_Box: View {
     var message: String
-    let menuColor = GameplayController.menuColor
+    let menuColor = ContentView.menuColor
     
     var body: some View {
         ZStack {

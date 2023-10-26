@@ -17,7 +17,7 @@
 		8639DA352A5B7AC700B356C1 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA342A5B7AC700B356C1 /* MainMenu.swift */; };
 		863A68902A8FC8EE00EC387B /* Tutorial Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */; };
 		863A68922A8FC90100EC387B /* Comment Dialogue Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863A68912A8FC90100EC387B /* Comment Dialogue Box.swift */; };
-		863AF79F2A9CF48900DF1620 /* ButtonContentShapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863AF79E2A9CF48900DF1620 /* ButtonContentShapes.swift */; };
+		863AF79F2A9CF48900DF1620 /* Content Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863AF79E2A9CF48900DF1620 /* Content Shape.swift */; };
 		86435B272A95052700A9D3B7 /* GameplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86435B262A95052700A9D3B7 /* GameplayTests.swift */; };
 		864CEA862A97AA0500EE6293 /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CEA852A97AA0500EE6293 /* Delegates.swift */; };
 		866E38952A6DADD000F53CB0 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E38942A6DADD000F53CB0 /* Object.swift */; };
@@ -57,9 +57,13 @@
 		86B982E82A698EEB004A100B /* Main Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E72A698EEB004A100B /* Main Overlay.swift */; };
 		86C1A5CE2A9F8AAF00F0DD10 /* Gameplay Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5CD2A9F8AAF00F0DD10 /* Gameplay Model.swift */; };
 		86C1A5D02A9F909900F0DD10 /* Location Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5CF2A9F909900F0DD10 /* Location Model.swift */; };
-		86C1A5D22AA0CE4000F0DD10 /* Object Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5D12AA0CE4000F0DD10 /* Object Button.swift */; };
+		86C1A5D22AA0CE4000F0DD10 /* All Content Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5D12AA0CE4000F0DD10 /* All Content Shapes.swift */; };
 		86C1A5D42AA0D19B00F0DD10 /* Root Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5D32AA0D19B00F0DD10 /* Root Controller.swift */; };
 		86C1A5D72AA0E71500F0DD10 /* TappableArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5D62AA0E71500F0DD10 /* TappableArea.swift */; };
+		86CECB8A2AE8964E00C4BD97 /* All Observable Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CECB892AE8964E00C4BD97 /* All Observable Buttons.swift */; };
+		86CECB8D2AE896B500C4BD97 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CECB8C2AE896B500C4BD97 /* Location.swift */; };
+		86CECB8F2AE8972900C4BD97 /* Observable Object Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CECB8E2AE8972900C4BD97 /* Observable Object Button.swift */; };
+		86CECB972AE89C2F00C4BD97 /* Tappable Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CECB962AE89C2F00C4BD97 /* Tappable Area.swift */; };
 		86EA91952A9E3C3F00423937 /* Story Dialogue Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA91942A9E3C3F00423937 /* Story Dialogue Box.swift */; };
 		86EA91972A9E484100423937 /* Profile Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA91962A9E484100423937 /* Profile Picture.swift */; };
 		86EA919A2A9E4C6A00423937 /* Dialogue Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA91992A9E4C6A00423937 /* Dialogue Box.swift */; };
@@ -96,7 +100,7 @@
 		8639DA342A5B7AC700B356C1 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tutorial Menu.swift"; sourceTree = "<group>"; };
 		863A68912A8FC90100EC387B /* Comment Dialogue Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment Dialogue Box.swift"; sourceTree = "<group>"; };
-		863AF79E2A9CF48900DF1620 /* ButtonContentShapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonContentShapes.swift; sourceTree = "<group>"; };
+		863AF79E2A9CF48900DF1620 /* Content Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content Shape.swift"; sourceTree = "<group>"; };
 		86435B262A95052700A9D3B7 /* GameplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayTests.swift; sourceTree = "<group>"; };
 		864CEA852A97AA0500EE6293 /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
 		866E38942A6DADD000F53CB0 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
@@ -136,10 +140,14 @@
 		86B982E72A698EEB004A100B /* Main Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main Overlay.swift"; sourceTree = "<group>"; };
 		86C1A5CD2A9F8AAF00F0DD10 /* Gameplay Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gameplay Model.swift"; sourceTree = "<group>"; };
 		86C1A5CF2A9F909900F0DD10 /* Location Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location Model.swift"; sourceTree = "<group>"; };
-		86C1A5D12AA0CE4000F0DD10 /* Object Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Object Button.swift"; sourceTree = "<group>"; };
+		86C1A5D12AA0CE4000F0DD10 /* All Content Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "All Content Shapes.swift"; sourceTree = "<group>"; };
 		86C1A5D32AA0D19B00F0DD10 /* Root Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Root Controller.swift"; sourceTree = "<group>"; };
 		86C1A5D52AA0D48500F0DD10 /* Guardian-StarUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Guardian-StarUITests-Info.plist"; sourceTree = SOURCE_ROOT; };
 		86C1A5D62AA0E71500F0DD10 /* TappableArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableArea.swift; sourceTree = "<group>"; };
+		86CECB892AE8964E00C4BD97 /* All Observable Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "All Observable Buttons.swift"; sourceTree = "<group>"; };
+		86CECB8C2AE896B500C4BD97 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		86CECB8E2AE8972900C4BD97 /* Observable Object Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable Object Button.swift"; sourceTree = "<group>"; };
+		86CECB962AE89C2F00C4BD97 /* Tappable Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tappable Area.swift"; sourceTree = "<group>"; };
 		86EA91942A9E3C3F00423937 /* Story Dialogue Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Story Dialogue Box.swift"; sourceTree = "<group>"; };
 		86EA91962A9E484100423937 /* Profile Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile Picture.swift"; sourceTree = "<group>"; };
 		86EA91992A9E4C6A00423937 /* Dialogue Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dialogue Box.swift"; sourceTree = "<group>"; };
@@ -193,13 +201,9 @@
 		8639DA092A5B4A6600B356C1 /* Guardian Star */ = {
 			isa = PBXGroup;
 			children = (
-				86C1A5D32AA0D19B00F0DD10 /* Root Controller.swift */,
 				8640CE142AA533D400E47D05 /* Untouch */,
+				86C1A5D32AA0D19B00F0DD10 /* Root Controller.swift */,
 				8639DA0C2A5B4A6600B356C1 /* ContentView.swift */,
-				86EA91992A9E4C6A00423937 /* Dialogue Box.swift */,
-				86C1A5D12AA0CE4000F0DD10 /* Object Button.swift */,
-				86C1A5CD2A9F8AAF00F0DD10 /* Gameplay Model.swift */,
-				86B982E72A698EEB004A100B /* Main Overlay.swift */,
 				8640CE132AA5338800E47D05 /* Unused Items */,
 				8639DA0E2A5B4A6800B356C1 /* Assets.xcassets */,
 				8639DA102A5B4A6800B356C1 /* Preview Content */,
@@ -237,6 +241,8 @@
 		8640CE132AA5338800E47D05 /* Unused Items */ = {
 			isa = PBXGroup;
 			children = (
+				86EA91942A9E3C3F00423937 /* Story Dialogue Box.swift */,
+				86C1A5CD2A9F8AAF00F0DD10 /* Gameplay Model.swift */,
 				86B18D1F2A7813F00040F895 /* UIMenuItems.swift */,
 				866E38932A6DA5A700F53CB0 /* Data Models */,
 			);
@@ -246,11 +252,13 @@
 		8640CE142AA533D400E47D05 /* Untouch */ = {
 			isa = PBXGroup;
 			children = (
+				86EA91992A9E4C6A00423937 /* Dialogue Box.swift */,
+				86EA91962A9E484100423937 /* Profile Picture.swift */,
+				86B982E72A698EEB004A100B /* Main Overlay.swift */,
+				863A68912A8FC90100EC387B /* Comment Dialogue Box.swift */,
 				864CEA842A97A9F400EE6293 /* Delegates */,
 				8639DA0A2A5B4A6600B356C1 /* Guardian_StarApp.swift */,
-				86EA91962A9E484100423937 /* Profile Picture.swift */,
-				863AF79E2A9CF48900DF1620 /* ButtonContentShapes.swift */,
-				8688B6152A72B4FB00B4FD53 /* PlayMode.swift */,
+				86CECB8B2AE8965A00C4BD97 /* Models */,
 			);
 			path = Untouch;
 			sourceTree = "<group>";
@@ -398,8 +406,6 @@
 			isa = PBXGroup;
 			children = (
 				863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */,
-				863A68912A8FC90100EC387B /* Comment Dialogue Box.swift */,
-				86EA91942A9E3C3F00423937 /* Story Dialogue Box.swift */,
 			);
 			path = Overlays;
 			sourceTree = "<group>";
@@ -411,6 +417,28 @@
 				86B982E22A698752004A100B /* Screens */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		86CECB8B2AE8965A00C4BD97 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				86CECB912AE898C800C4BD97 /* All Buttons */,
+				863AF79E2A9CF48900DF1620 /* Content Shape.swift */,
+				86CECB8E2AE8972900C4BD97 /* Observable Object Button.swift */,
+				86CECB962AE89C2F00C4BD97 /* Tappable Area.swift */,
+				8688B6152A72B4FB00B4FD53 /* PlayMode.swift */,
+				86CECB8C2AE896B500C4BD97 /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		86CECB912AE898C800C4BD97 /* All Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				86CECB892AE8964E00C4BD97 /* All Observable Buttons.swift */,
+				86C1A5D12AA0CE4000F0DD10 /* All Content Shapes.swift */,
+			);
+			path = "All Buttons";
 			sourceTree = "<group>";
 		};
 		86EA91982A9E4C2700423937 /* UI Data Models */ = {
@@ -560,6 +588,7 @@
 				86A51A912A741DA100924EAB /* ConsoleTable.swift in Sources */,
 				8688B6222A72D09C00B4FD53 /* LivingRoomWindow Controller.swift in Sources */,
 				864CEA862A97AA0500EE6293 /* Delegates.swift in Sources */,
+				86CECB8D2AE896B500C4BD97 /* Location.swift in Sources */,
 				866E38972A6DB60500F53CB0 /* BackyardController.swift in Sources */,
 				86B982E12A698748004A100B /* Hallway.swift in Sources */,
 				86B982DF2A69817C004A100B /* LivingRoom.swift in Sources */,
@@ -569,11 +598,12 @@
 				86A51A6D2A740AE200924EAB /* HallwayDoorGapController.swift in Sources */,
 				86A51A782A7419AB00924EAB /* ConsoleTableController.swift in Sources */,
 				86A51A892A741CFF00924EAB /* LowTable.swift in Sources */,
+				86CECB972AE89C2F00C4BD97 /* Tappable Area.swift in Sources */,
 				86A51A872A741CE400924EAB /* PoolTable.swift in Sources */,
 				86A51A8D2A741D5F00924EAB /* HallwayDoorknob.swift in Sources */,
 				8639DA0D2A5B4A6600B356C1 /* ContentView.swift in Sources */,
 				863A68922A8FC90100EC387B /* Comment Dialogue Box.swift in Sources */,
-				863AF79F2A9CF48900DF1620 /* ButtonContentShapes.swift in Sources */,
+				863AF79F2A9CF48900DF1620 /* Content Shape.swift in Sources */,
 				86EA91952A9E3C3F00423937 /* Story Dialogue Box.swift in Sources */,
 				86A51A8B2A741D2000924EAB /* HallwayDoorGap.swift in Sources */,
 				866E389F2A6DC21D00F53CB0 /* UpstairsController.swift in Sources */,
@@ -581,6 +611,7 @@
 				86A38EEF2A5F0C6400BA4895 /* Backyard.swift in Sources */,
 				8639DA352A5B7AC700B356C1 /* MainMenu.swift in Sources */,
 				86EA919A2A9E4C6A00423937 /* Dialogue Box.swift in Sources */,
+				86CECB8A2AE8964E00C4BD97 /* All Observable Buttons.swift in Sources */,
 				86A51A762A74159000924EAB /* LandingController.swift in Sources */,
 				86A51A852A741CC200924EAB /* BedroomWindow.swift in Sources */,
 				86A51A832A741CA300924EAB /* LivingRoomWindow.swift in Sources */,
@@ -588,13 +619,14 @@
 				86C1A5D42AA0D19B00F0DD10 /* Root Controller.swift in Sources */,
 				866E38952A6DADD000F53CB0 /* Object.swift in Sources */,
 				8688B6142A72B4A700B4FD53 /* GameplayController.swift in Sources */,
+				86CECB8F2AE8972900C4BD97 /* Observable Object Button.swift in Sources */,
 				86A51A7A2A741B2F00924EAB /* VentController.swift in Sources */,
 				86C1A5CE2A9F8AAF00F0DD10 /* Gameplay Model.swift in Sources */,
 				8639DA0B2A5B4A6600B356C1 /* Guardian_StarApp.swift in Sources */,
 				8688B6242A72D38100B4FD53 /* BedroomWindowController.swift in Sources */,
 				86A51A932A741DD100924EAB /* Vent.swift in Sources */,
 				86B982E42A698A6E004A100B /* Upstairs.swift in Sources */,
-				86C1A5D22AA0CE4000F0DD10 /* Object Button.swift in Sources */,
+				86C1A5D22AA0CE4000F0DD10 /* All Content Shapes.swift in Sources */,
 				866E389D2A6DC12C00F53CB0 /* HallwayController.swift in Sources */,
 				86C1A5D02A9F909900F0DD10 /* Location Model.swift in Sources */,
 				8688B61C2A72C2CC00B4FD53 /* HedgesController.swift in Sources */,
@@ -768,7 +800,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -795,7 +828,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

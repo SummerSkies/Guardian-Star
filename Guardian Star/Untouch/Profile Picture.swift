@@ -11,7 +11,7 @@ struct Profile_Picture: View {
     var emote: String
     
     var body: some View {
-        let menuColor = GameplayController.menuColor
+        let menuColor = ContentView.menuColor
         let profileCircle = Circle()
             .size(width: 70, height: 70)
             .offset(x: 25, y: 25)

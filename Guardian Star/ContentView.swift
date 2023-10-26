@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View, Equatable {
     @StateObject private var rootController = RootController()
+    static let menuColor = Color(red: 38 / 250, green: 38 / 250, blue: 38 / 250)
     
     let viewID = UUID()
     
@@ -21,14 +22,17 @@ struct ContentView: View, Equatable {
             Color.black
                 .ignoresSafeArea()
             
-            //Whatever View:
-//            BackyardView(currentMode: $rootController.currentMode)
-            
             ScrollView(.horizontal) {
                 ZStack {
                     Image(rootController.currentLocation.backgroundImageName)
                         .resizable()
                         .scaledToFill()
+                    
+                    ForEach(rootController.currentLocation.defaultImageNames, id: \.self) { imageName in
+                        Image(imageName)
+                            .resizable()
+                            .scaledToFill()
+                    }
                     
                     if rootController.currentMode == .observe {
                         let buttons = rootController.currentLocation.observeableObjects
@@ -39,14 +43,11 @@ struct ContentView: View, Equatable {
                                 rootController  .observeObject(emoteName: button.emoteName, message: button.message)
                             } label: {
                                 Image(button.imageName)
+                                    .resizable()
+                                    .scaledToFill()
                             }
                             .contentShape(button.tappableArea)
                         }
-                    } else {
-                        ForEach(rootController.currentLocation.defaultImageNames, id: \.self) { imageName in
-                            Image(imageName)
-                        }
-                        
                     }
                 }
             }
