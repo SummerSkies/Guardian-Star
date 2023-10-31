@@ -14,7 +14,7 @@ class RootController: ObservableObject {
     @Published var inventoryIsOpen = false
     @Published var currentEmoteName = "Thoughtful Susie"
     @Published var currentMessage = "This is default text."
-    @Published var currentMode = PlayMode.inspect
+    @Published var currentMode = PlayMode.observe
     @Published var currentLocation = allLocations[.backyard]!
     
     

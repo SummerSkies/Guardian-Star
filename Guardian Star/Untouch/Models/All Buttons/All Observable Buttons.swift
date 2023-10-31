@@ -32,7 +32,7 @@ struct CustomButtons {
         //Ivy Vines
         ObservableObjectButton(
             tappableArea: .custom(
-                offset: CGPoint(x: 170, y: 215),
+                offset: CGPoint(x: 160, y: 210),
                 scale: CGFloat(2)),
             imageName: "Observable Ivy Vines",
             emoteName: "Happy Susie",

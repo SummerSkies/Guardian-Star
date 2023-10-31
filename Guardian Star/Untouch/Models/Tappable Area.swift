@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum TappableArea {
     case rectangle(offset: CGPoint, size: CGSize)
