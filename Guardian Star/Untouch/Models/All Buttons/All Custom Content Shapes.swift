@@ -53,14 +53,15 @@ struct StreamLogo: Shape {
     func path(in rect: CGRect) -> Path {
         var pencil = Path()
     
-        pencil.move(to: CGPoint(x: rect.minX + 461, y: rect.minY + 335))
-        pencil.addLine(to: CGPoint(x: rect.minX + 450, y: rect.minY + 280))
-        pencil.addLine(to: CGPoint(x: rect.minX + 475, y: rect.minY + 230))
-        pencil.addLine(to: CGPoint(x: rect.minX + 463, y: rect.minY + 200))
-        pencil.addLine(to: CGPoint(x: rect.minX + 470, y: rect.minY + 194))
-        pencil.addLine(to: CGPoint(x: rect.minX + 490, y: rect.minY + 200))
-        pencil.addLine(to: CGPoint(x: rect.minX + 530, y: rect.minY + 270))
-        pencil.addLine(to: CGPoint(x: rect.minX + 540, y: rect.minY + 300))
+        pencil.move(to: CGPoint(x: rect.minX + (rect.maxX / 7), y: rect.maxY))
+        pencil.addLine(to: CGPoint(x: rect.minX, y: rect.midY + (rect.maxX / 4)))
+        pencil.addLine(to: CGPoint(x: rect.midX - (rect.maxX / 5), y: rect.minY + (rect.maxX / 3)))
+        pencil.addLine(to: CGPoint(x: rect.minX + (rect.maxX / 8), y: rect.minY + (rect.maxX / 7)))
+        pencil.addLine(to: CGPoint(x: rect.minX + (rect.maxX / 4.7), y: rect.minY))
+        pencil.addLine(to: CGPoint(x: rect.midX, y: rect.minY + (rect.maxX / 8)))
+        pencil.addLine(to: CGPoint(x: rect.midX, y: rect.midY + (rect.maxX / 5)))
+        pencil.addLine(to: CGPoint(x: rect.maxX, y: rect.midY + (rect.maxX / 8)))
+        pencil.addLine(to: CGPoint(x: rect.maxX, y: rect.midY + (rect.maxX / 2)))
         pencil.closeSubpath()
     
         return pencil
@@ -186,9 +187,10 @@ struct JeffContentView: View {
                                     .scaleEffect(x: -1, y: 1)
                                 
                                 StreamLogo()
-                                    .stroke(.blue, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
+                                    .stroke(.blue, style: StrokeStyle(lineWidth: 5, lineCap: .round, lineJoin: .round))
                                     .padding(EdgeInsets(top: topOffset, leading: leadingOffest, bottom: bottomOffset, trailing: trailingOffset))
                                     .scaleEffect(x: -1, y: 1)
+                                    .opacity(0.6)
                             }
                         }
                     }

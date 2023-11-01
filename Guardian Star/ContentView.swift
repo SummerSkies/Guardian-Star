@@ -37,7 +37,7 @@ struct ContentView: View, Equatable {
                             
                             //let _ = print(h / w)
                             //let _ = print(h == (w * 0.75))
-                            
+                            /*
                             ForEach(rootController.currentLocation.defaultImageNames, id: \.self) { imageName in
                                 Image(imageName)
                                     .resizable()
@@ -59,7 +59,9 @@ struct ContentView: View, Equatable {
                                             .resizable()
                                             .scaledToFill()
                                     }
+                             
                                     .contentShape(button.tappableArea)
+                             */
 //                                        .opacity(0.001)
 //                                        .frame(width: w * 0.2, height: h * 0.1)
 //                                    .overlay (
@@ -74,19 +76,33 @@ struct ContentView: View, Equatable {
 //                                        //.background(Rectangle().stroke()) // for debugging
 //                                        .padding(.leading, w * 0.27)
 //                                        .padding(.top, h * 0.31)
-                                    Rectangle()
-                                        .fill(.green)
-                                        .padding(.init(top: h / 1.8, leading: w / 1.42, bottom: h / 16, trailing: w / 8.70))
-                                    Image("Ivy Vines")
-                                        .resizable()
-                                        .scaledToFill()
+//                                    Rectangle()
+//                                        .fill(.green)
+//                                        .padding(.init(top: h / 1.8, leading: w / 1.42, bottom: h / 16, trailing: w / 8.70))
+                            let contentShape = StreamLogo()
+                            
+                            Button {
+                                print("hello")
+                            } label: {
+                                Rectangle()
+                                    .fill(.clear)
+                                    .padding(EdgeInsets(top: topOffset, leading: leadingOffest, bottom: bottomOffset, trailing: trailingOffset))
+                                    .overlay {
+                                        Image("Ivy Vines")
+                                            .resizable()
+                                            .scaledToFill()
+                                            .clipped()
+                                    }
+                            }
+                            .contentShape(contentShape)
                                     
-                                    StreamLogo()
-                                        .stroke(.blue, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
-                                        .padding(EdgeInsets(top: topOffset, leading: leadingOffest, bottom: bottomOffset, trailing: trailingOffset))
+                                    
+                                    
+                                     
                                     
                                     
 //                                        .padding(EdgeInsets(top: topOffset, leading: leadingOffest, bottom: bottomOffset, trailing: trailingOffset))
+                            /*
                                 }
                             } else if rootController.currentMode == .interact {
                                 
@@ -112,6 +128,7 @@ struct ContentView: View, Equatable {
 //                                    .scale(scaleFactor)
 //                                    .fill(.secondary)
                             }
+                             */
                         } //Geo Reader
                     } //Overlay
             } //Scroll View
@@ -121,9 +138,12 @@ struct ContentView: View, Equatable {
                 CommentDialogueBoxView(message: $rootController.currentMessage, emote: $rootController.currentEmoteName, showComment: $rootController.showComment)
             }
             
+            /*
             //Overlay View:
             MainOverlayViews(currentMode: $rootController.currentMode, showComment: $rootController.showComment, inventoryIsOpen: $rootController.inventoryIsOpen)
+             */
             }
+                             
         }
     }
 
