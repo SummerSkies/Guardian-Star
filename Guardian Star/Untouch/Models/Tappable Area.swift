@@ -9,6 +9,13 @@ import Foundation
 import SwiftUI
 
 enum TappableArea {
-    case rectangle(offset: CGPoint, size: CGSize)
-    case custom(offset: CGPoint, scale: CGFloat)
+    case rectangle
+    case custom
+}
+
+struct Padding {
+    let top: CGFloat
+    let leading: CGFloat
+    let bottom: CGFloat
+    let trailing: CGFloat
 }

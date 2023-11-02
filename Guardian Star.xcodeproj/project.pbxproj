@@ -17,7 +17,9 @@
 		8639DA352A5B7AC700B356C1 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA342A5B7AC700B356C1 /* MainMenu.swift */; };
 		863A68902A8FC8EE00EC387B /* Tutorial Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */; };
 		863A68922A8FC90100EC387B /* Comment Dialogue Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863A68912A8FC90100EC387B /* Comment Dialogue Box.swift */; };
-		863AF79F2A9CF48900DF1620 /* All Custom Content Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863AF79E2A9CF48900DF1620 /* All Custom Content Shapes.swift */; };
+		863AF79F2A9CF48900DF1620 /* Ivy Content Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863AF79E2A9CF48900DF1620 /* Ivy Content Shape.swift */; };
+		8641D8952AF347ED0086C9F1 /* Grid Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641D8942AF347ED0086C9F1 /* Grid Shape.swift */; };
+		8641D8972AF34D420086C9F1 /* All Content Shapes Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641D8962AF34D420086C9F1 /* All Content Shapes Functions.swift */; };
 		86435B272A95052700A9D3B7 /* GameplayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86435B262A95052700A9D3B7 /* GameplayTests.swift */; };
 		864CEA862A97AA0500EE6293 /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CEA852A97AA0500EE6293 /* Delegates.swift */; };
 		866E38952A6DADD000F53CB0 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E38942A6DADD000F53CB0 /* Object.swift */; };
@@ -57,7 +59,6 @@
 		86B982E82A698EEB004A100B /* Main Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E72A698EEB004A100B /* Main Overlay.swift */; };
 		86C1A5CE2A9F8AAF00F0DD10 /* Gameplay Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5CD2A9F8AAF00F0DD10 /* Gameplay Model.swift */; };
 		86C1A5D02A9F909900F0DD10 /* Location Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5CF2A9F909900F0DD10 /* Location Model.swift */; };
-		86C1A5D22AA0CE4000F0DD10 /* All Content Shapes Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5D12AA0CE4000F0DD10 /* All Content Shapes Functions.swift */; };
 		86C1A5D42AA0D19B00F0DD10 /* Root Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5D32AA0D19B00F0DD10 /* Root Controller.swift */; };
 		86C1A5D72AA0E71500F0DD10 /* TappableArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5D62AA0E71500F0DD10 /* TappableArea.swift */; };
 		86CECB8A2AE8964E00C4BD97 /* All Observable Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CECB892AE8964E00C4BD97 /* All Observable Buttons.swift */; };
@@ -100,7 +101,9 @@
 		8639DA342A5B7AC700B356C1 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tutorial Menu.swift"; sourceTree = "<group>"; };
 		863A68912A8FC90100EC387B /* Comment Dialogue Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment Dialogue Box.swift"; sourceTree = "<group>"; };
-		863AF79E2A9CF48900DF1620 /* All Custom Content Shapes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "All Custom Content Shapes.swift"; sourceTree = "<group>"; };
+		863AF79E2A9CF48900DF1620 /* Ivy Content Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ivy Content Shape.swift"; sourceTree = "<group>"; };
+		8641D8942AF347ED0086C9F1 /* Grid Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Grid Shape.swift"; sourceTree = "<group>"; };
+		8641D8962AF34D420086C9F1 /* All Content Shapes Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "All Content Shapes Functions.swift"; sourceTree = "<group>"; };
 		86435B262A95052700A9D3B7 /* GameplayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayTests.swift; sourceTree = "<group>"; };
 		864CEA852A97AA0500EE6293 /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
 		866E38942A6DADD000F53CB0 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
@@ -140,7 +143,6 @@
 		86B982E72A698EEB004A100B /* Main Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main Overlay.swift"; sourceTree = "<group>"; };
 		86C1A5CD2A9F8AAF00F0DD10 /* Gameplay Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gameplay Model.swift"; sourceTree = "<group>"; };
 		86C1A5CF2A9F909900F0DD10 /* Location Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location Model.swift"; sourceTree = "<group>"; };
-		86C1A5D12AA0CE4000F0DD10 /* All Content Shapes Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "All Content Shapes Functions.swift"; sourceTree = "<group>"; };
 		86C1A5D32AA0D19B00F0DD10 /* Root Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Root Controller.swift"; sourceTree = "<group>"; };
 		86C1A5D52AA0D48500F0DD10 /* Guardian-StarUITests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Guardian-StarUITests-Info.plist"; sourceTree = SOURCE_ROOT; };
 		86C1A5D62AA0E71500F0DD10 /* TappableArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TappableArea.swift; sourceTree = "<group>"; };
@@ -261,6 +263,14 @@
 				86CECB8B2AE8965A00C4BD97 /* Models */,
 			);
 			path = Untouch;
+			sourceTree = "<group>";
+		};
+		8641D8932AF347BC0086C9F1 /* All Custom Content Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				863AF79E2A9CF48900DF1620 /* Ivy Content Shape.swift */,
+			);
+			path = "All Custom Content Shapes";
 			sourceTree = "<group>";
 		};
 		864CEA842A97A9F400EE6293 /* Delegates */ = {
@@ -422,8 +432,10 @@
 		86CECB8B2AE8965A00C4BD97 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8641D8932AF347BC0086C9F1 /* All Custom Content Shapes */,
 				86CECB912AE898C800C4BD97 /* All Buttons */,
 				86CECB8E2AE8972900C4BD97 /* Observable Object Button.swift */,
+				8641D8942AF347ED0086C9F1 /* Grid Shape.swift */,
 				86CECB962AE89C2F00C4BD97 /* Tappable Area.swift */,
 				8688B6152A72B4FB00B4FD53 /* PlayMode.swift */,
 				86CECB8C2AE896B500C4BD97 /* Location.swift */,
@@ -434,9 +446,8 @@
 		86CECB912AE898C800C4BD97 /* All Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				8641D8962AF34D420086C9F1 /* All Content Shapes Functions.swift */,
 				86CECB892AE8964E00C4BD97 /* All Observable Buttons.swift */,
-				86C1A5D12AA0CE4000F0DD10 /* All Content Shapes Functions.swift */,
-				863AF79E2A9CF48900DF1620 /* All Custom Content Shapes.swift */,
 			);
 			path = "All Buttons";
 			sourceTree = "<group>";
@@ -603,7 +614,7 @@
 				86A51A8D2A741D5F00924EAB /* HallwayDoorknob.swift in Sources */,
 				8639DA0D2A5B4A6600B356C1 /* ContentView.swift in Sources */,
 				863A68922A8FC90100EC387B /* Comment Dialogue Box.swift in Sources */,
-				863AF79F2A9CF48900DF1620 /* All Custom Content Shapes.swift in Sources */,
+				863AF79F2A9CF48900DF1620 /* Ivy Content Shape.swift in Sources */,
 				86EA91952A9E3C3F00423937 /* Story Dialogue Box.swift in Sources */,
 				86A51A8B2A741D2000924EAB /* HallwayDoorGap.swift in Sources */,
 				866E389F2A6DC21D00F53CB0 /* UpstairsController.swift in Sources */,
@@ -617,6 +628,7 @@
 				86A51A832A741CA300924EAB /* LivingRoomWindow.swift in Sources */,
 				8688B6282A72E0AA00B4FD53 /* LowTableController.swift in Sources */,
 				86C1A5D42AA0D19B00F0DD10 /* Root Controller.swift in Sources */,
+				8641D8972AF34D420086C9F1 /* All Content Shapes Functions.swift in Sources */,
 				866E38952A6DADD000F53CB0 /* Object.swift in Sources */,
 				8688B6142A72B4A700B4FD53 /* GameplayController.swift in Sources */,
 				86CECB8F2AE8972900C4BD97 /* Observable Object Button.swift in Sources */,
@@ -626,10 +638,10 @@
 				8688B6242A72D38100B4FD53 /* BedroomWindowController.swift in Sources */,
 				86A51A932A741DD100924EAB /* Vent.swift in Sources */,
 				86B982E42A698A6E004A100B /* Upstairs.swift in Sources */,
-				86C1A5D22AA0CE4000F0DD10 /* All Content Shapes Functions.swift in Sources */,
 				866E389D2A6DC12C00F53CB0 /* HallwayController.swift in Sources */,
 				86C1A5D02A9F909900F0DD10 /* Location Model.swift in Sources */,
 				8688B61C2A72C2CC00B4FD53 /* HedgesController.swift in Sources */,
+				8641D8952AF347ED0086C9F1 /* Grid Shape.swift in Sources */,
 				86B982E82A698EEB004A100B /* Main Overlay.swift in Sources */,
 				86A51A8F2A741D8500924EAB /* Landing.swift in Sources */,
 				86B18D202A7813F00040F895 /* UIMenuItems.swift in Sources */,

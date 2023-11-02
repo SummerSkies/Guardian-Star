@@ -6,9 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct ObservableObjectButton {
     let tappableArea: TappableArea
+    let padding: Padding
     let imageName: String
     let emoteName: String
     let message: String
