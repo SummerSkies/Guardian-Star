@@ -10,7 +10,8 @@ import SwiftUI
 
 enum TappableArea {
     case rectangle
-    case custom
+    case ivyVines
+    case hedges
 }
 
 struct Padding {

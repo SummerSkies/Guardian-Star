@@ -51,17 +51,19 @@ struct ContentView: View, Equatable {
                                     } label: {
                                         Rectangle()
                                             .fill(.clear)
-                                            .padding(EdgeInsets(top: topOffset, leading: leadingOffest, bottom: bottomOffset, trailing: trailingOffset))
                                             .overlay {
                                                 Image(button.imageName)
                                                     .resizable()
                                                     .scaledToFill()
                                                     .clipped()
+                                                    .padding(EdgeInsets(top: -topOffset, leading: -leadingOffest, bottom: -bottomOffset, trailing: -trailingOffset))
                                             }
                                     }
                                     .contentShape(button.tappableArea)
+                                    .padding(EdgeInsets(top: topOffset, leading: leadingOffest, bottom: bottomOffset, trailing: trailingOffset))
                                 }
                             } //Current Mode
+                             
                         } //Geo Reader
                     } //Overlay
             } //Scroll View

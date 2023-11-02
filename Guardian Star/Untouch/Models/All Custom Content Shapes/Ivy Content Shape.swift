@@ -27,10 +27,10 @@ struct IvyVinesShape: Shape {
     }
 }
 
-struct IvyView: View, Equatable {
+struct View3: View, Equatable {
     let viewID = UUID()
     
-    static func == (lhs: IvyView, rhs: IvyView) -> Bool {
+    static func == (lhs: View3, rhs: View3) -> Bool {
         return lhs.viewID == rhs.viewID
     }
     
@@ -85,8 +85,8 @@ struct IvyView: View, Equatable {
     }
 }
 
-struct IvyView_Previews: PreviewProvider {
+struct View3_Previews: PreviewProvider {
     static var previews: some View {
-        IvyView().equatable()
+        View3().equatable()
     }
 }

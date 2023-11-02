@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		860A6B942AF4397F00401B0A /* Bedroom Windows Content Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A6B932AF4397F00401B0A /* Bedroom Windows Content Shape.swift */; };
+		860A6B962AF43C9500401B0A /* Hedges Content Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A6B952AF43C9500401B0A /* Hedges Content Shape.swift */; };
+		860A6B982AF446CF00401B0A /* Living Room Window Content Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A6B972AF446CF00401B0A /* Living Room Window Content Shape.swift */; };
+		860A6B9A2AF4497200401B0A /* RectangleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A6B992AF4497200401B0A /* RectangleShape.swift */; };
 		8639DA0B2A5B4A6600B356C1 /* Guardian_StarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA0A2A5B4A6600B356C1 /* Guardian_StarApp.swift */; };
 		8639DA0D2A5B4A6600B356C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA0C2A5B4A6600B356C1 /* ContentView.swift */; };
 		8639DA0F2A5B4A6800B356C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8639DA0E2A5B4A6800B356C1 /* Assets.xcassets */; };
@@ -88,6 +92,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		860A6B932AF4397F00401B0A /* Bedroom Windows Content Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bedroom Windows Content Shape.swift"; sourceTree = "<group>"; };
+		860A6B952AF43C9500401B0A /* Hedges Content Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hedges Content Shape.swift"; sourceTree = "<group>"; };
+		860A6B972AF446CF00401B0A /* Living Room Window Content Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Living Room Window Content Shape.swift"; sourceTree = "<group>"; };
+		860A6B992AF4497200401B0A /* RectangleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleShape.swift; sourceTree = "<group>"; };
 		8639DA072A5B4A6600B356C1 /* Guardian Star.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guardian Star.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8639DA0A2A5B4A6600B356C1 /* Guardian_StarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guardian_StarApp.swift; sourceTree = "<group>"; };
 		8639DA0C2A5B4A6600B356C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -268,7 +276,10 @@
 		8641D8932AF347BC0086C9F1 /* All Custom Content Shapes */ = {
 			isa = PBXGroup;
 			children = (
+				860A6B932AF4397F00401B0A /* Bedroom Windows Content Shape.swift */,
+				860A6B972AF446CF00401B0A /* Living Room Window Content Shape.swift */,
 				863AF79E2A9CF48900DF1620 /* Ivy Content Shape.swift */,
+				860A6B952AF43C9500401B0A /* Hedges Content Shape.swift */,
 			);
 			path = "All Custom Content Shapes";
 			sourceTree = "<group>";
@@ -436,6 +447,7 @@
 				86CECB912AE898C800C4BD97 /* All Buttons */,
 				86CECB8E2AE8972900C4BD97 /* Observable Object Button.swift */,
 				8641D8942AF347ED0086C9F1 /* Grid Shape.swift */,
+				860A6B992AF4497200401B0A /* RectangleShape.swift */,
 				86CECB962AE89C2F00C4BD97 /* Tappable Area.swift */,
 				8688B6152A72B4FB00B4FD53 /* PlayMode.swift */,
 				86CECB8C2AE896B500C4BD97 /* Location.swift */,
@@ -597,6 +609,7 @@
 				86EA91972A9E484100423937 /* Profile Picture.swift in Sources */,
 				8688B6262A72D9E300B4FD53 /* PoolTableController.swift in Sources */,
 				86A51A912A741DA100924EAB /* ConsoleTable.swift in Sources */,
+				860A6B9A2AF4497200401B0A /* RectangleShape.swift in Sources */,
 				8688B6222A72D09C00B4FD53 /* LivingRoomWindow Controller.swift in Sources */,
 				864CEA862A97AA0500EE6293 /* Delegates.swift in Sources */,
 				86CECB8D2AE896B500C4BD97 /* Location.swift in Sources */,
@@ -632,18 +645,21 @@
 				866E38952A6DADD000F53CB0 /* Object.swift in Sources */,
 				8688B6142A72B4A700B4FD53 /* GameplayController.swift in Sources */,
 				86CECB8F2AE8972900C4BD97 /* Observable Object Button.swift in Sources */,
+				860A6B962AF43C9500401B0A /* Hedges Content Shape.swift in Sources */,
 				86A51A7A2A741B2F00924EAB /* VentController.swift in Sources */,
 				86C1A5CE2A9F8AAF00F0DD10 /* Gameplay Model.swift in Sources */,
 				8639DA0B2A5B4A6600B356C1 /* Guardian_StarApp.swift in Sources */,
 				8688B6242A72D38100B4FD53 /* BedroomWindowController.swift in Sources */,
 				86A51A932A741DD100924EAB /* Vent.swift in Sources */,
 				86B982E42A698A6E004A100B /* Upstairs.swift in Sources */,
+				860A6B942AF4397F00401B0A /* Bedroom Windows Content Shape.swift in Sources */,
 				866E389D2A6DC12C00F53CB0 /* HallwayController.swift in Sources */,
 				86C1A5D02A9F909900F0DD10 /* Location Model.swift in Sources */,
 				8688B61C2A72C2CC00B4FD53 /* HedgesController.swift in Sources */,
 				8641D8952AF347ED0086C9F1 /* Grid Shape.swift in Sources */,
 				86B982E82A698EEB004A100B /* Main Overlay.swift in Sources */,
 				86A51A8F2A741D8500924EAB /* Landing.swift in Sources */,
+				860A6B982AF446CF00401B0A /* Living Room Window Content Shape.swift in Sources */,
 				86B18D202A7813F00040F895 /* UIMenuItems.swift in Sources */,
 				8688B6182A72BEA200B4FD53 /* InventoryController.swift in Sources */,
 				86A51A812A741C8500924EAB /* Hedges.swift in Sources */,

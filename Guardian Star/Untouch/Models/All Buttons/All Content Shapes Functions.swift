@@ -13,13 +13,17 @@ extension View {
         switch tappableArea {
         case .rectangle:
             self.contentShape(
-                Rectangle()
+                RectangleShape()
             )
             
     //MARK: BACKYARD
-        case .custom:
+        case .ivyVines:
             self.contentShape(
                 IvyVinesShape()
+            )
+        case .hedges:
+            self.contentShape(
+                HedgesShape()
             )
         }
     }
