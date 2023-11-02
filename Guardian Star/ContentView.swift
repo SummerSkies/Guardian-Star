@@ -81,6 +81,5 @@ struct ContentView: View, Equatable {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().equatable()
-            .environment(\.colorScheme, .light)
     }
 }
