@@ -92,9 +92,66 @@ struct View4: View, Equatable {
     }
 }
 
+struct View41: View, Equatable {
+    let viewID = UUID()
+    
+    static func == (lhs: View41, rhs: View41) -> Bool {
+        return lhs.viewID == rhs.viewID
+    }
+    
+    var body: some View {
+        ZStack {
+            
+            ScrollView(.horizontal) {
+                ZStack {
+                    Image("Backyard")
+                        .resizable()
+                        .scaledToFill()
+                        .opacity(0)
+                        .overlay {
+                            GeometryReader { proxy in
+                                let w = proxy.size.width
+                                let h = proxy.size.height
+                                let topOffset = h / 1.16
+                                let leadingOffest = w / 2.6
+                                let bottomOffset = h / 300
+                                let trailingOffset = w / 10.5
+                                
+                                Image("Hedges")
+                                    .resizable()
+                                    .scaledToFill()
+                                    //.scaleEffect(x: -1, y: 1)
+                                    .offset(x: -400, y: 0)
+                                
+                                Button {
+                                
+                                } label: {
+                                    Rectangle()
+                                        .fill(.indigo.opacity(0))
+                                        .overlay {
+                                            Image("Arrow Glow")
+                                                .resizable()
+                                                .scaledToFit()
+                                            
+                                            Image("Forward Arrow")
+                                                .resizable()
+                                                .scaledToFit()
+                                        }
+                                }
+                                .padding(EdgeInsets(top: topOffset, leading: leadingOffest, bottom: bottomOffset, trailing: trailingOffset))
+                                .offset(x: -400, y: 0)
+                            }
+                        }
+                    }
+            }
+        }
+    }
+}
+
 struct View4_Previews: PreviewProvider {
     static var previews: some View {
-        View4().equatable()
+        //View4().equatable()
+        View41().equatable()
     }
 }
 

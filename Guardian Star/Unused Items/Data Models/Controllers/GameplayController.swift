@@ -15,7 +15,6 @@ struct GameplayController {
     //static let menuColor = Color(red: 38 / 250, green: 38 / 250, blue: 38 / 250)
     
     static func observe(object: Object) {
-        print(object.message)
         //pop-up dialogue box with message.prefix(from: "\n")
         //wait for player tap
         //pop-up dialogue box with message.suffix(from: "\n")

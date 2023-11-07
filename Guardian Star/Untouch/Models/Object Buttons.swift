@@ -15,3 +15,9 @@ struct ObservableObjectButton {
     let emoteName: String
     let message: String
 }
+
+struct NavigationalObjectButton {
+    let padding: Padding
+    let imageName: String
+    let destination: LocationName
+}
