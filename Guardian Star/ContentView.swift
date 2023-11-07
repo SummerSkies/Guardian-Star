@@ -47,7 +47,7 @@ struct ContentView: View, Equatable {
                                     let trailingOffset = w / button.padding.trailing
                                     
                                     Button {
-                                        rootController  .observeObject(emoteName: button.emoteName, message: button.message)
+                                        rootController.observeObject(emoteName: button.emoteName, message: button.message)
                                     } label: {
                                         Rectangle()
                                             .fill(.clear)
@@ -60,6 +60,33 @@ struct ContentView: View, Equatable {
                                             }
                                     }
                                     .contentShape(button.tappableArea)
+                                    .padding(EdgeInsets(top: topOffset, leading: leadingOffest, bottom: bottomOffset, trailing: trailingOffset))
+                                }
+                            
+                            } else if rootController.currentMode == .navigate {
+                                let buttons = rootController.currentLocation.navigationalObjects
+                                
+                                ForEach(buttons, id: \.destination) { button in
+                                    let topOffset = h / button.padding.top
+                                    let leadingOffest = w / button.padding.leading
+                                    let bottomOffset = h / button.padding.bottom
+                                    let trailingOffset = w / button.padding.trailing
+                                    
+                                    Button {
+                                        print("ayo")
+                                    } label: {
+                                        Rectangle()
+                                            .fill(.clear)
+                                            .overlay {
+                                                Image("Arrow Glow")
+                                                    .resizable()
+                                                    .scaledToFit()
+                                                
+                                                Image(button.imageName)
+                                                    .resizable()
+                                                    .scaledToFit()
+                                            }
+                                    }
                                     .padding(EdgeInsets(top: topOffset, leading: leadingOffest, bottom: bottomOffset, trailing: trailingOffset))
                                 }
                             } //Current Mode

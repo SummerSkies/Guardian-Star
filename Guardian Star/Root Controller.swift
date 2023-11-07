@@ -14,7 +14,7 @@ class RootController: ObservableObject {
     @Published var inventoryIsOpen = false
     @Published var currentEmoteName = "Thoughtful Susie"
     @Published var currentMessage = "This is default text."
-    @Published var currentMode = PlayMode.observe
+    @Published var currentMode = PlayMode.interact
     @Published var currentLocation = allLocations[.backyard]!
     
     
@@ -43,7 +43,8 @@ class RootController: ObservableObject {
     //Backyard:
         .backyard: Location(
             backgroundImageName: "Backyard",
-            observeableObjects: CustomButtons.observableBackyardButtons,
+            observeableObjects: ObservableButtons.observableBackyardButtons,
+            navigationalObjects: NavigationalButtons.navigationalBackyardButtons,
             defaultImageNames: [
                 "Bedroom Windows",
                 "Living Room Window",

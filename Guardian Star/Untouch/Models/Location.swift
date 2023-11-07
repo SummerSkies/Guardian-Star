@@ -10,9 +10,11 @@ import Foundation
 struct Location {
     let backgroundImageName: String
     let observeableObjects: [ObservableObjectButton]
+    let navigationalObjects: [NavigationalObjectButton]
     let defaultImageNames: [String]
 }
 
 enum LocationName {
     case backyard
+    case hedges
 }

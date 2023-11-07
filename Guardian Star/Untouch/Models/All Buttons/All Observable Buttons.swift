@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct CustomButtons {
+struct ObservableButtons {
     
 //MARK: BACKYARD
     static let observableBackyardButtons = [
@@ -60,12 +60,6 @@ struct CustomButtons {
             emoteName: "Thoughtful Susie",
             message: "The hedges have been looking a little unkempt lately."
         )
-    ]
-    static let interactiveBackyardButtons = [
-        ""
-    ]
-    static let navigationalBackyardButtons = [
-        ""
     ]
     
 //MARK: HEDGES
