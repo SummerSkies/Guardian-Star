@@ -58,12 +58,12 @@ struct ContentView: View, Equatable {
                                                     .clipped()
                                                     .padding(EdgeInsets(top: -topOffset, leading: -leadingOffest, bottom: -bottomOffset, trailing: -trailingOffset))
                                                 
-                                                if rootController.currentLocation.backgroundImageName == "Hedges Location" {
-                                                    Image("Hedges Frame")
-                                                        .resizable()
-                                                        .scaledToFill()
-                                                }
                                             }
+//                                        if rootController.currentLocation.backgroundImageName == "Hedges Location" {
+//                                            Image("Hedges Frame")
+//                                                .resizable()
+//                                                .scaledToFill()
+//                                        }
                                     }
                                     .contentShape(button.tappableArea)
                                     .padding(EdgeInsets(top: topOffset, leading: leadingOffest, bottom: bottomOffset, trailing: trailingOffset))
