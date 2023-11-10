@@ -25,4 +25,26 @@ struct NavigationalButtons {
     ]
     
 //MARK: HEDGES
+    static let navigationalHedgesButtons = [
+    //Back
+        NavigationalObjectButton(
+            padding: Padding(
+                top: 1.3,
+                leading: 1.55,
+                bottom: 20,
+                trailing: 4),
+            imageName: "Backward Arrow",
+            destination: .backyard
+        ),
+    //Living Room Window
+        NavigationalObjectButton(
+            padding: Padding(
+                top: 20,
+                leading: 1.55,
+                bottom: 1.3,
+                trailing: 4),
+            imageName: "Up Arrow",
+            destination: .hedges
+        )
+    ]
 }

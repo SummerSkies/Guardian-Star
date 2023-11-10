@@ -14,7 +14,7 @@ class RootController: ObservableObject {
     @Published var inventoryIsOpen = false
     @Published var currentEmoteName = "Thoughtful Susie"
     @Published var currentMessage = "This is default text."
-    @Published var currentMode = PlayMode.observe
+    @Published var currentMode = PlayMode.navigate
     @Published var currentLocation = allLocations[.hedges]!
     
     
@@ -60,7 +60,7 @@ class RootController: ObservableObject {
         .hedges: Location(
             backgroundImageName: "Hedges Location",
             observeableObjects: ObservableButtons.observableHedgesButtons,
-            navigationalObjects: [],
+            navigationalObjects: NavigationalButtons.navigationalHedgesButtons,
             defaultImageNames: [
                 "Ivy Vines Base",
                 "Branch",
