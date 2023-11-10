@@ -12,6 +12,8 @@ enum TappableArea {
     case rectangle
     case ivyVines
     case hedges
+    case branch
+    case ivyBase
 }
 
 struct Padding {

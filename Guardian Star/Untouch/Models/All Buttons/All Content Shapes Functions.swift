@@ -25,6 +25,16 @@ extension View {
             self.contentShape(
                 HedgesShape()
             )
+            
+    //MARK: HEDGES
+        case .branch:
+            self.contentShape(
+                BranchShape()
+            )
+        case .ivyBase:
+            self.contentShape(
+                IvyBaseShape()
+            )
         }
     }
 }

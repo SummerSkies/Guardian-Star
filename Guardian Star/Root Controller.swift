@@ -14,8 +14,8 @@ class RootController: ObservableObject {
     @Published var inventoryIsOpen = false
     @Published var currentEmoteName = "Thoughtful Susie"
     @Published var currentMessage = "This is default text."
-    @Published var currentMode = PlayMode.interact
-    @Published var currentLocation = allLocations[.backyard]!
+    @Published var currentMode = PlayMode.observe
+    @Published var currentLocation = allLocations[.hedges]!
     
     
 //    var gameplayController = GameplayController()
@@ -39,6 +39,10 @@ class RootController: ObservableObject {
         currentMessage = message
     }
     
+    func naviagte(to location: LocationName) {
+        currentLocation = RootController.allLocations[location]!
+    }
+    
     static let allLocations: [LocationName: Location] = [
     //Backyard:
         .backyard: Location(
@@ -53,5 +57,15 @@ class RootController: ObservableObject {
             ]
         ),
     //Hedges:
+        .hedges: Location(
+            backgroundImageName: "Hedges Location",
+            observeableObjects: ObservableButtons.observableHedgesButtons,
+            navigationalObjects: [],
+            defaultImageNames: [
+                "Ivy Vines Base",
+                "Branch",
+                "Hedges Frame"
+            ]
+        )
     ]
 }

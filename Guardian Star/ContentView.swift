@@ -57,6 +57,12 @@ struct ContentView: View, Equatable {
                                                     .scaledToFill()
                                                     .clipped()
                                                     .padding(EdgeInsets(top: -topOffset, leading: -leadingOffest, bottom: -bottomOffset, trailing: -trailingOffset))
+                                                
+                                                if rootController.currentLocation.backgroundImageName == "Hedges Location" {
+                                                    Image("Hedges Frame")
+                                                        .resizable()
+                                                        .scaledToFill()
+                                                }
                                             }
                                     }
                                     .contentShape(button.tappableArea)
@@ -73,7 +79,7 @@ struct ContentView: View, Equatable {
                                     let trailingOffset = w / button.padding.trailing
                                     
                                     Button {
-                                        print("ayo")
+                                        rootController.naviagte(to: button.destination)
                                     } label: {
                                         Rectangle()
                                             .fill(.clear)

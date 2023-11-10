@@ -63,4 +63,30 @@ struct ObservableButtons {
     ]
     
 //MARK: HEDGES
+    static let observableHedgesButtons: [ObservableObjectButton] = [
+        //Branch
+        ObservableObjectButton(
+            tappableArea: .branch,
+            padding: Padding(
+                top: 1.64,
+                leading: 4.5,
+                bottom: 40,
+                trailing: 1.83),
+            imageName: "Observable Branch",
+            emoteName: "Thoughtful Susie",
+            message: "A long, spindly branch.\nIt must have broken off one of the bushes."
+        ),
+        //Ivy Vines Base
+        ObservableObjectButton(
+            tappableArea: .ivyBase,
+            padding: Padding(
+                top: 300,
+                leading: 2.6,
+                bottom: 3,
+                trailing: 300),
+            imageName: "Observable Ivy Vines Base",
+            emoteName: "Happy Susie",
+            message: "This ivy leads up the side of the house.\nI could probably climb it from here!"
+        )
+    ]
 }
