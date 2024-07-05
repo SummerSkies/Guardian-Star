@@ -6,3 +6,11 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct InteractiveButtons {
+
+//MARK: BACKYARD
+    static let interactiveBackyardButtons: [InteractiveObjectButton] = []
+}
+

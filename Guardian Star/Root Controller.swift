@@ -15,7 +15,7 @@ class RootController: ObservableObject {
     @Published var currentEmoteName = "Thoughtful Susie"
     @Published var currentMessage = "This is default text."
     @Published var currentMode = PlayMode.navigate
-    @Published var currentLocation = allLocations[.hedges]!
+    @Published var currentLocation = allLocations[.backyard]!
     
     
 //    var gameplayController = GameplayController()
@@ -49,6 +49,7 @@ class RootController: ObservableObject {
             backgroundImageName: "Backyard",
             observeableObjects: ObservableButtons.observableBackyardButtons,
             navigationalObjects: NavigationalButtons.navigationalBackyardButtons,
+            interactiveObjects: InteractiveButtons.interactiveBackyardButtons,
             defaultImageNames: [
                 "Bedroom Windows",
                 "Living Room Window",
@@ -61,6 +62,7 @@ class RootController: ObservableObject {
             backgroundImageName: "Hedges Location",
             observeableObjects: ObservableButtons.observableHedgesButtons,
             navigationalObjects: NavigationalButtons.navigationalHedgesButtons,
+            interactiveObjects: InteractiveButtons.interactiveBackyardButtons,
             defaultImageNames: [
                 "Ivy Vines Base",
                 "Branch",

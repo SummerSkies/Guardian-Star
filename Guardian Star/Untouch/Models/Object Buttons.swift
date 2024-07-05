@@ -21,3 +21,6 @@ struct NavigationalObjectButton {
     let imageName: String
     let destination: LocationName
 }
+
+struct InteractiveObjectButton {
+}

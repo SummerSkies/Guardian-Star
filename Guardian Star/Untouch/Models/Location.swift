@@ -11,6 +11,7 @@ struct Location {
     let backgroundImageName: String
     let observeableObjects: [ObservableObjectButton]
     let navigationalObjects: [NavigationalObjectButton]
+    let interactiveObjects: [InteractiveObjectButton]
     let defaultImageNames: [String]
 }
 

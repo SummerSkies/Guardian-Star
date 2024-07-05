@@ -90,8 +90,10 @@ struct ContentView: View, Equatable {
                                     }
                                     .padding(EdgeInsets(top: topOffset, leading: leadingOffest, bottom: bottomOffset, trailing: trailingOffset))
                                 }
+                                
+                            } else if rootController.currentMode == .interact {
+                                    let buttons = rootController.currentLocation.interactiveObjects
                             } //Current Mode
-                             
                         } //Geo Reader
                     } //Overlay
             } //Scroll View
