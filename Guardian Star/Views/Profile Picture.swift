@@ -7,11 +7,11 @@
 
 import SwiftUI
 
-struct Profile_Picture: View {
+struct ProfilePicture: View {
     var emote: String
     
     var body: some View {
-        let menuColor = ContentView.menuColor
+        let menuColor = RootController.menuColor
         let profileCircle = Circle()
             .size(width: 70, height: 70)
             .offset(x: 25, y: 25)

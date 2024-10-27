@@ -6,7 +6,9 @@
 //
 
 import Foundation
-import SwiftUI
+
+struct InteractiveObjectButton {
+}
 
 struct InteractiveButtons {
 

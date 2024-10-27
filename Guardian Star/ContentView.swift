@@ -8,36 +8,47 @@
 import SwiftUI
 
 struct ContentView: View, Equatable {
-    @StateObject private var rootController = RootController()
-    static let menuColor = Color(red: 38 / 250, green: 38 / 250, blue: 38 / 250)
+    //Root controller holds majority of view setup and data
+    //This way, ContentView's job is just to display that data
+    @EnvironmentObject var rootController: RootController
     
+    //All views have equatable setup to allow preview to reload less often
     let viewID = UUID()
-    
     static func == (lhs: ContentView, rhs: ContentView) -> Bool {
         return lhs.viewID == rhs.viewID
     }
     
+    
     var body: some View {
         ZStack {
+            
+            //Fill the safe area with black
             Color.black
                 .ignoresSafeArea()
             
+            //Holds the interactable play area
             ScrollView(.horizontal) {
+                //Scroll view size determined by current game location background
                 Image(rootController.currentLocation.backgroundImageName)
                     .resizable()
                     .scaledToFill()
                     .overlay {
+                        //Measure play area size
                         GeometryReader { proxy in
                             let w = proxy.size.width
                             let h = proxy.size.height
                             
+                            //Layer regular image versions of each object under everything so the objects don't disappear on playmode change
+                            //Each object image has the same dimensions as the background
                             ForEach(rootController.currentLocation.defaultImageNames, id: \.self) { imageName in
                                 Image(imageName)
                                     .resizable()
                                     .scaledToFill()
                             }
                             
-                            if rootController.currentMode == .observe {
+                            switch rootController.currentMode {
+//Observable Buttons
+                            case .observe:
                                 let buttons = rootController.currentLocation.observeableObjects
                                 
                                 ForEach(buttons, id: \.imageName) { button in
@@ -63,8 +74,11 @@ struct ContentView: View, Equatable {
                                     .contentShape(button.tappableArea)
                                     .padding(EdgeInsets(top: topOffset, leading: leadingOffest, bottom: bottomOffset, trailing: trailingOffset))
                                 }
-                            
-                            } else if rootController.currentMode == .navigate {
+//Interactive Buttons
+                            case .interact:
+                                let buttons = rootController.currentLocation.interactiveObjects
+//Navigational Buttons
+                            case .navigate:
                                 let buttons = rootController.currentLocation.navigationalObjects
                                 
                                 ForEach(buttons, id: \.destination) { button in
@@ -74,7 +88,7 @@ struct ContentView: View, Equatable {
                                     let trailingOffset = w / button.padding.trailing
                                     
                                     Button {
-                                        rootController.naviagte(to: button.destination)
+                                        rootController.navigate(to: button.destination)
                                     } label: {
                                         Rectangle()
                                             .fill(.clear)
@@ -90,9 +104,8 @@ struct ContentView: View, Equatable {
                                     }
                                     .padding(EdgeInsets(top: topOffset, leading: leadingOffest, bottom: bottomOffset, trailing: trailingOffset))
                                 }
-                                
-                            } else if rootController.currentMode == .interact {
-                                    let buttons = rootController.currentLocation.interactiveObjects
+                            default:
+                                EmptyView()
                             } //Current Mode
                         } //Geo Reader
                     } //Overlay
@@ -100,18 +113,19 @@ struct ContentView: View, Equatable {
 
             //Dialogue View:
             if rootController.showComment == true {
-                CommentDialogueBoxView(message: $rootController.currentMessage, emote: $rootController.currentEmoteName, showComment: $rootController.showComment)
+                CommentDialogueBoxView()
             }
-            
             
             //Overlay View:
-            MainOverlayViews(currentMode: $rootController.currentMode, showComment: $rootController.showComment, inventoryIsOpen: $rootController.inventoryIsOpen)
-            }
-        }
-    }
+            MainOverlayViews()
+        } //Zstack
+    } //View Body
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().equatable()
+        ContentView()
+            .equatable()
+            .environmentObject(RootController())
     }
 }

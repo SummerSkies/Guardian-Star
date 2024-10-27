@@ -10,10 +10,13 @@ import SwiftUI
 @main
 struct Guardian_StarApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    @StateObject private var rootController = RootController()
     
     var body: some Scene {
         WindowGroup {
-            ContentView().equatable()
+            ContentView()
+                .equatable()
+                .environmentObject(rootController)
                 .environment(\.colorScheme, .light)
         }
     }

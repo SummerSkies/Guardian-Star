@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		860A6B942AF4397F00401B0A /* Bedroom Windows Content Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A6B932AF4397F00401B0A /* Bedroom Windows Content Shape.swift */; };
-		860A6B962AF43C9500401B0A /* Hedges Content Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A6B952AF43C9500401B0A /* Hedges Content Shape.swift */; };
-		860A6B982AF446CF00401B0A /* Living Room Window Content Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A6B972AF446CF00401B0A /* Living Room Window Content Shape.swift */; };
-		860A6B9A2AF4497200401B0A /* RectangleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860A6B992AF4497200401B0A /* RectangleShape.swift */; };
 		8639DA0B2A5B4A6600B356C1 /* Guardian_StarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA0A2A5B4A6600B356C1 /* Guardian_StarApp.swift */; };
 		8639DA0D2A5B4A6600B356C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA0C2A5B4A6600B356C1 /* ContentView.swift */; };
 		8639DA0F2A5B4A6800B356C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8639DA0E2A5B4A6800B356C1 /* Assets.xcassets */; };
@@ -18,20 +14,15 @@
 		8639DA352A5B7AC700B356C1 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8639DA342A5B7AC700B356C1 /* MainMenu.swift */; };
 		863A68902A8FC8EE00EC387B /* Tutorial Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */; };
 		863A68922A8FC90100EC387B /* Comment Dialogue Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863A68912A8FC90100EC387B /* Comment Dialogue Box.swift */; };
-		863AF79F2A9CF48900DF1620 /* Ivy Content Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863AF79E2A9CF48900DF1620 /* Ivy Content Shape.swift */; };
 		8641D8952AF347ED0086C9F1 /* Grid Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641D8942AF347ED0086C9F1 /* Grid Shape.swift */; };
-		8641D8972AF34D420086C9F1 /* All Content Shapes Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641D8962AF34D420086C9F1 /* All Content Shapes Functions.swift */; };
+		8641D8972AF34D420086C9F1 /* Content Shapes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8641D8962AF34D420086C9F1 /* Content Shapes.swift */; };
 		864CEA862A97AA0500EE6293 /* Delegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864CEA852A97AA0500EE6293 /* Delegates.swift */; };
-		864EC2FD2AFDA22700D5ABEE /* Ivy Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EC2FC2AFDA22700D5ABEE /* Ivy Base.swift */; };
-		864EC2FF2AFDAC9C00D5ABEE /* Branch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EC2FE2AFDAC9C00D5ABEE /* Branch.swift */; };
-		864EC3012AFDBC8D00D5ABEE /* All Interactive Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EC3002AFDBC8D00D5ABEE /* All Interactive Buttons.swift */; };
-		864EC3032AFDBCCF00D5ABEE /* Hedges Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EC3022AFDBCCF00D5ABEE /* Hedges Navigation.swift */; };
-		866616842AFAC02B00860E30 /* All Navigational Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866616832AFAC02B00860E30 /* All Navigational Buttons.swift */; };
+		864EC3012AFDBC8D00D5ABEE /* Interactive Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864EC3002AFDBC8D00D5ABEE /* Interactive Objects.swift */; };
+		866616842AFAC02B00860E30 /* Navigational Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866616832AFAC02B00860E30 /* Navigational Objects.swift */; };
 		866E38952A6DADD000F53CB0 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E38942A6DADD000F53CB0 /* Object.swift */; };
 		866E389B2A6DB73200F53CB0 /* LivingRoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E389A2A6DB73200F53CB0 /* LivingRoomController.swift */; };
 		866E389D2A6DC12C00F53CB0 /* HallwayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E389C2A6DC12C00F53CB0 /* HallwayController.swift */; };
 		866E389F2A6DC21D00F53CB0 /* UpstairsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 866E389E2A6DC21D00F53CB0 /* UpstairsController.swift */; };
-		8688B6142A72B4A700B4FD53 /* GameplayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8688B6132A72B4A700B4FD53 /* GameplayController.swift */; };
 		8688B6162A72B4FB00B4FD53 /* PlayMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8688B6152A72B4FB00B4FD53 /* PlayMode.swift */; };
 		8688B6182A72BEA200B4FD53 /* InventoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8688B6172A72BEA200B4FD53 /* InventoryController.swift */; };
 		8688B61A2A72BEE800B4FD53 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8688B6192A72BEE800B4FD53 /* Item.swift */; };
@@ -46,20 +37,16 @@
 		86A51A782A7419AB00924EAB /* ConsoleTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A51A772A7419AB00924EAB /* ConsoleTableController.swift */; };
 		86A51A7A2A741B2F00924EAB /* VentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86A51A792A741B2F00924EAB /* VentController.swift */; };
 		86B982E82A698EEB004A100B /* Main Overlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86B982E72A698EEB004A100B /* Main Overlay.swift */; };
-		86C1A5D42AA0D19B00F0DD10 /* Root Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5D32AA0D19B00F0DD10 /* Root Controller.swift */; };
-		86CECB8A2AE8964E00C4BD97 /* All Observable Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CECB892AE8964E00C4BD97 /* All Observable Buttons.swift */; };
+		86C1A5D42AA0D19B00F0DD10 /* RootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C1A5D32AA0D19B00F0DD10 /* RootController.swift */; };
+		86CECB8A2AE8964E00C4BD97 /* Observable Objects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CECB892AE8964E00C4BD97 /* Observable Objects.swift */; };
 		86CECB8D2AE896B500C4BD97 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CECB8C2AE896B500C4BD97 /* Location.swift */; };
-		86CECB8F2AE8972900C4BD97 /* Object Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CECB8E2AE8972900C4BD97 /* Object Buttons.swift */; };
-		86CECB972AE89C2F00C4BD97 /* Tappable Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CECB962AE89C2F00C4BD97 /* Tappable Area.swift */; };
 		86EA91972A9E484100423937 /* Profile Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA91962A9E484100423937 /* Profile Picture.swift */; };
 		86EA919A2A9E4C6A00423937 /* Dialogue Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86EA91992A9E4C6A00423937 /* Dialogue Box.swift */; };
+		86FB31572CCE162F002B3B3F /* Tappable Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FB31562CCE162F002B3B3F /* Tappable Area.swift */; };
+		86FB31592CCE1CE9002B3B3F /* Old Code Contents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FB31582CCE1CE2002B3B3F /* Old Code Contents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		860A6B932AF4397F00401B0A /* Bedroom Windows Content Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bedroom Windows Content Shape.swift"; sourceTree = "<group>"; };
-		860A6B952AF43C9500401B0A /* Hedges Content Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hedges Content Shape.swift"; sourceTree = "<group>"; };
-		860A6B972AF446CF00401B0A /* Living Room Window Content Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Living Room Window Content Shape.swift"; sourceTree = "<group>"; };
-		860A6B992AF4497200401B0A /* RectangleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleShape.swift; sourceTree = "<group>"; };
 		8639DA072A5B4A6600B356C1 /* Guardian Star.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guardian Star.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8639DA0A2A5B4A6600B356C1 /* Guardian_StarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guardian_StarApp.swift; sourceTree = "<group>"; };
 		8639DA0C2A5B4A6600B356C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,20 +55,15 @@
 		8639DA342A5B7AC700B356C1 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tutorial Menu.swift"; sourceTree = "<group>"; };
 		863A68912A8FC90100EC387B /* Comment Dialogue Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Comment Dialogue Box.swift"; sourceTree = "<group>"; };
-		863AF79E2A9CF48900DF1620 /* Ivy Content Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ivy Content Shape.swift"; sourceTree = "<group>"; };
 		8641D8942AF347ED0086C9F1 /* Grid Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Grid Shape.swift"; sourceTree = "<group>"; };
-		8641D8962AF34D420086C9F1 /* All Content Shapes Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "All Content Shapes Functions.swift"; sourceTree = "<group>"; };
+		8641D8962AF34D420086C9F1 /* Content Shapes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Content Shapes.swift"; sourceTree = "<group>"; };
 		864CEA852A97AA0500EE6293 /* Delegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Delegates.swift; sourceTree = "<group>"; };
-		864EC2FC2AFDA22700D5ABEE /* Ivy Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Ivy Base.swift"; sourceTree = "<group>"; };
-		864EC2FE2AFDAC9C00D5ABEE /* Branch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Branch.swift; sourceTree = "<group>"; };
-		864EC3002AFDBC8D00D5ABEE /* All Interactive Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "All Interactive Buttons.swift"; sourceTree = "<group>"; };
-		864EC3022AFDBCCF00D5ABEE /* Hedges Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hedges Navigation.swift"; sourceTree = "<group>"; };
-		866616832AFAC02B00860E30 /* All Navigational Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "All Navigational Buttons.swift"; sourceTree = "<group>"; };
+		864EC3002AFDBC8D00D5ABEE /* Interactive Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interactive Objects.swift"; sourceTree = "<group>"; };
+		866616832AFAC02B00860E30 /* Navigational Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Navigational Objects.swift"; sourceTree = "<group>"; };
 		866E38942A6DADD000F53CB0 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
 		866E389A2A6DB73200F53CB0 /* LivingRoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingRoomController.swift; sourceTree = "<group>"; };
 		866E389C2A6DC12C00F53CB0 /* HallwayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HallwayController.swift; sourceTree = "<group>"; };
 		866E389E2A6DC21D00F53CB0 /* UpstairsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpstairsController.swift; sourceTree = "<group>"; };
-		8688B6132A72B4A700B4FD53 /* GameplayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayController.swift; sourceTree = "<group>"; };
 		8688B6152A72B4FB00B4FD53 /* PlayMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayMode.swift; sourceTree = "<group>"; };
 		8688B6172A72BEA200B4FD53 /* InventoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryController.swift; sourceTree = "<group>"; };
 		8688B6192A72BEE800B4FD53 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
@@ -96,13 +78,13 @@
 		86A51A772A7419AB00924EAB /* ConsoleTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsoleTableController.swift; sourceTree = "<group>"; };
 		86A51A792A741B2F00924EAB /* VentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VentController.swift; sourceTree = "<group>"; };
 		86B982E72A698EEB004A100B /* Main Overlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main Overlay.swift"; sourceTree = "<group>"; };
-		86C1A5D32AA0D19B00F0DD10 /* Root Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Root Controller.swift"; sourceTree = "<group>"; };
-		86CECB892AE8964E00C4BD97 /* All Observable Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "All Observable Buttons.swift"; sourceTree = "<group>"; };
+		86C1A5D32AA0D19B00F0DD10 /* RootController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootController.swift; sourceTree = "<group>"; };
+		86CECB892AE8964E00C4BD97 /* Observable Objects.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Observable Objects.swift"; sourceTree = "<group>"; };
 		86CECB8C2AE896B500C4BD97 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		86CECB8E2AE8972900C4BD97 /* Object Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Object Buttons.swift"; sourceTree = "<group>"; };
-		86CECB962AE89C2F00C4BD97 /* Tappable Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tappable Area.swift"; sourceTree = "<group>"; };
 		86EA91962A9E484100423937 /* Profile Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Profile Picture.swift"; sourceTree = "<group>"; };
 		86EA91992A9E4C6A00423937 /* Dialogue Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dialogue Box.swift"; sourceTree = "<group>"; };
+		86FB31562CCE162F002B3B3F /* Tappable Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Tappable Area.swift"; sourceTree = "<group>"; };
+		86FB31582CCE1CE2002B3B3F /* Old Code Contents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Old Code Contents.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,10 +117,15 @@
 		8639DA092A5B4A6600B356C1 /* Guardian Star */ = {
 			isa = PBXGroup;
 			children = (
-				8640CE142AA533D400E47D05 /* Untouch */,
-				86C1A5D32AA0D19B00F0DD10 /* Root Controller.swift */,
+				8639DA0A2A5B4A6600B356C1 /* Guardian_StarApp.swift */,
+				86C1A5D32AA0D19B00F0DD10 /* RootController.swift */,
 				8639DA0C2A5B4A6600B356C1 /* ContentView.swift */,
-				8640CE132AA5338800E47D05 /* Unused Items */,
+				864CEA842A97A9F400EE6293 /* Delegates */,
+				86FB31532CCDE3FA002B3B3F /* Structs */,
+				86FB31542CCE0EAE002B3B3F /* Objects */,
+				86FB31552CCE1108002B3B3F /* Views */,
+				8641D8942AF347ED0086C9F1 /* Grid Shape.swift */,
+				86FB315A2CCE1D44002B3B3F /* Old Code */,
 				8639DA0E2A5B4A6800B356C1 /* Assets.xcassets */,
 				8639DA102A5B4A6800B356C1 /* Preview Content */,
 			);
@@ -153,64 +140,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		8640CE132AA5338800E47D05 /* Unused Items */ = {
-			isa = PBXGroup;
-			children = (
-				866E38932A6DA5A700F53CB0 /* Data Models */,
-			);
-			path = "Unused Items";
-			sourceTree = "<group>";
-		};
-		8640CE142AA533D400E47D05 /* Untouch */ = {
-			isa = PBXGroup;
-			children = (
-				86EA91992A9E4C6A00423937 /* Dialogue Box.swift */,
-				86EA91962A9E484100423937 /* Profile Picture.swift */,
-				86B982E72A698EEB004A100B /* Main Overlay.swift */,
-				863A68912A8FC90100EC387B /* Comment Dialogue Box.swift */,
-				864CEA842A97A9F400EE6293 /* Delegates */,
-				8639DA0A2A5B4A6600B356C1 /* Guardian_StarApp.swift */,
-				86CECB8B2AE8965A00C4BD97 /* Models */,
-			);
-			path = Untouch;
-			sourceTree = "<group>";
-		};
-		8641D8932AF347BC0086C9F1 /* All Custom Content Shapes */ = {
-			isa = PBXGroup;
-			children = (
-				864EC2FA2AFD9F8800D5ABEE /* Backyard */,
-				864EC2FB2AFD9F9400D5ABEE /* Hedges */,
-			);
-			path = "All Custom Content Shapes";
-			sourceTree = "<group>";
-		};
 		864CEA842A97A9F400EE6293 /* Delegates */ = {
 			isa = PBXGroup;
 			children = (
 				864CEA852A97AA0500EE6293 /* Delegates.swift */,
 			);
 			path = Delegates;
-			sourceTree = "<group>";
-		};
-		864EC2FA2AFD9F8800D5ABEE /* Backyard */ = {
-			isa = PBXGroup;
-			children = (
-				860A6B932AF4397F00401B0A /* Bedroom Windows Content Shape.swift */,
-				860A6B972AF446CF00401B0A /* Living Room Window Content Shape.swift */,
-				863AF79E2A9CF48900DF1620 /* Ivy Content Shape.swift */,
-				860A6B952AF43C9500401B0A /* Hedges Content Shape.swift */,
-			);
-			path = Backyard;
-			sourceTree = "<group>";
-		};
-		864EC2FB2AFD9F9400D5ABEE /* Hedges */ = {
-			isa = PBXGroup;
-			children = (
-				864EC2FE2AFDAC9C00D5ABEE /* Branch.swift */,
-				864EC2FC2AFDA22700D5ABEE /* Ivy Base.swift */,
-				864EC3022AFDBCCF00D5ABEE /* Hedges Navigation.swift */,
-			);
-			path = Hedges;
 			sourceTree = "<group>";
 		};
 		866E38902A6DA30F00F53CB0 /* Controllers */ = {
@@ -221,20 +156,8 @@
 				86A51A732A74141000924EAB /* Hallway Locations */,
 				86A51A742A74141D00924EAB /* Upstairs Locations */,
 				8688B6172A72BEA200B4FD53 /* InventoryController.swift */,
-				8688B6132A72B4A700B4FD53 /* GameplayController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		866E38932A6DA5A700F53CB0 /* Data Models */ = {
-			isa = PBXGroup;
-			children = (
-				86B982E62A698E6F004A100B /* Views */,
-				866E38902A6DA30F00F53CB0 /* Controllers */,
-				866E38942A6DADD000F53CB0 /* Object.swift */,
-				8688B6192A72BEE800B4FD53 /* Item.swift */,
-			);
-			path = "Data Models";
 			sourceTree = "<group>";
 		};
 		86A51A6E2A740B0500924EAB /* Backyard Locations */ = {
@@ -278,63 +201,49 @@
 			path = "Upstairs Locations";
 			sourceTree = "<group>";
 		};
-		86A51A7B2A741BFE00924EAB /* Menus */ = {
+		86FB31532CCDE3FA002B3B3F /* Structs */ = {
 			isa = PBXGroup;
 			children = (
-				8639DA342A5B7AC700B356C1 /* MainMenu.swift */,
+				8688B6152A72B4FB00B4FD53 /* PlayMode.swift */,
+				86CECB8C2AE896B500C4BD97 /* Location.swift */,
+				86FB31562CCE162F002B3B3F /* Tappable Area.swift */,
 			);
-			path = Menus;
+			path = Structs;
 			sourceTree = "<group>";
 		};
-		86B982E22A698752004A100B /* Screens */ = {
+		86FB31542CCE0EAE002B3B3F /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				86A51A7B2A741BFE00924EAB /* Menus */,
+				86CECB892AE8964E00C4BD97 /* Observable Objects.swift */,
+				864EC3002AFDBC8D00D5ABEE /* Interactive Objects.swift */,
+				866616832AFAC02B00860E30 /* Navigational Objects.swift */,
+				8641D8962AF34D420086C9F1 /* Content Shapes.swift */,
 			);
-			path = Screens;
+			path = Objects;
 			sourceTree = "<group>";
 		};
-		86B982E52A698E52004A100B /* Overlays */ = {
+		86FB31552CCE1108002B3B3F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */,
-			);
-			path = Overlays;
-			sourceTree = "<group>";
-		};
-		86B982E62A698E6F004A100B /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				86B982E52A698E52004A100B /* Overlays */,
-				86B982E22A698752004A100B /* Screens */,
+				86B982E72A698EEB004A100B /* Main Overlay.swift */,
+				863A68912A8FC90100EC387B /* Comment Dialogue Box.swift */,
+				86EA91992A9E4C6A00423937 /* Dialogue Box.swift */,
+				86EA91962A9E484100423937 /* Profile Picture.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		86CECB8B2AE8965A00C4BD97 /* Models */ = {
+		86FB315A2CCE1D44002B3B3F /* Old Code */ = {
 			isa = PBXGroup;
 			children = (
-				8641D8932AF347BC0086C9F1 /* All Custom Content Shapes */,
-				86CECB912AE898C800C4BD97 /* All Buttons */,
-				86CECB8E2AE8972900C4BD97 /* Object Buttons.swift */,
-				8641D8942AF347ED0086C9F1 /* Grid Shape.swift */,
-				860A6B992AF4497200401B0A /* RectangleShape.swift */,
-				86CECB962AE89C2F00C4BD97 /* Tappable Area.swift */,
-				8688B6152A72B4FB00B4FD53 /* PlayMode.swift */,
-				86CECB8C2AE896B500C4BD97 /* Location.swift */,
+				86FB31582CCE1CE2002B3B3F /* Old Code Contents.swift */,
+				863A688F2A8FC8EE00EC387B /* Tutorial Menu.swift */,
+				8639DA342A5B7AC700B356C1 /* MainMenu.swift */,
+				866E38942A6DADD000F53CB0 /* Object.swift */,
+				8688B6192A72BEE800B4FD53 /* Item.swift */,
+				866E38902A6DA30F00F53CB0 /* Controllers */,
 			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		86CECB912AE898C800C4BD97 /* All Buttons */ = {
-			isa = PBXGroup;
-			children = (
-				8641D8962AF34D420086C9F1 /* All Content Shapes Functions.swift */,
-				86CECB892AE8964E00C4BD97 /* All Observable Buttons.swift */,
-				864EC3002AFDBC8D00D5ABEE /* All Interactive Buttons.swift */,
-				866616832AFAC02B00860E30 /* All Navigational Buttons.swift */,
-			);
-			path = "All Buttons";
+			path = "Old Code";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,10 +322,8 @@
 			files = (
 				86A51A712A740EEF00924EAB /* HallwayDoorknobController.swift in Sources */,
 				86EA91972A9E484100423937 /* Profile Picture.swift in Sources */,
-				864EC2FD2AFDA22700D5ABEE /* Ivy Base.swift in Sources */,
-				864EC3012AFDBC8D00D5ABEE /* All Interactive Buttons.swift in Sources */,
+				864EC3012AFDBC8D00D5ABEE /* Interactive Objects.swift in Sources */,
 				8688B6262A72D9E300B4FD53 /* PoolTableController.swift in Sources */,
-				860A6B9A2AF4497200401B0A /* RectangleShape.swift in Sources */,
 				8688B6222A72D09C00B4FD53 /* LivingRoomWindow Controller.swift in Sources */,
 				864CEA862A97AA0500EE6293 /* Delegates.swift in Sources */,
 				86CECB8D2AE896B500C4BD97 /* Location.swift in Sources */,
@@ -425,35 +332,28 @@
 				8688B6162A72B4FB00B4FD53 /* PlayMode.swift in Sources */,
 				86A51A6D2A740AE200924EAB /* HallwayDoorGapController.swift in Sources */,
 				86A51A782A7419AB00924EAB /* ConsoleTableController.swift in Sources */,
-				864EC2FF2AFDAC9C00D5ABEE /* Branch.swift in Sources */,
-				86CECB972AE89C2F00C4BD97 /* Tappable Area.swift in Sources */,
-				866616842AFAC02B00860E30 /* All Navigational Buttons.swift in Sources */,
+				866616842AFAC02B00860E30 /* Navigational Objects.swift in Sources */,
 				8639DA0D2A5B4A6600B356C1 /* ContentView.swift in Sources */,
 				863A68922A8FC90100EC387B /* Comment Dialogue Box.swift in Sources */,
-				863AF79F2A9CF48900DF1620 /* Ivy Content Shape.swift in Sources */,
 				866E389F2A6DC21D00F53CB0 /* UpstairsController.swift in Sources */,
+				86FB31592CCE1CE9002B3B3F /* Old Code Contents.swift in Sources */,
 				863A68902A8FC8EE00EC387B /* Tutorial Menu.swift in Sources */,
 				8639DA352A5B7AC700B356C1 /* MainMenu.swift in Sources */,
 				86EA919A2A9E4C6A00423937 /* Dialogue Box.swift in Sources */,
-				86CECB8A2AE8964E00C4BD97 /* All Observable Buttons.swift in Sources */,
+				86CECB8A2AE8964E00C4BD97 /* Observable Objects.swift in Sources */,
 				86A51A762A74159000924EAB /* LandingController.swift in Sources */,
 				8688B6282A72E0AA00B4FD53 /* LowTableController.swift in Sources */,
-				86C1A5D42AA0D19B00F0DD10 /* Root Controller.swift in Sources */,
-				8641D8972AF34D420086C9F1 /* All Content Shapes Functions.swift in Sources */,
+				86C1A5D42AA0D19B00F0DD10 /* RootController.swift in Sources */,
+				8641D8972AF34D420086C9F1 /* Content Shapes.swift in Sources */,
 				866E38952A6DADD000F53CB0 /* Object.swift in Sources */,
-				8688B6142A72B4A700B4FD53 /* GameplayController.swift in Sources */,
-				86CECB8F2AE8972900C4BD97 /* Object Buttons.swift in Sources */,
-				860A6B962AF43C9500401B0A /* Hedges Content Shape.swift in Sources */,
+				86FB31572CCE162F002B3B3F /* Tappable Area.swift in Sources */,
 				86A51A7A2A741B2F00924EAB /* VentController.swift in Sources */,
 				8639DA0B2A5B4A6600B356C1 /* Guardian_StarApp.swift in Sources */,
 				8688B6242A72D38100B4FD53 /* BedroomWindowController.swift in Sources */,
-				860A6B942AF4397F00401B0A /* Bedroom Windows Content Shape.swift in Sources */,
 				866E389D2A6DC12C00F53CB0 /* HallwayController.swift in Sources */,
-				864EC3032AFDBCCF00D5ABEE /* Hedges Navigation.swift in Sources */,
 				8688B61C2A72C2CC00B4FD53 /* HedgesController.swift in Sources */,
 				8641D8952AF347ED0086C9F1 /* Grid Shape.swift in Sources */,
 				86B982E82A698EEB004A100B /* Main Overlay.swift in Sources */,
-				860A6B982AF446CF00401B0A /* Living Room Window Content Shape.swift in Sources */,
 				8688B6182A72BEA200B4FD53 /* InventoryController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

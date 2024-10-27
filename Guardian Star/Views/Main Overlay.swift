@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct MainOverlayViews: View {
-    @Binding var currentMode: PlayMode
-    @Binding var showComment: Bool
-    @Binding var inventoryIsOpen: Bool
-    @StateObject private var rootController = RootController()
+    @EnvironmentObject private var rootController: RootController
+    
     @State private var previousPlayMode = PlayMode.observe
     @State private var previousInventoryMode = PlayMode.inspect
+    
     var inventoryOffset: CGFloat {
-        if inventoryIsOpen {
+        if rootController.inventoryIsOpen {
             return 0
         } else {
             return 194
@@ -24,49 +23,49 @@ struct MainOverlayViews: View {
     
     //Colors
     var observeButtonColor: Color {
-        if currentMode == .observe {
+        if rootController.currentMode == .observe {
             return Color.white
         } else {
             return Color.secondary
         }
     }
     var interactButtonColor: Color {
-        if currentMode == .interact {
+        if rootController.currentMode == .interact {
             return Color.white
         } else {
             return Color.secondary
         }
     }
     var navigateButtonColor: Color {
-        if currentMode == .navigate {
+        if rootController.currentMode == .navigate {
             return Color.white
         } else {
             return Color.secondary
         }
     }
     var inspectButtonColor: Color {
-        if currentMode == .inspect {
+        if rootController.currentMode == .inspect {
             return Color.white
         } else {
             return Color.white.opacity(0.6)
         }
     }
     var craftButtonColor: Color {
-        if currentMode == .craft {
+        if rootController.currentMode == .craft {
             return Color.white
         } else {
             return Color.white.opacity(0.6)
         }
     }
     var useButtonColor: Color {
-        if currentMode == .use {
+        if rootController.currentMode == .use {
             return Color.white
         } else {
             return Color.white.opacity(0.6)
         }
     }
     
-    let menuColor = ContentView.menuColor
+    let menuColor = RootController.menuColor
     
     //MARK: VIEW BODY
     var body: some View {
@@ -100,7 +99,7 @@ struct MainOverlayViews: View {
                     HStack {
                         //Observe Button
                         Button {
-                            currentMode = .observe
+                            rootController.currentMode = .observe
                         } label: {
                             Image(systemName: "magnifyingglass.circle")
                                 .resizable()
@@ -109,11 +108,11 @@ struct MainOverlayViews: View {
                                 .foregroundColor(observeButtonColor)
                         }
                         .accessibilityIdentifier("Observe Button")
-                        .disabled(inventoryIsOpen)
+                        .disabled(rootController.inventoryIsOpen)
                         
                         //Interact Button
                         Button {
-                            currentMode = .interact
+                            rootController.currentMode = .interact
                         } label: {
                             Image(systemName: "dot.circle.and.hand.point.up.left.fill")
                                 .resizable()
@@ -122,11 +121,11 @@ struct MainOverlayViews: View {
                                 .foregroundColor(interactButtonColor)
                         }
                         .accessibilityIdentifier("Interact Button")
-                        .disabled(inventoryIsOpen)
+                        .disabled(rootController.inventoryIsOpen)
                         
                         //Navigate Button
                         Button {
-                            currentMode = .navigate
+                            rootController.currentMode = .navigate
                         } label: {
                             Image(systemName: "arrow.up.and.down.circle")
                                 .resizable()
@@ -135,7 +134,7 @@ struct MainOverlayViews: View {
                                 .foregroundColor(navigateButtonColor)
                         }
                         .accessibilityIdentifier("Navigate Button")
-                        .disabled(inventoryIsOpen)
+                        .disabled(rootController.inventoryIsOpen)
                     }
                     .padding(.leading)
                     
@@ -144,14 +143,14 @@ struct MainOverlayViews: View {
                     //Inventory Button
                     ZStack {
                         Button {
-                            inventoryIsOpen.toggle()
+                            rootController.inventoryIsOpen.toggle()
                             
-                            if inventoryIsOpen {
-                                previousPlayMode = currentMode
-                                currentMode = previousInventoryMode
+                            if rootController.inventoryIsOpen {
+                                previousPlayMode = rootController.currentMode
+                                rootController.currentMode = previousInventoryMode
                             } else {
-                                previousInventoryMode = currentMode
-                                currentMode = previousPlayMode
+                                previousInventoryMode = rootController.currentMode
+                                rootController.currentMode = previousPlayMode
                                 
                             }
                         } label: {
@@ -209,7 +208,7 @@ struct MainOverlayViews: View {
                             //Buttons
                             VStack(spacing: 20) {
                                 Button {
-                                    currentMode = .inspect
+                                    rootController.currentMode = .inspect
                                 } label: {
                                     Image(systemName: "eye.circle")
                                         .resizable()
@@ -219,7 +218,7 @@ struct MainOverlayViews: View {
                                 .foregroundColor(inspectButtonColor)
                                 
                                 Button {
-                                    currentMode = .craft
+                                    rootController.currentMode = .craft
                                 } label: {
                                     Image(systemName: "hammer.circle")
                                         .resizable()
@@ -229,7 +228,7 @@ struct MainOverlayViews: View {
                                 .foregroundColor(craftButtonColor)
                                 
                                 Button {
-                                    currentMode = .use
+                                    rootController.currentMode = .use
                                 } label: {
                                     Image(systemName: "circle")
                                         .resizable()
@@ -251,7 +250,7 @@ struct MainOverlayViews: View {
                                 GridRow {
                                     ForEach((1...5), id: \.self) { _ in
                                         Button {
-                                            if currentMode == .inspect {
+                                            if rootController.currentMode == .inspect {
                                                 rootController.observeObject(emoteName: "Thoughtful Susie", message: "Item inspected.")
                                             }
                                             

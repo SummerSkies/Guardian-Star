@@ -1,12 +1,10 @@
 //
-//  Tappable Area.swift
+//  TappableArea.swift
 //  Guardian Star
 //
-//  Created by Juliana Nielson on 10/24/23.
+//  Created by Juliana Nielson on 10/27/24.
 //
-
 import Foundation
-import SwiftUI
 
 enum TappableArea {
     case rectangle

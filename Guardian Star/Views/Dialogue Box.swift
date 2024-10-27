@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-struct Dialogue_Box: View {
+struct DialogueBox: View {
     var message: String
-    let menuColor = ContentView.menuColor
+    let menuColor = RootController.menuColor
     
     var body: some View {
         ZStack {

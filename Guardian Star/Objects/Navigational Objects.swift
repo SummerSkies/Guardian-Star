@@ -6,7 +6,12 @@
 //
 
 import Foundation
-import SwiftUI
+
+struct NavigationalObjectButton {
+    let padding: Padding
+    let imageName: String
+    let destination: LocationName
+}
 
 struct NavigationalButtons {
     
