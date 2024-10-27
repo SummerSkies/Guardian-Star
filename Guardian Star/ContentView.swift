@@ -38,7 +38,9 @@ struct ContentView: View, Equatable {
                             let w = proxy.size.width
                             let h = proxy.size.height
                             
-                            //Layer regular image versions of each object under everything so the objects don't disappear on playmode change
+                            //Layer regular image versions of each object under everything so:
+                                //1. The objects don't disappear on playmode change and
+                                //2. Only the glow has an opacity change on touch
                             //Each object image has the same dimensions as the background
                             ForEach(rootController.currentLocation.defaultImageNames, id: \.self) { imageName in
                                 Image(imageName)
@@ -110,7 +112,7 @@ struct ContentView: View, Equatable {
                         } //Geo Reader
                     } //Overlay
             } //Scroll View
-
+            
             //Dialogue View:
             if rootController.showComment == true {
                 CommentDialogueBoxView()
