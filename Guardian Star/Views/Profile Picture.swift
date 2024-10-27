@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfilePicture: View {
-    var emote: String
+    let emote: String
     
     var body: some View {
         let menuColor = RootController.menuColor

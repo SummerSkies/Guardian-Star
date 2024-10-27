@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DialogueBox: View {
-    var message: String
+    let message: String
     let menuColor = RootController.menuColor
     
     var body: some View {

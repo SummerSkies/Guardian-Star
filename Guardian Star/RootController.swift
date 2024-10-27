@@ -11,7 +11,7 @@ import Combine
 
 class RootController: ObservableObject {
     @Published var currentLocation = allLocations[.backyard]!
-    @Published var currentMode = PlayMode.navigate
+    @Published var currentMode = PlayMode.observe
     
     @Published var inventoryIsOpen = false
     
@@ -23,9 +23,9 @@ class RootController: ObservableObject {
     static let menuColor = Color(red: 38 / 250, green: 38 / 250, blue: 38 / 250)
     
     func observeObject(emoteName: String, message: String) {
-        showComment = true
         currentEmoteName = emoteName
         currentMessage = message
+        showComment = true
     }
     
     func navigate(to location: LocationName) {
