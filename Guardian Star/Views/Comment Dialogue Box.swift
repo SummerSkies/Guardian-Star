@@ -11,10 +11,11 @@ struct CommentDialogueBoxView: View {
     @EnvironmentObject private var rootController: RootController
     
     @State private var animationOpacity = 0.0
+    let animationDuration = 0.3
     
     func dismiss() {
         Task {
-            await animate(duration: 0.7) {
+            await animate(duration: animationDuration) {
                 animationOpacity = 0.0
             }
             rootController.showComment = false
@@ -22,33 +23,27 @@ struct CommentDialogueBoxView: View {
     }
     
     var body: some View {
-        
-        ZStack {
-            GeometryReader { geometry in
-                let areaWidth = geometry.size.width
-                
-                Rectangle()
-                    .frame(width: areaWidth, height: 160, alignment: .top)
-                    .foregroundColor(.clear)
-                    .overlay {
-                        DialogueBox(message: rootController.currentMessage)
-                            .offset(x: 35, y: 0)
-                            .opacity(animationOpacity)
-                            .animation(.easeIn(duration: 0.7), value: animationOpacity
-                            )
-                        ProfilePicture(emote: rootController.currentEmoteName)
-                            .offset(x: -143, y: 35)
-                            .opacity(animationOpacity)
-                            .animation(.easeIn(duration: 0.7), value: animationOpacity
-                            )
-                    }
-                    .onAppear {
-                        animationOpacity = 1.0
-                    }
-            }
+        GeometryReader { geometry in
+            let areaWidth = geometry.size.width
             
-            Color.clear
-                .contentShape(Rectangle())
+            Rectangle()
+                .frame(width: areaWidth, height: 160, alignment: .top)
+                .foregroundColor(.clear)
+                .overlay {
+                    DialogueBox(message: rootController.currentMessage)
+                        .offset(x: 35, y: 0)
+                        .opacity(animationOpacity)
+                        .animation(.easeIn(duration: animationDuration), value: animationOpacity
+                        )
+                    ProfilePicture(emote: rootController.currentEmoteName)
+                        .offset(x: -143, y: 35)
+                        .opacity(animationOpacity)
+                        .animation(.easeIn(duration: animationDuration), value: animationOpacity
+                        )
+                }
+                .onAppear {
+                    animationOpacity = 1.0
+                }
                 .gesture(
                     TapGesture()
                         .onEnded {

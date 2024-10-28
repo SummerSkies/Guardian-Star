@@ -20,7 +20,8 @@ struct DialogueBox: View {
                     Text(message)
                         .foregroundColor(.white)
                         .padding()
-                        .font(.callout)
+                        .font(.custom("Futura-MediumItalic", size: 16, relativeTo: .headline))
+                    //Size 16 for long messages, size 20 for short messages.
                 })
             
             RoundedRectangle(cornerSize: CGSize(width: 20.0, height: 20.0))
@@ -32,5 +33,12 @@ struct DialogueBox: View {
                 .foregroundColor(.white)
                 .offset(x: 0, y: 75)
         }
+    }
+}
+
+struct CommentDialogueBoxView_Previews: PreviewProvider {
+    static var previews: some View {
+        DialogueBox(message: "I wonder if I could climb that ivy up to Daisy's window.\nI'll have to start at the base, through the hedges.")
+            .environmentObject(RootController())
     }
 }
