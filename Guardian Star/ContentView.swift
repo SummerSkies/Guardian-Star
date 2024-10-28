@@ -33,6 +33,7 @@ struct ContentView: View, Equatable {
                     .resizable()
                     .scaledToFill()
                     .overlay {
+                        //Color.blue
                         //Measure play area size
                         GeometryReader { proxy in
                             let w = proxy.size.width

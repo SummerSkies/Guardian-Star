@@ -29,6 +29,8 @@ struct CommentDialogueBoxView: View {
             Rectangle()
                 .frame(width: areaWidth, height: 160, alignment: .top)
                 .foregroundColor(.clear)
+            /*
+            //Smaller
                 .overlay {
                     DialogueBox(message: rootController.currentMessage)
                         .offset(x: 35, y: 0)
@@ -41,6 +43,22 @@ struct CommentDialogueBoxView: View {
                         .animation(.easeIn(duration: animationDuration), value: animationOpacity
                         )
                 }
+             */
+            ///*
+            //Larger
+                .overlay {
+                    DialogueBox(message: rootController.currentMessage)
+                        .offset(x: 35, y: 10)
+                        .opacity(animationOpacity)
+                        .animation(.easeIn(duration: animationDuration), value: animationOpacity
+                        )
+                    ProfilePicture(emote: rootController.currentEmoteName)
+                        .offset(x: -145, y: 50)
+                        .opacity(animationOpacity)
+                        .animation(.easeIn(duration: animationDuration), value: animationOpacity
+                        )
+                }
+             //*/
                 .onAppear {
                     animationOpacity = 1.0
                 }
@@ -65,5 +83,12 @@ extension View {
                 continuation.resume()
             }
         }
+    }
+}
+
+struct CommentDialogueBoxView_Previews: PreviewProvider {
+    static var previews: some View {
+        CommentDialogueBoxView()
+            .environmentObject(RootController())
     }
 }

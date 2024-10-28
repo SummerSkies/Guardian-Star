@@ -15,9 +15,9 @@ class RootController: ObservableObject {
     
     @Published var inventoryIsOpen = false
     
-    @Published var showComment = false
+    @Published var showComment = true
     @Published var currentEmoteName = "Thoughtful Susie"
-    @Published var currentMessage = "This is default text."
+    @Published var currentMessage = "I wonder if I could climb that ivy up to Daisy's window.\nI'll have to start at the base, through the hedges."//"This is default text."
     
     static let allLocations = AllLocations.locations
     static let menuColor = Color(red: 38 / 250, green: 38 / 250, blue: 38 / 250)

@@ -86,6 +86,7 @@ struct MainOverlayViews: View {
                 }
                 .frame(width: 50, height: 50)
                 .accessibilityIdentifier("Home Button")
+                //.background(Color.secondary)
                 
                 Spacer()
             }
